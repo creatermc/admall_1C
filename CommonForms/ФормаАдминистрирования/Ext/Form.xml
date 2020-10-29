@@ -1160,6 +1160,9 @@
 																	<ListChoiceMode>true</ListChoiceMode>
 																	<ContextMenu name="СписокПользователей1СКонтекстноеМеню" id="84"/>
 																	<ExtendedTooltip name="СписокПользователей1СРасширеннаяПодсказка" id="85"/>
+																	<Events>
+																		<Event name="ChoiceProcessing">СписокПользователей1СОбработкаВыбора</Event>
+																	</Events>
 																</InputField>
 																<Button name="ПолучитьСписокАктивныхПользователей" id="276">
 																	<Type>UsualButton</Type>
@@ -1190,6 +1193,10 @@
 																<InputField name="idСессииПользователя1С" id="639">
 																	<DataPath>idСессииПользователя1С</DataPath>
 																	<TitleLocation>None</TitleLocation>
+																	<Width>20</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<HorizontalStretch>false</HorizontalStretch>
 																	<ContextMenu name="idСессииПользователя1СКонтекстноеМеню" id="640"/>
 																	<ExtendedTooltip name="idСессииПользователя1СРасширеннаяПодсказка" id="641"/>
 																</InputField>
@@ -3725,7 +3732,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>20</v8:Length>
+					<v8:Length>50</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
