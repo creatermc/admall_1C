@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.9">
+	<ConfigVersions>
+		<Metadata name="Catalog.База1С" id="c3791300-144a-11eb-1d83-b42e9905bfa2" configVersion="10b8afae6914eb11d88db42e9905bfa200000000">
+			<Metadata name="Catalog.База1С.Attribute.Сервер1С" id="9cc1808e-1469-11eb-d88d-b42e9905bfa2"/>
+			<Metadata name="Catalog.База1С.Attribute.idБазы1С" id="da69f67e-144a-11eb-1d83-b42e9905bfa2"/>
+		</Metadata>
+		<Metadata name="Catalog.ПолучательПисьма" id="67b63d42-0161-11eb-c19d-b42e9905bfa2" configVersion="ba613b8b4702eb113884b42e9905bfa200000000">
+			<Metadata name="Catalog.ПолучательПисьма.Attribute.email" id="7f5f5e46-0161-11eb-c19d-b42e9905bfa2"/>
+			<Metadata name="Catalog.ПолучательПисьма.Attribute.Примечание" id="8d2e2e30-0161-11eb-c19d-b42e9905bfa2"/>
+		</Metadata>
+		<Metadata name="Catalog.ПользователиБазы1С" id="4c9d7026-192e-11eb-889d-b42e9905bfa2" configVersion="c022b19b2e19eb11889db42e9905bfa200000000">
+			<Metadata name="Catalog.ПользователиБазы1С.Attribute.База1С" id="7049ad78-192e-11eb-889d-b42e9905bfa2"/>
+		</Metadata>
+		<Metadata name="Catalog.Сервер1С" id="115e3a96-13a6-11eb-568f-b42e9905bfa2" configVersion="46b33a6b3615eb11d88db42e9905bfa200000000">
+			<Metadata name="Catalog.Сервер1С.Attribute.IDСервера1С" id="2ba6c63e-13a6-11eb-568f-b42e9905bfa2"/>
+		</Metadata>
+		<Metadata name="Catalog.СписокБаз" id="361b9619-0161-11eb-c19d-b42e9905bfa2" configVersion="44693b8b4702eb113884b42e9905bfa200000000">
+			<Metadata name="Catalog.СписокБаз.Attribute.логинАдминистратораБилетногоМодуля" id="080ffea8-01a3-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.ЛогинБронированиеСайт" id="15fac0ba-01a4-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.логинАдминистраторБД" id="1d785854-01a2-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.ПарольБронированиеСайт" id="2cf06e28-01a4-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.ПарольАдминистратораБилетногоМодуля" id="35c33f54-01a3-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.База1С" id="4528668c-0161-11eb-c19d-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.БазаPostgres" id="4c845468-0161-11eb-c19d-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.парольАдминистратораБД" id="501ae498-01a2-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.Примечание" id="57d25edc-0161-11eb-c19d-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.логинАдминистратораАК" id="7d1f85d4-01a2-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.ПарольАдминистратораАК" id="943fdb4c-01a2-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.ЛогинСвязь1ССБилетнымМодулем" id="98fcb1f4-01a3-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.ПарольСвязь1ССБилетнымМодулем" id="b62a1b5e-01a3-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.ЭлАдресБилетногоМодуля" id="be8190bc-01a2-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.ЭлАдресБазы" id="f69921b4-01a1-11eb-3884-b42e9905bfa2"/>
+			<Metadata name="Catalog.СписокБаз.Attribute.БронированиеСайт" id="f7c36f98-01a3-11eb-3884-b42e9905bfa2"/>
+		</Metadata>
+		<Metadata name="Catalog.СписокБаз.Form.ФормаЭлемента" id="3009ead2-0247-11eb-3884-b42e9905bfa2" configVersion="4097a073f202eb11168db42e9905bfa200000000"/>
+		<Metadata name="Catalog.СписокБаз.Form.ФормаЭлемента.Form" id="3009ead2-0247-11eb-3884-b42e9905bfa2.0" configVersion="fc6ca073f202eb11168db42e9905bfa200000000"/>
+		<Metadata name="CommonCommand.ОтправитьПисьмо" id="73db87b4-0163-11eb-c19d-b42e9905bfa2" configVersion="9af392a66301eb11c19db42e9905bfa200000000"/>
+		<Metadata name="CommonCommand.ОтправитьПисьмо.CommandModule" id="73db87b4-0163-11eb-c19d-b42e9905bfa2.2" configVersion="f617fc8f6301eb11c19db42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаHelpDocker" id="405f318e-1535-11eb-d88d-b42e9905bfa2" configVersion="8ed0e4325317eb11f492b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаHelpDocker.Form" id="405f318e-1535-11eb-d88d-b42e9905bfa2.0" configVersion="1423e4325317eb11f492b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2" configVersion="187e0a313719eb11889db42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования.Form" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.0" configVersion="ec1e09313719eb11889db42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования.Help" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.1" configVersion="7e4fcbfae6fcea11b39ab42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаОтправкиУведомительногоПисьма" id="e9ad774c-0161-11eb-c19d-b42e9905bfa2" configVersion="54bae571980feb113d92b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаОтправкиУведомительногоПисьма.Form" id="e9ad774c-0161-11eb-c19d-b42e9905bfa2.0" configVersion="0650e471980feb113d92b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаРасширенныйПросмотр" id="0ba9da1e-1762-11eb-f492-b42e9905bfa2" configVersion="2e42ee536217eb11f492b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаРасширенныйПросмотр.Form" id="0ba9da1e-1762-11eb-f492-b42e9905bfa2.0" configVersion="b859ed536217eb11f492b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаСправкаКластера1С" id="a74d7350-1752-11eb-f492-b42e9905bfa2" configVersion="16d06ee55217eb11f492b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаСправкаКластера1С.Form" id="a74d7350-1752-11eb-f492-b42e9905bfa2.0" configVersion="08706ee55217eb11f492b42e9905bfa200000000"/>
+		<Metadata name="Configuration.АдминистрированиеСервера" id="68b31c24-f990-11ea-a281-b42e9905bfa2" configVersion="e232b19b2e19eb11889db42e9905bfa200000000"/>
+		<Metadata name="Configuration.АдминистрированиеСервера.ClientApplicationInterface" id="68b31c25-f990-11ea-a281-b42e9905bfa2.b" configVersion="2af61608ebfcea11b39ab42e9905bfa200000000"/>
+		<Metadata name="Configuration.АдминистрированиеСервера.HomePageWorkArea" id="68b31c25-f990-11ea-a281-b42e9905bfa2.8" configVersion="d0bcd02be7fcea11b39ab42e9905bfa200000000"/>
+		<Metadata name="Configuration.АдминистрированиеСервера.MainSectionCommandInterface" id="68b31c25-f990-11ea-a281-b42e9905bfa2.9" configVersion="06d9edd66301eb11c19db42e9905bfa200000000"/>
+		<Metadata name="Constant.АдресТехЭлПочты" id="b3f1cc20-0161-11eb-c19d-b42e9905bfa2" configVersion="4ea45dd36101eb11c19db42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl" id="704fca2c-02f5-11eb-b99e-b42e9905bfa2" configVersion="4eafc174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AdministratorForm" id="08be9e15-3246-46ce-ab7f-62314925d3c6" configVersion="ea72c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AdministratorForm.Form" id="08be9e15-3246-46ce-ab7f-62314925d3c6.0" configVersion="8c696470f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedApplicationForm" id="896c70ee-792b-4473-ac1c-1cabf2303dd3" configVersion="8ebac174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedApplicationForm.Form" id="896c70ee-792b-4473-ac1c-1cabf2303dd3.0" configVersion="ce715b70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedComObjectForm" id="2f3ca9d8-302f-4993-991b-a87a3f2cb179" configVersion="388ec174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedComObjectForm.Form" id="2f3ca9d8-302f-4993-991b-a87a3f2cb179.0" configVersion="78ee5c70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedDirectoryForm" id="d4470523-e855-44d0-9517-932c396e0347" configVersion="9cc0c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedDirectoryForm.Form" id="d4470523-e855-44d0-9517-932c396e0347.0" configVersion="ce745d70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedExternalComponentForm" id="f675960c-6790-4e19-9912-157c2328811c" configVersion="a4bdc174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedExternalComponentForm.Form" id="f675960c-6790-4e19-9912-157c2328811c.0" configVersion="12695c70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedInternetResourceForm" id="3d4992b7-cb22-4603-8e61-b0ad194e157e" configVersion="249dc174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedInternetResourceForm.Form" id="3d4992b7-cb22-4603-8e61-b0ad194e157e.0" configVersion="c2ec5a70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedModuleForm" id="c67473be-3b1a-478d-ba97-578a7e9e64c0" configVersion="4cacc174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AllowedModuleForm.Form" id="c67473be-3b1a-478d-ba97-578a7e9e64c0.0" configVersion="04eb5b70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AssignmentRuleForm" id="518c099f-2fb0-43a3-8e6b-57adee181133" configVersion="3488c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AssignmentRuleForm.Form" id="518c099f-2fb0-43a3-8e6b-57adee181133.0" configVersion="a2c25e70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AuthenticateCentralServerForm" id="25bf2850-8b9d-4d99-b0f8-583bc45ced9a" configVersion="dad2c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AuthenticateCentralServerForm.Form" id="25bf2850-8b9d-4d99-b0f8-583bc45ced9a.0" configVersion="064a5f70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AuthenticationForm" id="a54e7c95-43dd-45fa-89dd-621deb3b9b11" configVersion="40a9c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.AuthenticationForm.Form" id="a54e7c95-43dd-45fa-89dd-621deb3b9b11.0" configVersion="ce1b6170f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.ClusterForm" id="f561cff9-6b5f-4897-86ae-3ec051809b07" configVersion="0c97c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.ClusterForm.Form" id="f561cff9-6b5f-4897-86ae-3ec051809b07.0" configVersion="54966070f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.ClusterManagerForm" id="1c458c93-fc03-4cf0-9cb6-ef5fd21c0e48" configVersion="0076c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.ClusterManagerForm.Form" id="1c458c93-fc03-4cf0-9cb6-ef5fd21c0e48.0" configVersion="dae46370f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.CounterForm" id="ccda92e7-7923-4b19-916c-5a3525030730" configVersion="f2c9c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.CounterForm.Form" id="ccda92e7-7923-4b19-916c-5a3525030730.0" configVersion="32eb5f70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.CreateInfobaseForm" id="2ddadfa7-2427-4c93-8a6d-48a63d39f453" configVersion="7a6fc174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.CreateInfobaseForm.Form" id="2ddadfa7-2427-4c93-8a6d-48a63d39f453.0" configVersion="c0ca6570f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.InfobaseAuthenticationForm" id="fb7ca083-d952-4260-8e36-e2461690a0dd" configVersion="dcc6c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.InfobaseAuthenticationForm.Form" id="fb7ca083-d952-4260-8e36-e2461690a0dd.0" configVersion="888e6170f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.InfobaseEditForm" id="e3ce6b39-0321-4130-912a-d80e05dc05be" configVersion="f6cfc174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.InfobaseEditForm.Form" id="e3ce6b39-0321-4130-912a-d80e05dc05be.0" configVersion="601e5e70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.LoadSettingsForm" id="72cea96f-d663-472e-bf91-e45a29081081" configVersion="2682c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.LoadSettingsForm.Form" id="72cea96f-d663-472e-bf91-e45a29081081.0" configVersion="d8ba6270f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.MainForm" id="e2d3c11b-7244-4c1f-b434-609f613dc02b" configVersion="189ac174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.MainForm.Form" id="e2d3c11b-7244-4c1f-b434-609f613dc02b.0" configVersion="ee155670f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.MainForm.Help" id="e2d3c11b-7244-4c1f-b434-609f613dc02b.1" configVersion="9cc95870f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.ResourceLimitForm" id="56709a7b-f86c-4f26-be4b-c258eaebccf4" configVersion="eaccc174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.ResourceLimitForm.Form" id="56709a7b-f86c-4f26-be4b-c258eaebccf4.0" configVersion="6a9b5970f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.SaveSettingsForm" id="1cc30872-81a3-46f1-85c6-5130a983085e" configVersion="2c8bc174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.SaveSettingsForm.Form" id="1cc30872-81a3-46f1-85c6-5130a983085e.0" configVersion="ca466270f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.SaveSettingsFormToStorage" id="884b2a9f-f8a6-4645-9e0e-1df38ad937fd" configVersion="0c79c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.SaveSettingsFormToStorage.Form" id="884b2a9f-f8a6-4645-9e0e-1df38ad937fd.0" configVersion="861d6670f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.SecurityProfileForm" id="c75017ce-db55-4252-b82a-797fe04b5b44" configVersion="3285c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.SecurityProfileForm.Form" id="c75017ce-db55-4252-b82a-797fe04b5b44.0" configVersion="02535a70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.SelectDeleteInfobaseModeForm" id="8eaf0aab-fca7-4f44-9836-45cd0b204d3e" configVersion="0094c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.SelectDeleteInfobaseModeForm.Form" id="8eaf0aab-fca7-4f44-9836-45cd0b204d3e.0" configVersion="ead16170f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.WorkProcessForm" id="22bd0e20-fb88-4276-88ea-bad299da18dd" configVersion="0e7cc174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.WorkProcessForm.Form" id="22bd0e20-fb88-4276-88ea-bad299da18dd.0" configVersion="8a536370f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.WorkServerForm" id="402b8d6b-5bc3-4c30-9f4c-702b20297033" configVersion="247fc174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Form.WorkServerForm.Form" id="402b8d6b-5bc3-4c30-9f4c-702b20297033.0" configVersion="c21e6570f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.ObjectModule" id="704fca2c-02f5-11eb-b99e-b42e9905bfa2.0" configVersion="1a3a6a70f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Template.CounterValueDataCompositionSchema" id="9ec7f3c6-a60f-4fb1-b25c-cf9441113b69" configVersion="3091c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Template.CounterValueDataCompositionSchema.Template" id="9ec7f3c6-a60f-4fb1-b25c-cf9441113b69.0" configVersion="c6526970f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Template.DocumentationLinkTemplate" id="0a645070-12ab-4831-8b97-484b08c70ef1" configVersion="b2c3c174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Template.DocumentationLinkTemplate.Template" id="0a645070-12ab-4831-8b97-484b08c70ef1.0" configVersion="18c96970f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Template.SessionDataCompositionSchema" id="f16d5c21-52f7-4efc-815d-90f040bde668" configVersion="206ac174f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="DataProcessor.StandartServerControl.Template.SessionDataCompositionSchema.Template" id="f16d5c21-52f7-4efc-815d-90f040bde668.0" configVersion="8ca76770f502eb11b99eb42e9905bfa200000000"/>
+		<Metadata name="Language.Русский" id="68b31d96-f990-11ea-a281-b42e9905bfa2" configVersion="2e0b548890f9ea11a281b42e9905bfa200000000"/>
+		<Metadata name="Role.ПолныеПрава" id="84a54cfc-fe38-11ea-a18e-b42e9905bfa2" configVersion="7404046e39feea11a18eb42e9905bfa200000000"/>
+		<Metadata name="Role.ПолныеПрава.Rights" id="84a54cfc-fe38-11ea-a18e-b42e9905bfa2.0" configVersion="1ecedd6b39feea11a18eb42e9905bfa200000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

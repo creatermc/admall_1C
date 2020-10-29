@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="55">
+			<Group>AlwaysHorizontal</Group>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="57">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<InputField name="База1С" id="7">
+					<DataPath>Объект.База1С</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="База1СКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="База1СРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ЭлАдресБазы" id="16">
+					<DataPath>Объект.ЭлАдресБазы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЭлАдресБазыКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ЭлАдресБазыРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<UsualGroup name="Группа7" id="67">
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="68"/>
+					<ChildItems>
+						<InputField name="логинАдминистраторБД" id="19">
+							<DataPath>Объект.логинАдминистраторБД</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="логинАдминистраторБДКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="логинАдминистраторБДРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="парольАдминистратораБД" id="22">
+							<DataPath>Объект.парольАдминистратораБД</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="парольАдминистратораБДКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="парольАдминистратораБДРасширеннаяПодсказка" id="24"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа6" id="65">
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<InputField name="логинАдминистратораАК" id="25">
+							<DataPath>Объект.логинАдминистратораАК</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="логинАдминистратораАККонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="логинАдминистратораАКРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="ПарольАдминистратораАК" id="28">
+							<DataPath>Объект.ПарольАдминистратораАК</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПарольАдминистратораАККонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ПарольАдминистратораАКРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="59">
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<InputField name="ЭлАдресБилетногоМодуля" id="31">
+					<DataPath>Объект.ЭлАдресБилетногоМодуля</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЭлАдресБилетногоМодуляКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ЭлАдресБилетногоМодуляРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="логинАдминистратораБилетногоМодуля" id="34">
+					<DataPath>Объект.логинАдминистратораБилетногоМодуля</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="логинАдминистратораБилетногоМодуляКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="логинАдминистратораБилетногоМодуляРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ПарольАдминистратораБилетногоМодуля" id="37">
+					<DataPath>Объект.ПарольАдминистратораБилетногоМодуля</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПарольАдминистратораБилетногоМодуляКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ПарольАдминистратораБилетногоМодуляРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="ЛогинСвязь1ССБилетнымМодулем" id="40">
+					<DataPath>Объект.ЛогинСвязь1ССБилетнымМодулем</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЛогинСвязь1ССБилетнымМодулемКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ЛогинСвязь1ССБилетнымМодулемРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="ПарольСвязь1ССБилетнымМодулем" id="43">
+					<DataPath>Объект.ПарольСвязь1ССБилетнымМодулем</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПарольСвязь1ССБилетнымМодулемКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ПарольСвязь1ССБилетнымМодулемРасширеннаяПодсказка" id="45"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="61">
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<InputField name="БронированиеСайт" id="46">
+					<DataPath>Объект.БронированиеСайт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БронированиеСайтКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="БронированиеСайтРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ЛогинБронированиеСайт" id="49">
+					<DataPath>Объект.ЛогинБронированиеСайт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЛогинБронированиеСайтКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ЛогинБронированиеСайтРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ПарольБронированиеСайт" id="52">
+					<DataPath>Объект.ПарольБронированиеСайт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПарольБронированиеСайтКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ПарольБронированиеСайтРасширеннаяПодсказка" id="54"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="63">
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="64"/>
+			<ChildItems>
+				<InputField name="БазаPostgres" id="10">
+					<DataPath>Объект.БазаPostgres</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="БазаPostgresКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="БазаPostgresРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Примечание" id="13">
+			<DataPath>Объект.Примечание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПримечаниеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПримечаниеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СписокБаз</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
