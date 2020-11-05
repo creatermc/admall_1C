@@ -20,6 +20,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа44" id="553">
@@ -41,6 +42,145 @@
 					<ContextMenu name="ИнформацияЗаполнения6КонтекстноеМеню" id="556"/>
 					<ExtendedTooltip name="ИнформацияЗаполнения6РасширеннаяПодсказка" id="557"/>
 				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа51" id="644">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тунель SSH</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа51РасширеннаяПодсказка" id="645"/>
+			<ChildItems>
+				<CheckBoxField name="ТунельSSH" id="646">
+					<DataPath>ТунельSSH</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТунельSSHКонтекстноеМеню" id="647"/>
+					<ExtendedTooltip name="ТунельSSHРасширеннаяПодсказка" id="648"/>
+					<Events>
+						<Event name="OnChange">ТунельSSHПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="Группа52" id="649">
+					<Enabled>false</Enabled>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа52РасширеннаяПодсказка" id="650"/>
+					<ChildItems>
+						<InputField name="АдресСервераЧерезSSH" id="26">
+							<DataPath>АдресСервераЧерезSSH</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>false</HorizontalStretch>
+							<DropListButton>true</DropListButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>vl (dev)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">178.170.249.37</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>server (prod)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">84.201.185.107</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="АдресСервераЧерезSSHКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="АдресСервераЧерезSSHРасширеннаяПодсказка" id="28"/>
+							<Events>
+								<Event name="OnChange">АдресСервераЧерезSSHПриИзменении</Event>
+								<Event name="TextEditEnd">АдресСервераЧерезSSHОкончаниеВводаТекста</Event>
+								<Event name="ChoiceProcessing">АдресСервераЧерезSSHОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПользовательСервераЧерезSSH" id="21">
+							<DataPath>ПользовательСервераЧерезSSH</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учетная запись</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>false</HorizontalStretch>
+							<DropListButton>true</DropListButton>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>denis</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">denis</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>admin</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">admin</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПользовательСервераЧерезSSHКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ПользовательСервераЧерезSSHРасширеннаяПодсказка" id="23"/>
+							<Events>
+								<Event name="TextEditEnd">ПользовательСервераЧерезSSHОкончаниеВводаТекста</Event>
+								<Event name="ChoiceProcessing">ПользовательСервераЧерезSSHОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПарольПользовательСервераЧерезSSH" id="18">
+							<DataPath>ПарольПользовательСервераЧерезSSH</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>false</HorizontalStretch>
+							<PasswordMode>true</PasswordMode>
+							<BorderColor>win:HotLight</BorderColor>
+							<ContextMenu name="ПарольПользовательСервераЧерезSSHКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ПарольПользовательСервераЧерезSSHРасширеннаяПодсказка" id="20"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа25" id="202">
@@ -73,252 +213,19 @@
 									</ToolTip>
 									<ExtendedTooltip name="ГруппаSSHРасширеннаяПодсказка" id="142"/>
 									<ChildItems>
-										<UsualGroup name="Группа42" id="507">
-											<Visible>false</Visible>
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+										<UsualGroup name="Группа6" id="651">
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<BackColor>#C0F0C0</BackColor>
-											<ExtendedTooltip name="Группа42РасширеннаяПодсказка" id="508"/>
+											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="652"/>
 											<ChildItems>
-												<LabelField name="ИнформацияЗаполнения5" id="509">
-													<DataPath>ИнформацияЗаполнения</DataPath>
-													<TitleLocation>None</TitleLocation>
-													<Border width="1">
-														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
-													</Border>
-													<ContextMenu name="ИнформацияЗаполнения5КонтекстноеМеню" id="510"/>
-													<ExtendedTooltip name="ИнформацияЗаполнения5РасширеннаяПодсказка" id="511"/>
-												</LabelField>
+												<TextDocumentField name="ТекстСкриптаИзФормы" id="625">
+													<DataPath>ТекстСкриптаИзФормы</DataPath>
+													<ContextMenu name="ТекстСкриптаИзФормыКонтекстноеМеню" id="626"/>
+													<ExtendedTooltip name="ТекстСкриптаИзФормыРасширеннаяПодсказка" id="627"/>
+												</TextDocumentField>
 											</ChildItems>
 										</UsualGroup>
-										<UsualGroup name="Группа6" id="113">
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<Group>Vertical</Group>
-											<ShowTitle>false</ShowTitle>
-											<BackColor>#C0F0C0</BackColor>
-											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="114"/>
-											<ChildItems>
-												<RadioButtonField name="ВариантSSH" id="199">
-													<DataPath>ВариантSSH</DataPath>
-													<TitleLocation>None</TitleLocation>
-													<RadioButtonType>Tumbler</RadioButtonType>
-													<ColumnsCount>2</ColumnsCount>
-													<ChoiceList>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Через SSH</v8:content>
-																	</v8:item>
-																	<v8:item>
-																		<v8:lang>en</v8:lang>
-																		<v8:content>Via SSH</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:string">Через SSH</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Локально</v8:content>
-																	</v8:item>
-																	<v8:item>
-																		<v8:lang>en</v8:lang>
-																		<v8:content>locally</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:string">Локально</Value>
-															</xr:Value>
-														</xr:Item>
-													</ChoiceList>
-													<ContextMenu name="ВариантSSHКонтекстноеМеню" id="200"/>
-													<ExtendedTooltip name="ВариантSSHРасширеннаяПодсказка" id="201"/>
-													<Events>
-														<Event name="OnChange">ВариантSSHПриИзменении</Event>
-													</Events>
-												</RadioButtonField>
-											</ChildItems>
-										</UsualGroup>
-										<Pages name="Группа12" id="195">
-											<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
-											<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="196"/>
-											<ChildItems>
-												<Page name="Группа24" id="197">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>SSH</v8:content>
-														</v8:item>
-													</Title>
-													<ExtendedTooltip name="Группа24РасширеннаяПодсказка" id="198"/>
-													<ChildItems>
-														<UsualGroup name="ГруппаАдминистраторСервераSSH" id="64">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Администратор сервера SSH</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Администратор сервера SSH</v8:content>
-																</v8:item>
-															</ToolTip>
-															<HorizontalStretch>true</HorizontalStretch>
-															<Group>AlwaysHorizontal</Group>
-															<Representation>None</Representation>
-															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаАдминистраторСервераSSHРасширеннаяПодсказка" id="65"/>
-															<ChildItems>
-																<UsualGroup name="ГруппаРеквизитыПодключения" id="71">
-																	<Enabled>false</Enabled>
-																	<Title>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Реквизиты подключения</v8:content>
-																		</v8:item>
-																	</Title>
-																	<ToolTip>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Группа реквизиты подключения</v8:content>
-																		</v8:item>
-																	</ToolTip>
-																	<Group>Vertical</Group>
-																	<Representation>None</Representation>
-																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="ГруппаРеквизитыПодключенияРасширеннаяПодсказка" id="72"/>
-																	<ChildItems>
-																		<InputField name="АдресСервераЧерезSSH" id="26">
-																			<DataPath>АдресСервераЧерезSSH</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Адрес</v8:content>
-																				</v8:item>
-																			</Title>
-																			<HorizontalStretch>false</HorizontalStretch>
-																			<DropListButton>true</DropListButton>
-																			<ListChoiceMode>true</ListChoiceMode>
-																			<ChoiceList>
-																				<xr:Item>
-																					<xr:Presentation/>
-																					<xr:CheckState>0</xr:CheckState>
-																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																						<Presentation>
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>vl (dev)</v8:content>
-																							</v8:item>
-																						</Presentation>
-																						<Value xsi:type="xs:string">178.170.249.37</Value>
-																					</xr:Value>
-																				</xr:Item>
-																				<xr:Item>
-																					<xr:Presentation/>
-																					<xr:CheckState>0</xr:CheckState>
-																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																						<Presentation>
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>server (prod)</v8:content>
-																							</v8:item>
-																						</Presentation>
-																						<Value xsi:type="xs:string">84.201.185.107</Value>
-																					</xr:Value>
-																				</xr:Item>
-																			</ChoiceList>
-																			<ContextMenu name="АдресСервераЧерезSSHКонтекстноеМеню" id="27"/>
-																			<ExtendedTooltip name="АдресСервераЧерезSSHРасширеннаяПодсказка" id="28"/>
-																			<Events>
-																				<Event name="OnChange">АдресСервераЧерезSSHПриИзменении</Event>
-																				<Event name="TextEditEnd">АдресСервераЧерезSSHОкончаниеВводаТекста</Event>
-																				<Event name="ChoiceProcessing">АдресСервераЧерезSSHОбработкаВыбора</Event>
-																			</Events>
-																		</InputField>
-																		<InputField name="ПользовательСервераЧерезSSH" id="21">
-																			<DataPath>ПользовательСервераЧерезSSH</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Учетная запись</v8:content>
-																				</v8:item>
-																			</Title>
-																			<HorizontalStretch>false</HorizontalStretch>
-																			<DropListButton>true</DropListButton>
-																			<ChoiceList>
-																				<xr:Item>
-																					<xr:Presentation/>
-																					<xr:CheckState>0</xr:CheckState>
-																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																						<Presentation>
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>denis</v8:content>
-																							</v8:item>
-																						</Presentation>
-																						<Value xsi:type="xs:string">denis</Value>
-																					</xr:Value>
-																				</xr:Item>
-																				<xr:Item>
-																					<xr:Presentation/>
-																					<xr:CheckState>0</xr:CheckState>
-																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																						<Presentation>
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>admin</v8:content>
-																							</v8:item>
-																						</Presentation>
-																						<Value xsi:type="xs:string">admin</Value>
-																					</xr:Value>
-																				</xr:Item>
-																			</ChoiceList>
-																			<ContextMenu name="ПользовательСервераЧерезSSHКонтекстноеМеню" id="22"/>
-																			<ExtendedTooltip name="ПользовательСервераЧерезSSHРасширеннаяПодсказка" id="23"/>
-																			<Events>
-																				<Event name="TextEditEnd">ПользовательСервераЧерезSSHОкончаниеВводаТекста</Event>
-																				<Event name="ChoiceProcessing">ПользовательСервераЧерезSSHОбработкаВыбора</Event>
-																			</Events>
-																		</InputField>
-																		<InputField name="ПарольПользовательСервераЧерезSSH" id="18">
-																			<DataPath>ПарольПользовательСервераЧерезSSH</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Пароль</v8:content>
-																				</v8:item>
-																			</Title>
-																			<HorizontalStretch>false</HorizontalStretch>
-																			<PasswordMode>true</PasswordMode>
-																			<BorderColor>win:HotLight</BorderColor>
-																			<ContextMenu name="ПарольПользовательСервераЧерезSSHКонтекстноеМеню" id="19"/>
-																			<ExtendedTooltip name="ПарольПользовательСервераЧерезSSHРасширеннаяПодсказка" id="20"/>
-																		</InputField>
-																	</ChildItems>
-																</UsualGroup>
-															</ChildItems>
-														</UsualGroup>
-													</ChildItems>
-												</Page>
-											</ChildItems>
-										</Pages>
-										<TextDocumentField name="ТекстСкриптаИзФормы" id="625">
-											<DataPath>ТекстСкриптаИзФормы</DataPath>
-											<ContextMenu name="ТекстСкриптаИзФормыКонтекстноеМеню" id="626"/>
-											<ExtendedTooltip name="ТекстСкриптаИзФормыРасширеннаяПодсказка" id="627"/>
-										</TextDocumentField>
 									</ChildItems>
 								</Page>
 								<Page name="ГруппаUbuntu" id="131">
@@ -484,6 +391,16 @@
 															<Type>UsualButton</Type>
 															<CommandName>Form.Command.ПолучитьСписокЗапущенныхСервисов</CommandName>
 															<ExtendedTooltip name="ПолучитьСписокЗапущенныхСервисовРасширеннаяПодсказка" id="520"/>
+														</Button>
+														<Button name="СкоростьСоединения" id="653">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.СкоростьСоединения</CommandName>
+															<ExtendedTooltip name="СкоростьСоединенияРасширеннаяПодсказка" id="654"/>
+														</Button>
+														<Button name="ПроверкаСвязи" id="655">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ПроверкаСвязи</CommandName>
+															<ExtendedTooltip name="ПроверкаСвязиРасширеннаяПодсказка" id="656"/>
 														</Button>
 														<Button name="ПерезагрузитьФизическийСервер" id="521">
 															<Type>UsualButton</Type>
@@ -1126,22 +1043,6 @@
 																</Button>
 															</ChildItems>
 														</UsualGroup>
-														<Button name="ОтключитьВсехПользователей" id="272">
-															<Type>UsualButton</Type>
-															<CommandName>Form.Command.ОтключитьВсехПользователей</CommandName>
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Отключить всех</v8:content>
-																</v8:item>
-															</Title>
-															<ExtendedTooltip name="ОтключитьВсехПользователейРасширеннаяПодсказка" id="273"/>
-														</Button>
-														<Button name="ЗакрытьКонфигураторБазы1С" id="270">
-															<Type>UsualButton</Type>
-															<CommandName>Form.Command.ЗакрытьКонфигураторБазы1С</CommandName>
-															<ExtendedTooltip name="ЗакрытьКонфигураторБазы1СРасширеннаяПодсказка" id="271"/>
-														</Button>
 														<UsualGroup name="Группа3" id="90">
 															<Title>
 																<v8:item>
@@ -1170,7 +1071,7 @@
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Получить список</v8:content>
+																			<v8:content>Обновить список</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ExtendedTooltip name="ПолучитьСписокАктивныхПользователейРасширеннаяПодсказка" id="277"/>
@@ -1211,6 +1112,32 @@
 																		</v8:item>
 																	</Title>
 																	<ExtendedTooltip name="ОтключитьПользователяБазы1СРасширеннаяПодсказка" id="275"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа50" id="642">
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа50РасширеннаяПодсказка" id="643"/>
+															<ChildItems>
+																<Button name="ОтключитьВсехПользователей" id="272">
+																	<Type>UsualButton</Type>
+																	<Width>13</Width>
+																	<CommandName>Form.Command.ОтключитьВсехПользователей</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Отключить всех</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="ОтключитьВсехПользователейРасширеннаяПодсказка" id="273"/>
+																</Button>
+																<Button name="ЗакрытьКонфигураторБазы1С" id="270">
+																	<Type>UsualButton</Type>
+																	<Width>17</Width>
+																	<CommandName>Form.Command.ЗакрытьКонфигураторБазы1С</CommandName>
+																	<ExtendedTooltip name="ЗакрытьКонфигураторБазы1СРасширеннаяПодсказка" id="271"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
@@ -1390,36 +1317,64 @@
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="279"/>
 																	<ChildItems>
-																		<CheckBoxField name="АрхивироватьCFФайл" id="206">
-																			<DataPath>АрхивироватьCFФайл</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>cf файл</v8:content>
-																				</v8:item>
-																			</Title>
-																			<CheckBoxType>Auto</CheckBoxType>
-																			<ContextMenu name="АрхивироватьCFФайлКонтекстноеМеню" id="207"/>
-																			<ExtendedTooltip name="АрхивироватьCFФайлРасширеннаяПодсказка" id="208"/>
-																			<Events>
-																				<Event name="OnChange">АрхивироватьCFФайлПриИзменении</Event>
-																			</Events>
-																		</CheckBoxField>
-																		<CheckBoxField name="АрхивироватьDTФайл" id="209">
-																			<DataPath>АрхивироватьDTФайл</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>dt файл</v8:content>
-																				</v8:item>
-																			</Title>
-																			<CheckBoxType>Auto</CheckBoxType>
-																			<ContextMenu name="АрхивироватьDTФайлКонтекстноеМеню" id="210"/>
-																			<ExtendedTooltip name="АрхивироватьDTФайлРасширеннаяПодсказка" id="211"/>
-																			<Events>
-																				<Event name="OnChange">АрхивироватьDTФайлПриИзменении</Event>
-																			</Events>
-																		</CheckBoxField>
+																		<UsualGroup name="Группа12" id="660">
+																			<Group>AlwaysHorizontal</Group>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="661"/>
+																			<ChildItems>
+																				<CheckBoxField name="АрхивироватьCFФайл" id="206">
+																					<DataPath>АрхивироватьCFФайл</DataPath>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>cf файл</v8:content>
+																						</v8:item>
+																					</Title>
+																					<CheckBoxType>Auto</CheckBoxType>
+																					<ContextMenu name="АрхивироватьCFФайлКонтекстноеМеню" id="207"/>
+																					<ExtendedTooltip name="АрхивироватьCFФайлРасширеннаяПодсказка" id="208"/>
+																					<Events>
+																						<Event name="OnChange">АрхивироватьCFФайлПриИзменении</Event>
+																					</Events>
+																				</CheckBoxField>
+																				<InputField name="ПутьСохраненияФайлаCF" id="657">
+																					<DataPath>ПутьСохраненияФайлаCF</DataPath>
+																					<TitleLocation>Right</TitleLocation>
+																					<ContextMenu name="ПутьСохраненияФайлаCFКонтекстноеМеню" id="658"/>
+																					<ExtendedTooltip name="ПутьСохраненияФайлаCFРасширеннаяПодсказка" id="659"/>
+																				</InputField>
+																			</ChildItems>
+																		</UsualGroup>
+																		<UsualGroup name="Группа24" id="665">
+																			<Group>AlwaysHorizontal</Group>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<ExtendedTooltip name="Группа24РасширеннаяПодсказка" id="666"/>
+																			<ChildItems>
+																				<CheckBoxField name="АрхивироватьDTФайл" id="209">
+																					<DataPath>АрхивироватьDTФайл</DataPath>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>dt файл</v8:content>
+																						</v8:item>
+																					</Title>
+																					<CheckBoxType>Auto</CheckBoxType>
+																					<ContextMenu name="АрхивироватьDTФайлКонтекстноеМеню" id="210"/>
+																					<ExtendedTooltip name="АрхивироватьDTФайлРасширеннаяПодсказка" id="211"/>
+																					<Events>
+																						<Event name="OnChange">АрхивироватьDTФайлПриИзменении</Event>
+																					</Events>
+																				</CheckBoxField>
+																				<InputField name="ПутьСохраненияФайлаDT" id="662">
+																					<DataPath>ПутьСохраненияФайлаDT</DataPath>
+																					<TitleLocation>Right</TitleLocation>
+																					<ContextMenu name="ПутьСохраненияФайлаDTКонтекстноеМеню" id="663"/>
+																					<ExtendedTooltip name="ПутьСохраненияФайлаDTРасширеннаяПодсказка" id="664"/>
+																				</InputField>
+																			</ChildItems>
+																		</UsualGroup>
 																	</ChildItems>
 																</UsualGroup>
 																<Button name="ВыгрузитьФайл" id="298">
@@ -3737,6 +3692,45 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="Реквизит1" id="56">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьСохраненияФайлаCF" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес до папки файла .cf</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьСохраненияФайлаDT" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес до папки файла .dt</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВыполнитьСформированныйСкрипт" id="4">
@@ -4278,6 +4272,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПолучитьСтатусРегламентныхЗаданий</Action>
+		</Command>
+		<Command name="ПроверкаСвязи" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка связи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка связи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверкаСвязи</Action>
+		</Command>
+		<Command name="СкоростьСоединения" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скорость соединения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скорость соединения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СкоростьСоединения</Action>
 		</Command>
 	</Commands>
 </Form>

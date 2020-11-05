@@ -188,6 +188,7 @@
 			<Catalog>Сервер1С</Catalog>
 			<Catalog>База1С</Catalog>
 			<Catalog>ПользователиБазы1С</Catalog>
+			<Catalog>АдминистраторСервера1С</Catalog>
 			<DataProcessor>StandartServerControl</DataProcessor>
 		</ChildObjects>
 	</Configuration>
