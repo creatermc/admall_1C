@@ -45,7 +45,7 @@
 			Возврат;
 		КонецЕсли;
 
-		Если Элементы.База1С.СписокВыбора.НайтиПоЗначению(База1С) = Неопределено Тогда
+		Если Элементы.База1С1.СписокВыбора.НайтиПоЗначению(База1С) = Неопределено Тогда
 			Оповещение = Новый ОписаниеОповещения("ПослеЗакрытияПредупреждение", ЭтотОбъект);
 			ПоказатьПредупреждение(Оповещение, "Текущая база 1С " + Символ(34) + База1С + Символ(34) + " не обнаружена!", 0, "Внимание!");
 			Возврат;
@@ -53,7 +53,7 @@
 
 	    Оповещение = Новый ОписаниеОповещения("ПослеЗакрытияВопроса", ЭтотОбъект);	
 	     ПоказатьВопрос(Оповещение, "Вы уверны что хотиете безвозвратно удалить " +Символы.ПС + " базу 1С " + Символ(34) +
-			 Элементы.База1С.СписокВыбора.НайтиПоЗначению(База1С).Представление  + Символ(34) + " ?",
+			 Элементы.База1С1.СписокВыбора.НайтиПоЗначению(База1С).Представление  + Символ(34) + " ?",
 	        	РежимДиалогаВопрос.ДаНет, 0, КодВозвратаДиалога.Нет, "Внимание!" );
 	КонецЕсли;
 //
@@ -735,7 +735,7 @@
 Функция СкриптВыгрузкиCFФайлаБазы1C()
 	Возврат "xvfb-run -a /opt/1C/v8.3/i386/1cv8 CONFIG /S " + idКластераСервера1С.Наименование + "\" + База1С.Наименование + "/N " +АдминистраторБазы1С + 
 		"/P " + ПарольАдминистратораБазы1С + " /DumpCfg " + ?(ЗначениеЗаполнено(ПутьСохраненияФайлаCF), ПутьСохраненияФайлаCF,
-		 "~/cfs") + ?(Прав(СокрЛП(ПутьСохраненияФайлаCF), 1) = "/" , "", "/") + База1С.Наименование + "-" + Строка(ТекущаяДата()) + ".cf";
+		 "~/cfs") + ?(Прав(СокрЛП(ПутьСохраненияФайлаCF), 1) = "/" , "", "/") + База1С.Наименование + "-" + Строка(Формат(ТекущаяДата(), "ДФ=dd.MM.yyyy-HH-MM")) + ".cf";
 КонецФункции
 
 // Скрипт примеры 1С 
@@ -744,69 +744,117 @@
 &НаКлиенте
 Функция ПримерыСкриптов()
 
-//pipenv run cli sessions terminate -i test
-//pipenv run cli infobases dump test ~/dumps/ts200728.dt -u admin -p gbhjubcnjgjhjv
-//pipenv run cli infobases load test ~/cfs/release11011.cf -u admin -p gbhjubcnjgjhjv
 
+//dev (vl)
+
+//new-core
+//pipenv run cli sessions terminate -i new-core
+//pipenv run cli infobases dump new-core ~/dumps/nc201117.dt -u admin -p 12345
+//pipenv run cli infobases load new-core ~/cfs/release11017.cf -u admin -p 12345
+
+//aeroflot	
+//pipenv run cli sessions terminate -i aeroflot
+//pipenv run cli infobases dump aeroflot ~/dumps/af201117.dt -u admin -p 12345
+//pipenv run cli infobases load aeroflot ~/cfs/release11017.cf -u admin -p 12345
+
+//jetest
+//pipenv run cli sessions terminate -i jetest
+//pipenv run cli infobases dump jetest ~/dumps/jt201117.dt -u admin -p 12345
+//pipenv run cli infobases load jetest ~/cfs/release11017.cf -u admin -p 12345
+
+//simplebase
+//pipenv run cli sessions terminate -i simplebase
+//pipenv run cli infobases dump simplebase ~/dumps/sb201117.dt -u admin -p 12345
+//pipenv run cli infobases load simplebase ~/cfs/release11017.cf -u admin -p 12345
+
+ 			
+//trainingnajet
+//pipenv run cli sessions terminate -i trainingnajet
+//pipenv run cli infobases dump trainingnajet ~/dumps/tr201117.dt -u admin -p 12345
+//pipenv run cli infobases load trainingnajet ~/cfs/release11017.cf -u admin -p 12345
+
+
+//prod (server)
+
+//test
+//pipenv run cli sessions terminate -i test
+//pipenv run cli infobases dump test ~/dumps/ts200728.dt -u admin -p 12345
+//pipenv run cli infobases load test ~/cfs/release11011.cf -u admin -p 12345
+
+//alltest21
 //pipenv run cli sessions terminate -i alltest21
 //pipenv run cli infobases dump alltest21 ~/dumps/at200728.dt -u admin -p 12345
 //pipenv run cli infobases load alltest21 ~/cfs/release11011.cf -u admin -p 12345
 
+//new-core
 //pipenv run cli sessions terminate -i new-core
-//pipenv run cli infobases dump new-core ~/dumps/nj200728.dt -u admin -p abufcvfckjv
-//pipenv run cli infobases load new-core ~/cfs/release11011.cf -u admin -p abufcvfckjv
+//pipenv run cli infobases dump new-core ~/dumps/nj200728.dt -u admin -p 12345
+//pipenv run cli infobases load new-core ~/cfs/release11011.cf -u admin -p 12345
 
+//aeroflot
 //pipenv run cli sessions terminate -i aeroflot
-//pipenv run cli infobases dump aeroflot ~/dumps/af200728.dt -u admin -p ghzybrcjcvtnfyjq
-//pipenv run cli infobases load aeroflot ~/cfs/release11011.cf -u admin -p ghzybrcjcvtnfyjq
+//pipenv run cli infobases dump aeroflot ~/dumps/af200728.dt -u admin -p 12345
+//pipenv run cli infobases load aeroflot ~/cfs/release11017.cf -u admin -p 12345
 
-
-
-//pipenv run cli infobases save aeroflot ~/cfs/3888.сf -u admin -p ghzybrcjcvtnfyjq
-
+//pobeda
 //pipenv run cli sessions terminate -i pobeda
-//pipenv run cli infobases dump pobeda ~/dumps/pb200728.dt -u admin -p ibicdfhtymtv
-//pipenv run cli infobases load pobeda ~/cfs/release1101.cf -u admin -p ibicdfhtymtv
+//pipenv run cli infobases dump pobeda ~/dumps/pb200728.dt -u admin -p 12345
+//pipenv run cli infobases load pobeda ~/cfs/release11017.cf -u admin -p 12345
 
+//jetexpress
 //pipenv run cli sessions terminate -i jetexpress
-//pipenv run cli infobases dump jetexpress ~/dumps/je200728.dt -u admin -p cegybwfcdbynfvb
-//pipenv run cli infobases load jetexpress ~/cfs/release11011.cf -u admin -p cegybwfcdbynfvb
+//pipenv run cli infobases dump jetexpress ~/dumps/je200728.dt -u admin -p 12345
+//pipenv run cli infobases load jetexpress ~/cfs/release11011.cf -u admin -p 12345
 
+//amg
 //pipenv run cli sessions terminate -i amg
-//pipenv run cli infobases dump amg ~/dumps/am200609.dt -u admin -p nfpcudjplzvb
-//pipenv run cli infobases load amg ~/cfs/release11010-1.cf -u admin -p nfpcudjplzvb
+//pipenv run cli infobases dump amg ~/dumps/am201118.dt -u admin -p 12345
+//pipenv run cli infobases load amg ~/cfs/release11010-1.cf -u admin -p 12345
 
+//aviaservice
 //pipenv run cli sessions terminate -i aviaservice
-//pipenv run cli infobases dump aviaservice ~/dumps/as200609.dt -u admin -p nfhtkrfciehegfvb
-//pipenv run cli infobases load aviaservice ~/cfs/release11010-1.cf -u admin -p nfhtkrfciehegfvb
+//pipenv run cli infobases dump aviaservice ~/dumps/as200609.dt -u admin -p 12345
+//pipenv run cli infobases load aviaservice ~/cfs/release11010-1.cf -u admin -p 12345
 
+//bysky
 //pipenv run cli sessions terminate -i bysky
-//pipenv run cli infobases dump bysky ~/dumps/bs200609.dt -u admin -p cnfrfycuhjdthfvb
-//pipenv run cli infobases load bysky ~/cfs/release11010-1.cf -u admin -p cnfrfycuhjdthfvb
+//pipenv run cli infobases dump bysky ~/dumps/bs200609.dt -u admin -p 12345
+//pipenv run cli infobases load bysky ~/cfs/release11010-1.cf -u admin -p 12345
 
+//jetexpress
 //pipenv run cli sessions terminate -i jetexpress
-//pipenv run cli infobases dump jetexpress ~/dumps/je20200728.dt -u admin -p cegybwfcdbynfvb
-//pipenv run cli infobases load jetexpress ~/cfs/release11011.cf -u admin -p cegybwfcdbynfvb
+//pipenv run cli infobases dump jetexpress ~/dumps/je20200728.dt -u admin -p 12345
+//pipenv run cli infobases load jetexpress ~/cfs/release11011.cf -u admin -p 12345
 
+//aeroflot
 //pipenv run cli sessions terminate -i aeroflot
-//pipenv run cli infobases dump aeroflot ~/dumps/af200728.dt -u admin -p ghzybrcjcvtnfyjq
-//pipenv run cli infobases load aeroflot ~/cfs/release11011.cf -u admin -p ghzybrcjcvtnfyjq
+//pipenv run cli infobases dump aeroflot ~/dumps/af200728.dt -u admin -p 12345
+//pipenv run cli infobases load aeroflot ~/cfs/release11011.cf -u admin -p 12345
 
+//pobeda
 //pipenv run cli sessions terminate -i pobeda
-//pipenv run cli infobases dump pobeda ~/dumps/pb200728.dt -u admin -p ibicdfhtymtv
-//pipenv run cli infobases load pobeda ~/cfs/release1101.cf -u admin -p ibicdfhtymtv
+//pipenv run cli infobases dump pobeda ~/dumps/pb200728.dt -u admin -p 12345
+//pipenv run cli infobases load pobeda ~/cfs/release1101.cf -u admin -p 12345
 
+//weltall
 //pipenv run cli sessions terminate -i weltall
-//pipenv run cli infobases dump weltall ~/dumps/wt200609.dt -u admin -p dtlhjcufqrfvb
-//pipenv run cli infobases load weltall ~/cfs/release11010-1.cf -u admin -p dtlhjcufqrfvb
+//pipenv run cli infobases dump weltall ~/dumps/wt200609.dt -u admin -p 12345
+//pipenv run cli infobases load weltall ~/cfs/release11010-1.cf -u admin -p 12345
 
+//eastunion
 //pipenv run cli sessions terminate -i eastunion
-//pipenv run cli infobases dump eastunion ~/dumps/eu200609.dt -u admin -p dfyyfccfvjhtpfvb
-//pipenv run cli infobases load eastunion ~/cfs/release11010-1.cf -u admin -p dfyyfccfvjhtpfvb
+//pipenv run cli infobases dump eastunion ~/dumps/eu200609.dt -u admin -p 12345
+//pipenv run cli infobases load eastunion ~/cfs/release11010-1.cf -u admin -p 12345
 
+//redwings
 //pipenv run cli sessions terminate -i redwings
-//pipenv run cli infobases dump redwings ~/dumps/rw200609.dt -u admin -p xfqybrcvecjhjv
-//pipenv run cli infobases load redwings ~/cfs/release11010-1.cf -u admin -p xfqybrcvecjhjv
+//pipenv run cli infobases dump redwings ~/dumps/rw200609.dt -u admin -p 12345
+//pipenv run cli infobases load redwings ~/cfs/release11010-1.cf -u admin -p 12345
+
+
+//
+//Пример сохранения конфигурации базы aeroflot
+//pipenv run cli infobases save aeroflot ~/cfs/3888.сf -u admin -p 12345
 
 КонецФункции
 
@@ -1404,8 +1452,8 @@
 
 		ЗаполнитьСписокВыбораБаз1С();
 
-		ОбновитьОтображениеДанных(База1С);
-		ОбновитьОтображениеДанных(Элементы.База1С3);
+		ОбновитьОтображениеДанных(ЭтаФорма.Элементы.База1С1);
+		ОбновитьОтображениеДанных(ЭтаФорма.Элементы.База1С3);
 
 		Если РезультатВыполненияТЧ.Количество() > 0 Тогда 
 			Оповещение = Новый ОписаниеОповещения("ПослеЗакрытияПредупреждение", ЭтотОбъект);
@@ -1424,6 +1472,8 @@
 	Элементы.База1С4.СписокВыбора.Очистить();
 	Элементы.База1С5.СписокВыбора.Очистить();
 	Элементы.База1С6.СписокВыбора.Очистить();
+	
+	РезультатВыполнения = "";
 
 		ТекстКомандыДляВыполнения = ?(ТунельSSH, "sshpass -p '" + ПарольПользовательСервераЧерезSSH + "' ssh '" + 
 			ПользовательСервераЧерезSSH + "'@'" + АдресСервераЧерезSSH + "' " + СкриптПолучениеДанныхОБазах1С() + " ", 
@@ -1514,7 +1564,7 @@
 &НаКлиенте
 Процедура ЗакрытьКонфигураторБазы1С(Команда)
 
-	Если Элементы.База1С.СписокВыбора.Количество() > 0 Тогда 
+	Если Элементы.База1С1.СписокВыбора.Количество() > 0 Тогда 
 		
 	КонецЕсли;
 
@@ -1535,11 +1585,6 @@
 	Если АрхивироватьDTФайл Тогда 
 		АрхивироватьDTФайл = Ложь;
 	КонецЕсли;	
-КонецПроцедуры
-
-&НаКлиенте
-Процедура ВыгрузитьФайл(Команда)
-	
 КонецПроцедуры
 
 &НаКлиенте
@@ -1609,7 +1654,7 @@
 
 	Запрос = Новый Запрос;
 	Запрос.Текст = "ВЫБРАТЬ
-		|	" +ИмяСправочника + ".Представление КАК Представление
+		|	Спр" +ИмяСправочника + ".Представление КАК Представление
 		|ИЗ
 		|	Справочник." + ИмяСправочника + " КАК Спр" + ИмяСправочника + "
 		|ГДЕ
@@ -2238,11 +2283,10 @@
 #Область ВыгрузкаИЗагрузкаФайлов1С
 
 &НаКлиенте
-Процедура ЗагрузитьФайл(Команда)
-
+Процедура ВыгрузитьФайл(Команда)
+	
 			Если ТунельSSH Тогда  
-				Если Не ЗначениеЗаполнено(АдминистраторСервера1С) Или Не ЗначениеЗаполнено(ПарольАдминистратораСервера1С) Или
-							Не ЗначениеЗаполнено(АдресСервераЧерезSSH) Или Не ЗначениеЗаполнено(ПользовательСервераЧерезSSH) Или
+				Если  Не ЗначениеЗаполнено(АдресСервераЧерезSSH) Или Не ЗначениеЗаполнено(ПользовательСервераЧерезSSH) Или
 							Не ЗначениеЗаполнено(ПарольПользовательСервераЧерезSSH) Или Не ЗначениеЗаполнено(База1С) Или 
 							Не ЗначениеЗаполнено(idКластераСервера1С)  Или Не ЗначениеЗаполнено(АдминистраторБазы1С)  Или
 							Не ЗначениеЗаполнено(ПарольАдминистратораБазы1С)  Тогда
@@ -2251,8 +2295,7 @@
 					Возврат;
 				КонецЕсли;
 			Иначе 
-				Если Не ЗначениеЗаполнено(АдминистраторСервера1С) Или Не ЗначениеЗаполнено(ПарольАдминистратораСервера1С) Или
-							Не ЗначениеЗаполнено(База1С) Или Не ЗначениеЗаполнено(idКластераСервера1С)  Или 
+				Если 	Не ЗначениеЗаполнено(База1С) Или Не ЗначениеЗаполнено(idКластераСервера1С)  Или 
 							Не ЗначениеЗаполнено(АдминистраторБазы1С)  Или Не ЗначениеЗаполнено(ПарольАдминистратораБазы1С) Тогда
 						Оповещение = Новый ОписаниеОповещения("ПослеЗакрытияПредупреждение", ЭтотОбъект);
 						ПоказатьПредупреждение(Оповещение, "Не заполнены основные поля !", 0, "Внимание!");
@@ -2265,6 +2308,11 @@
 		Иначе
 			ВыполнитьВыгрузкуDTФайла();
 		КонецЕсли;
+
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ЗагрузитьФайл(Команда)
 
 КонецПроцедуры
 
@@ -2456,7 +2504,10 @@
 
 &НаКлиенте
 Процедура ОтправитьПисьмоУведомление(Команда)
-	ОтправкаПисьмаУведомленияПользователям();	
+	Если ОтправкаПисьмаУведомленияПользователям() Тогда 
+		Оповещение = Новый ОписаниеОповещения("ПослеЗакрытияПредупреждение", ЭтотОбъект);
+		ПоказатьПредупреждение(Оповещение, "Электронное письмо отправлено успешно!", 0, "Внимание!");	
+	КонецЕсли;
 КонецПроцедуры
 
 &НаСервере
@@ -2465,7 +2516,7 @@
 КонецФункции
 
 &НаСервере 
-Процедура ОтправкаПисьмаУведомленияПользователям()
+Функция ОтправкаПисьмаУведомленияПользователям()
 
 //server: smtp.yandex.ru
 //  port: 465
@@ -2540,8 +2591,11 @@
 										|пас: " +  База.ПарольБронированиеСайт + " <br  /><br  />
 										|", "");
 
-				Текст = Письмо.Тексты.Добавить(ОкончТелоПисьма);
-				Текст.ТипТекста = ТипТекстаПочтовогоСообщения.HTML; //  .ПростойТекст;
+				Текст = Письмо.Тексты;
+					Текст.Добавить("123").ТипТекста = ТипТекстаПочтовогоСообщения.ПростойТекст; //ОкончТелоПисьма); //ОкончТелоПисьмаПростойТекст);//
+					Текст.Добавить("321").ТипТекста = ТипТекстаПочтовогоСообщения.ПростойТекст;
+					Текст.Добавить("567").ТипТекста = ТипТекстаПочтовогоСообщения.ПростойТекст;
+				//Текст.ТипТекста = ТипТекстаПочтовогоСообщения.HTML; //  .ПростойТекст;
 			Письмо.Тема = "NAJET. Развернута и доступна новая база 1С " + Символ(31) + База + Символ(31);
 			Письмо.Отправитель = АдресТехЭлПочты;
 			Письмо.ИмяОтправителя = Лев(АдресТехЭлПочты, Найти(АдресТехЭлПочты, "@")-1);
@@ -2553,25 +2607,29 @@
 		//Подключиться к ящику 
 		Попытка
 			Почта.Подключиться(Профиль);		 
-			РезультатВыполнения = "Соединение с почтовым сервером завершено успешно!";
+			РезультатВыполнения = РезультатВыполнения +  Символы.ПС + "Соединение с почтовым сервером завершено успешно!";
 		Исключение
-			РезультатВыполнения = "Ошибка подключения к электронному ящику";
+			РезультатВыполнения = РезультатВыполнения +  Символы.ПС + "Ошибка подключения к электронному ящику";
+			Возврат Ложь;
 		КонецПопытки;
 
 		//Отправляем письмо
 		Попытка
 			 Почта.Послать(Письмо);	 	  
-				РезультатВыполнения = "Электронное письмо отправлено успешно";
+				РезультатВыполнения = РезультатВыполнения +  Символы.ПС + "Электронное письмо отправлено успешно";
 		Исключение
-			РезультатВыполнения = "Ошибка отправки электронного письма";
+			РезультатВыполнения = РезультатВыполнения +  Символы.ПС + "Ошибка отправки электронного письма";
+			Возврат Ложь;
 		КонецПопытки;
 
 		//Закрываем письмо
 		Почта.Отключиться();
 		//Закрываем файл вложения
 		Письмо.Вложения.Очистить();
+
+		Возврат Истина;
 	
-КонецПроцедуры
+КонецФункции
 
 &НаКлиенте
 Процедура ЭлАдресТехническойПочты(Команда)
@@ -2898,6 +2956,8 @@
 &НаСервере
 Функция ОбработкаФайла(ФайлСкрипта)
 
+		РезультатВыполнения = "";
+
 		ИмяФайла = Строка(Новый УникальныйИдентификатор);
 		ФайлРезультатСкрипта = КаталогВременныхФайлов() +  ИмяФайла + "." + "log";
 
@@ -2919,11 +2979,13 @@
 				Текст.Закрыть();
 				ФайлВоВременномХранилище = ПоместитьВоВременноеХранилище(Стр); 
 
-			УдалитьФайлы(ФайлРезультатСкрипта);
-			УдалитьФайлы(ФайлСкрипта);
-
-				//РезультатВыполнения = РезультатВыполнения + Символы.ПС + ФайлРезультатСкрипта;
-				//РезультатВыполнения =  РезультатВыполнения + Символы.ПС + ФайлСкрипта;
+				Если Не ОтображатьИменаФайлов Тогда 
+					УдалитьФайлы(ФайлРезультатСкрипта);
+					УдалитьФайлы(ФайлСкрипта);
+				Иначе 
+					РезультатВыполнения = РезультатВыполнения + Символы.ПС + ФайлРезультатСкрипта;
+					РезультатВыполнения =  РезультатВыполнения + Символы.ПС + ФайлСкрипта;
+				КонецЕсли;
 
 	Возврат ФайлВоВременномХранилище;
 
@@ -2955,6 +3017,16 @@
 &НаСервере
 Процедура СкоростьСоединенияНаСервере()
 
+КонецПроцедуры
+
+&НаКлиенте
+Процедура УдалитьФайл(Команда)
+	
+КонецПроцедуры
+
+&НаКлиенте
+Процедура ДанныеОФайле(Команда)
+	
 КонецПроцедуры
 
 //гугл онлайн диаграмма (блок схема)
@@ -3030,3 +3102,54 @@
 
 //Производная функции: основные понятия и определения
 //http://ru.solverbook.com/spravochnik/proizvodnye/
+
+//Advanced Bash-Scripting Guide
+//Искусство программирования на языке сценариев командной оболочки
+//http://rus-linux.net/MyLDP/BOOKS/abs-guide/flat/abs-book.html#SPECIAL-CHARS
+
+//Текстовые потоки и фильтры
+//Обработка текста в командной строке с использованием текстовых утилит GNU
+//https://www.ibm.com/developerworks/ru/library/l-lpic1-v3-103-2/index.html
+
+//Advanced Bash-Scripting Guide
+//Искусство программирования на языке сценариев командной оболочки
+//https://se.ifmo.ru/~ad/Documentation/ABS_Guide_ru.html#MOREADV
+
+//Команда Sed в Linux, вывод текста, удаление, замена.
+//https://itproffi.ru/komanda-sed-v-linux-vyvod-teksta-udalenie-zamena/
+
+//https://putty.org.ru/articles/change-default-sshd-port.html
+//Смена порта SSH-сервера как мера защиты от брутфорса
+
+//https://help.ubuntu.ru/wiki/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE_%D0%BF%D0%BE_ubuntu_server/%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C/firewall
+//Firewall
+
+//https://1cloud.ru/help/security/ispolzovanie-utility-ufw-na-inux
+//Использование утилиты UFW на Linux
+
+//https://yvision.kz/post/81000
+//Подключение к SSH на нестандартном порту
+
+//https://losst.ru/otkrytye-porty-ubuntu
+//ОТКРЫТЫЕ ПОРТЫ UBUNTU
+
+//https://itsecforu.ru/2019/03/18/%F0%9F%90%A7-3-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%B0-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D1%8C-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82-%D0%BB%D0%B8-%D0%BF%D0%BE%D1%80%D1%82-%D0%BD/
+//3 способа проверить, открыт ли порт на удаленной системе Linux
+
+//https://progi.pro/sshpass-t10662
+//Sshpass – вопросы и ответы
+
+//https://www.shellhacks.com/ru/copy-files-ssh-10-examples/
+//10 Примеров: Копирование файлов через SSH
+
+//http://hutpu4.net/linux-open-source/kopirovanie-fajlov-po-ssh.html
+//Копирование файлов по SSH
+
+//https://putty.org.ru/articles/change-default-sshd-port.html
+//Смена порта SSH-сервера как мера защиты от брутфорса
+
+//http://backend.wiki.val.bmstu.ru/doku.php?id=%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81_ssh
+
+//https://qastack.ru/programming/12202587/automatically-enter-ssh-password-with-script
+
+

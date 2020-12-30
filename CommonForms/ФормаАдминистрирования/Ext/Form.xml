@@ -817,7 +817,6 @@
 																	<DataPath>База1С</DataPath>
 																	<TitleLocation>None</TitleLocation>
 																	<HorizontalStretch>false</HorizontalStretch>
-																	<DropListButton>true</DropListButton>
 																	<AutoMarkIncomplete>true</AutoMarkIncomplete>
 																	<ChoiceListHeight>2</ChoiceListHeight>
 																	<DropListWidth>2</DropListWidth>
@@ -1190,6 +1189,7 @@
 																	</ChildItems>
 																</UsualGroup>
 																<UsualGroup name="ГруппаАдминистраторСервера1С3" id="306">
+																	<Visible>false</Visible>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -1255,21 +1255,13 @@
 																	<Representation>None</Representation>
 																	<ExtendedTooltip name="ГруппаБаза1С1РасширеннаяПодсказка" id="213"/>
 																	<ChildItems>
-																		<InputField name="База1С1" id="214">
+																		<InputField name="База1С1" id="667">
 																			<DataPath>База1С</DataPath>
 																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
-																			<DropListButton>true</DropListButton>
-																			<ListChoiceMode>true</ListChoiceMode>
 																			<AutoMarkIncomplete>true</AutoMarkIncomplete>
-																			<ChoiceListHeight>2</ChoiceListHeight>
-																			<DropListWidth>2</DropListWidth>
-																			<HeightControlVariant>UseContentHeight</HeightControlVariant>
-																			<ContextMenu name="База1С1КонтекстноеМеню" id="215"/>
-																			<ExtendedTooltip name="База1С1РасширеннаяПодсказка" id="216"/>
-																			<Events>
-																				<Event name="ChoiceProcessing">База1СОбработкаВыбора</Event>
-																			</Events>
+																			<ContextMenu name="База1С1КонтекстноеМеню" id="668"/>
+																			<ExtendedTooltip name="База1С1РасширеннаяПодсказка" id="669"/>
 																		</InputField>
 																		<Button name="ПолучитьСписокБаз1С1" id="280">
 																			<Type>UsualButton</Type>
@@ -1299,6 +1291,7 @@
 																		<InputField name="АдминистраторБазы1С2" id="262">
 																			<DataPath>АдминистраторБазы1С</DataPath>
 																			<HorizontalStretch>false</HorizontalStretch>
+																			<AutoMarkIncomplete>true</AutoMarkIncomplete>
 																			<ContextMenu name="АдминистраторБазы1С2КонтекстноеМеню" id="263"/>
 																			<ExtendedTooltip name="АдминистраторБазы1С2РасширеннаяПодсказка" id="264"/>
 																		</InputField>
@@ -1306,6 +1299,7 @@
 																			<DataPath>ПарольАдминистратораБазы1С</DataPath>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<PasswordMode>true</PasswordMode>
+																			<AutoMarkIncomplete>true</AutoMarkIncomplete>
 																			<ContextMenu name="ПарольАдминистратораБазы1С2КонтекстноеМеню" id="266"/>
 																			<ExtendedTooltip name="ПарольАдминистратораБазы1С2РасширеннаяПодсказка" id="267"/>
 																		</InputField>
@@ -1379,8 +1373,20 @@
 																</UsualGroup>
 																<Button name="ВыгрузитьФайл" id="298">
 																	<Type>UsualButton</Type>
+																	<Width>10</Width>
 																	<CommandName>Form.Command.ВыгрузитьФайл</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Выгрузить</v8:content>
+																		</v8:item>
+																	</Title>
 																	<ExtendedTooltip name="ВыгрузитьФайлРасширеннаяПодсказка" id="299"/>
+																</Button>
+																<Button name="ЗагрузитьФайл1" id="670">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.ЗагрузитьФайл</CommandName>
+																	<ExtendedTooltip name="ЗагрузитьФайл1РасширеннаяПодсказка" id="671"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
@@ -1641,56 +1647,135 @@
 																		</InputField>
 																	</ChildItems>
 																</UsualGroup>
-																<UsualGroup name="ГруппаОбновлениеБазы1С" id="66">
+																<UsualGroup name="ГруппаФайлы" id="684">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа файлы</v8:content>
+																		</v8:item>
+																	</Title>
 																	<ToolTip>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Обновление базы 1С</v8:content>
+																			<v8:content>Группа файлы</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<HorizontalStretch>false</HorizontalStretch>
 																	<Group>Vertical</Group>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="ГруппаОбновлениеБазы1СРасширеннаяПодсказка" id="67"/>
+																	<ExtendedTooltip name="ГруппаФайлыРасширеннаяПодсказка" id="685"/>
 																	<ChildItems>
-																		<InputField name="НаименованиеФайлаОбновленияБазы1Сdt" id="284">
-																			<DataPath>НаименованиеФайлаОбновленияБазы1Сdt</DataPath>
-																			<Title>
+																		<UsualGroup name="ГруппаОбновлениеБазы1С" id="66">
+																			<ToolTip>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Исходный файл dt</v8:content>
+																					<v8:content>Обновление базы 1С</v8:content>
 																				</v8:item>
-																			</Title>
-																			<TitleLocation>Top</TitleLocation>
+																			</ToolTip>
 																			<HorizontalStretch>false</HorizontalStretch>
-																			<ChoiceButton>true</ChoiceButton>
-																			<ClearButton>true</ClearButton>
-																			<ContextMenu name="НаименованиеФайлаОбновленияБазы1СdtКонтекстноеМеню" id="285"/>
-																			<ExtendedTooltip name="НаименованиеФайлаОбновленияБазы1СdtРасширеннаяПодсказка" id="286"/>
-																		</InputField>
-																		<InputField name="НаименованиеФайлаОбновленияБазы1С" id="68">
-																			<DataPath>НаименованиеФайлаОбновленияБазы1Сcf</DataPath>
-																			<Title>
+																			<Group>Vertical</Group>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<ExtendedTooltip name="ГруппаОбновлениеБазы1СРасширеннаяПодсказка" id="67"/>
+																			<ChildItems>
+																				<InputField name="НаименованиеФайлаОбновленияБазы1Сdt" id="284">
+																					<DataPath>НаименованиеФайлаОбновленияБазы1Сdt</DataPath>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Выбор файла</v8:content>
+																						</v8:item>
+																					</Title>
+																					<TitleLocation>Top</TitleLocation>
+																					<HorizontalStretch>false</HorizontalStretch>
+																					<ChoiceButton>true</ChoiceButton>
+																					<ClearButton>true</ClearButton>
+																					<ContextMenu name="НаименованиеФайлаОбновленияБазы1СdtКонтекстноеМеню" id="285"/>
+																					<ExtendedTooltip name="НаименованиеФайлаОбновленияБазы1СdtРасширеннаяПодсказка" id="286"/>
+																				</InputField>
+																				<InputField name="НаименованиеФайлаОбновленияБазы1С" id="68">
+																					<DataPath>НаименованиеФайлаОбновленияБазы1Сcf</DataPath>
+																					<Visible>false</Visible>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Исходный файл cf</v8:content>
+																						</v8:item>
+																					</Title>
+																					<TitleLocation>Top</TitleLocation>
+																					<HorizontalStretch>false</HorizontalStretch>
+																					<ChoiceButton>true</ChoiceButton>
+																					<ClearButton>true</ClearButton>
+																					<ContextMenu name="НаименованиеФайлаОбновленияБазы1СКонтекстноеМеню" id="69"/>
+																					<ExtendedTooltip name="НаименованиеФайлаОбновленияБазы1СРасширеннаяПодсказка" id="70"/>
+																				</InputField>
+																			</ChildItems>
+																		</UsualGroup>
+																		<InputField name="ИсходныйКаталог" id="695">
+																			<DataPath>ИсходныйКаталог</DataPath>
+																			<ToolTip>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Исходный файл cf</v8:content>
+																					<v8:content>Исходный каталог на сервере</v8:content>
 																				</v8:item>
-																			</Title>
-																			<TitleLocation>Top</TitleLocation>
-																			<HorizontalStretch>false</HorizontalStretch>
-																			<ChoiceButton>true</ChoiceButton>
-																			<ClearButton>true</ClearButton>
-																			<ContextMenu name="НаименованиеФайлаОбновленияБазы1СКонтекстноеМеню" id="69"/>
-																			<ExtendedTooltip name="НаименованиеФайлаОбновленияБазы1СРасширеннаяПодсказка" id="70"/>
+																			</ToolTip>
+																			<ContextMenu name="ИсходныйКаталогКонтекстноеМеню" id="696"/>
+																			<ExtendedTooltip name="ИсходныйКаталогРасширеннаяПодсказка" id="697"/>
 																		</InputField>
+																		<Button name="ЗагрузитьФайл" id="300">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ЗагрузитьФайл</CommandName>
+																			<ExtendedTooltip name="ЗагрузитьФайлРасширеннаяПодсказка" id="301"/>
+																		</Button>
+																		<UsualGroup name="Группа53" id="689">
+																			<Group>Vertical</Group>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<ExtendedTooltip name="Группа53РасширеннаяПодсказка" id="690"/>
+																			<ChildItems>
+																				<UsualGroup name="Группа55" id="693">
+																					<Group>AlwaysHorizontal</Group>
+																					<Representation>None</Representation>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="Группа55РасширеннаяПодсказка" id="694"/>
+																					<ChildItems>
+																						<InputField name="ИмяФайлаПроверкаДанных" id="686">
+																							<DataPath>ИмяФайлаПроверкаДанных</DataPath>
+																							<ContextMenu name="ИмяФайлаПроверкаДанныхКонтекстноеМеню" id="687"/>
+																							<ExtendedTooltip name="ИмяФайлаПроверкаДанныхРасширеннаяПодсказка" id="688"/>
+																						</InputField>
+																					</ChildItems>
+																				</UsualGroup>
+																				<UsualGroup name="Группа54" id="691">
+																					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																					<Group>AlwaysHorizontal</Group>
+																					<HorizontalAlign>Right</HorizontalAlign>
+																					<Representation>None</Representation>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="Группа54РасширеннаяПодсказка" id="692"/>
+																					<ChildItems>
+																						<Button name="ДанныеОФайле" id="682">
+																							<Type>UsualButton</Type>
+																							<CommandName>Form.Command.ДанныеОФайле</CommandName>
+																							<ExtendedTooltip name="ДанныеОФайлеРасширеннаяПодсказка" id="683"/>
+																						</Button>
+																						<Button name="УдалитьФайл" id="680">
+																							<Type>UsualButton</Type>
+																							<CommandName>Form.Command.УдалитьФайл</CommandName>
+																							<Title>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Удалить</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ExtendedTooltip name="УдалитьФайлРасширеннаяПодсказка" id="681"/>
+																						</Button>
+																					</ChildItems>
+																				</UsualGroup>
+																			</ChildItems>
+																		</UsualGroup>
 																	</ChildItems>
 																</UsualGroup>
-																<Button name="ЗагрузитьФайл" id="300">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ЗагрузитьФайл</CommandName>
-																	<ExtendedTooltip name="ЗагрузитьФайлРасширеннаяПодсказка" id="301"/>
-																</Button>
 															</ChildItems>
 														</UsualGroup>
 													</ChildItems>
@@ -2586,6 +2671,34 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+										<TextDocumentField name="ТекстЭлПисьма" id="672">
+											<DataPath>ТекстЭлПисьма</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>"Тело" письма</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ТекстЭлПисьмаКонтекстноеМеню" id="673"/>
+											<ExtendedTooltip name="ТекстЭлПисьмаРасширеннаяПодсказка" id="674"/>
+										</TextDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="Группа42" id="675">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа42РасширеннаяПодсказка" id="676"/>
+									<ChildItems>
+										<CheckBoxField name="ОтображатьИменаФайлов" id="677">
+											<DataPath>ОтображатьИменаФайлов</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОтображатьИменаФайловКонтекстноеМеню" id="678"/>
+											<ExtendedTooltip name="ОтображатьИменаФайловРасширеннаяПодсказка" id="679"/>
+										</CheckBoxField>
 									</ChildItems>
 								</Page>
 							</ChildItems>
@@ -2862,11 +2975,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:CatalogRef.АдминистраторСервера1С</v8:Type>
 			</Type>
 			<FillCheck>ShowError</FillCheck>
 		</Attribute>
@@ -3035,11 +3144,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:CatalogRef.ПользователиБазы1С</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ПарольАдминистратораБазы1С" id="15">
@@ -3692,7 +3797,13 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="Реквизит1" id="56">
+		<Attribute name="ТекстЭлПисьма" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст эл письма</v8:content>
+				</v8:item>
+			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -3721,6 +3832,47 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Адрес до папки файла .dt</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображатьИменаФайлов" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать имена файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяФайлаПроверкаДанных" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсходныйКаталог" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходный каталог</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -3848,7 +4000,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить файл</v8:content>
+					<v8:content>Загрузить файл на сервер</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьФайл</Action>
@@ -4302,6 +4454,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СкоростьСоединения</Action>
+		</Command>
+		<Command name="УдалитьФайл" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьФайл</Action>
+		</Command>
+		<Command name="ДанныеОФайле" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные о файле</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДанныеОФайле</Action>
 		</Command>
 	</Commands>
 </Form>
