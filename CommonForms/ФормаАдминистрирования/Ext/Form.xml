@@ -23,25 +23,74 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="Группа44" id="553">
-			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-			<Group>Vertical</Group>
+		<UsualGroup name="Группа56" id="698">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<BackColor>#C0F0C0</BackColor>
-			<ExtendedTooltip name="Группа44РасширеннаяПодсказка" id="554"/>
+			<ExtendedTooltip name="Группа56РасширеннаяПодсказка" id="699"/>
 			<ChildItems>
-				<LabelField name="ИнформацияЗаполнения6" id="555">
-					<DataPath>ИнформацияЗаполнения</DataPath>
-					<TitleLocation>None</TitleLocation>
-					<Width>75</Width>
-					<Height>2</Height>
-					<Border width="1">
-						<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
-					</Border>
-					<ContextMenu name="ИнформацияЗаполнения6КонтекстноеМеню" id="556"/>
-					<ExtendedTooltip name="ИнформацияЗаполнения6РасширеннаяПодсказка" id="557"/>
-				</LabelField>
+				<UsualGroup name="ГруппаИзображение" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изображение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа изображение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИзображениеРасширеннаяПодсказка" id="74"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияBASH" id="75">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация BASH</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияBASHКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ДекорацияBASHРасширеннаяПодсказка" id="77"/>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа44" id="553">
+					<VerticalStretch>false</VerticalStretch>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>#C0F0C0</BackColor>
+					<ExtendedTooltip name="Группа44РасширеннаяПодсказка" id="554"/>
+					<ChildItems>
+						<LabelField name="ИнформацияЗаполнения6" id="555">
+							<DataPath>ИнформацияЗаполнения</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>75</Width>
+							<Height>2</Height>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+							</Border>
+							<ContextMenu name="ИнформацияЗаполнения6КонтекстноеМеню" id="556"/>
+							<ExtendedTooltip name="ИнформацияЗаполнения6РасширеннаяПодсказка" id="557"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа51" id="644">
@@ -213,19 +262,192 @@
 									</ToolTip>
 									<ExtendedTooltip name="ГруппаSSHРасширеннаяПодсказка" id="142"/>
 									<ChildItems>
-										<UsualGroup name="Группа6" id="651">
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="652"/>
+										<Pages name="Группа57Страницы" id="702">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа57 страницы</v8:content>
+												</v8:item>
+											</Title>
+											<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+											<ExtendedTooltip name="Группа57СтраницыРасширеннаяПодсказка" id="703"/>
 											<ChildItems>
-												<TextDocumentField name="ТекстСкриптаИзФормы" id="625">
-													<DataPath>ТекстСкриптаИзФормы</DataPath>
-													<ContextMenu name="ТекстСкриптаИзФормыКонтекстноеМеню" id="626"/>
-													<ExtendedTooltip name="ТекстСкриптаИзФормыРасширеннаяПодсказка" id="627"/>
-												</TextDocumentField>
+												<Page name="Группа57ЗапросSSH" id="704">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Запрос SSH</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Запрос SSH</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Группа57ЗапросSSHРасширеннаяПодсказка" id="705"/>
+													<ChildItems>
+														<UsualGroup name="Группа59" id="748">
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа59РасширеннаяПодсказка" id="749"/>
+														</UsualGroup>
+														<Pages name="Группа61" id="759">
+															<ExtendedTooltip name="Группа61РасширеннаяПодсказка" id="760"/>
+															<ChildItems>
+																<Page name="Группа62" id="761">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Группа62РасширеннаяПодсказка" id="762"/>
+																	<ChildItems>
+																		<UsualGroup name="Группа58" id="746">
+																			<Group>Vertical</Group>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<ExtendedTooltip name="Группа58РасширеннаяПодсказка" id="747"/>
+																			<ChildItems>
+																				<UsualGroup name="Группа6" id="651">
+																					<Group>Vertical</Group>
+																					<Representation>None</Representation>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="652"/>
+																					<ChildItems>
+																						<TextDocumentField name="ТекстСкриптаИзФормы" id="625">
+																							<DataPath>ТекстСкриптаИзФормы</DataPath>
+																							<TitleLocation>None</TitleLocation>
+																							<ContextMenu name="ТекстСкриптаИзФормыКонтекстноеМеню" id="626"/>
+																							<ExtendedTooltip name="ТекстСкриптаИзФормыРасширеннаяПодсказка" id="627"/>
+																						</TextDocumentField>
+																					</ChildItems>
+																				</UsualGroup>
+																				<UsualGroup name="Группа57" id="742">
+																					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																					<Group>AlwaysHorizontal</Group>
+																					<Representation>None</Representation>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="Группа57РасширеннаяПодсказка" id="743"/>
+																					<ChildItems>
+																						<Button name="ВыполнитьСформированныйСкрипт" id="744">
+																							<Type>UsualButton</Type>
+																							<CommandName>Form.Command.ВыполнитьСформированныйСкрипт</CommandName>
+																							<ExtendedTooltip name="ВыполнитьСформированныйСкриптРасширеннаяПодсказка" id="745"/>
+																						</Button>
+																					</ChildItems>
+																				</UsualGroup>
+																			</ChildItems>
+																		</UsualGroup>
+																	</ChildItems>
+																</Page>
+																<Page name="Группа63" id="763">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>cli</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="Группа63РасширеннаяПодсказка" id="764"/>
+																	<ChildItems>
+																		<UsualGroup name="Группа60" id="750">
+																			<Group>AlwaysHorizontal</Group>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<ExtendedTooltip name="Группа60РасширеннаяПодсказка" id="751"/>
+																			<ChildItems>
+																				<InputField name="ТекстПрямойКоманды" id="756">
+																					<DataPath>ТекстПрямойКоманды</DataPath>
+																					<TitleLocation>None</TitleLocation>
+																					<ContextMenu name="ТекстПрямойКомандыКонтекстноеМеню" id="757"/>
+																					<ExtendedTooltip name="ТекстПрямойКомандыРасширеннаяПодсказка" id="758"/>
+																				</InputField>
+																				<Button name="ВыполнитьПрямуюКоманду" id="754">
+																					<Type>UsualButton</Type>
+																					<CommandName>Form.Command.ВыполнитьПрямуюКоманду</CommandName>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Выполнить</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ExtendedTooltip name="ВыполнитьПрямуюКомандуРасширеннаяПодсказка" id="755"/>
+																				</Button>
+																			</ChildItems>
+																		</UsualGroup>
+																	</ChildItems>
+																</Page>
+															</ChildItems>
+														</Pages>
+													</ChildItems>
+												</Page>
+												<Page name="Группа57ИнформацияSSH" id="706">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>help</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Информация</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Группа57ИнформацияSSHРасширеннаяПодсказка" id="707"/>
+													<ChildItems>
+														<Button name="СсылкаНаСайт3" id="708">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.СсылкаНаСайт3</CommandName>
+															<ExtendedTooltip name="СсылкаНаСайт3РасширеннаяПодсказка" id="709"/>
+														</Button>
+														<Button name="СсылкаНаСайт5" id="712">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.СсылкаНаСайт5</CommandName>
+															<ExtendedTooltip name="СсылкаНаСайт5РасширеннаяПодсказка" id="713"/>
+														</Button>
+														<Button name="СсылкаНаСайт4" id="710">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.СсылкаНаСайт4</CommandName>
+															<ExtendedTooltip name="СсылкаНаСайт4РасширеннаяПодсказка" id="711"/>
+														</Button>
+														<Button name="СсылкаНаСайт6" id="716">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.СсылкаНаСайт6</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Искусство программирования на языке сценариев</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="СсылкаНаСайт6РасширеннаяПодсказка" id="717"/>
+														</Button>
+														<Button name="СсылкаНаСайт7" id="718">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.СсылкаНаСайт7</CommandName>
+															<ExtendedTooltip name="СсылкаНаСайт7РасширеннаяПодсказка" id="719"/>
+														</Button>
+														<Button name="СсылкаНаСайт8" id="720">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.СсылкаНаСайт8</CommandName>
+															<ExtendedTooltip name="СсылкаНаСайт8РасширеннаяПодсказка" id="721"/>
+														</Button>
+														<Button name="СсылкаНаСайт9" id="722">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.СсылкаНаСайт9</CommandName>
+															<ExtendedTooltip name="СсылкаНаСайт9РасширеннаяПодсказка" id="723"/>
+														</Button>
+														<Button name="СсылкаНаСайт10" id="724">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.СсылкаНаСайт10</CommandName>
+															<ExtendedTooltip name="СсылкаНаСайт10РасширеннаяПодсказка" id="725"/>
+														</Button>
+													</ChildItems>
+												</Page>
 											</ChildItems>
-										</UsualGroup>
+										</Pages>
 									</ChildItems>
 								</Page>
 								<Page name="ГруппаUbuntu" id="131">
@@ -243,113 +465,6 @@
 									</ToolTip>
 									<ExtendedTooltip name="ГруппаUbuntuРасширеннаяПодсказка" id="132"/>
 									<ChildItems>
-										<UsualGroup name="Группа41" id="502">
-											<Visible>false</Visible>
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<BackColor>#C0F0C0</BackColor>
-											<ExtendedTooltip name="Группа41РасширеннаяПодсказка" id="503"/>
-											<ChildItems>
-												<LabelField name="ИнформацияЗаполнения4" id="504">
-													<DataPath>ИнформацияЗаполнения</DataPath>
-													<TitleLocation>None</TitleLocation>
-													<Border width="1">
-														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
-													</Border>
-													<ContextMenu name="ИнформацияЗаполнения4КонтекстноеМеню" id="505"/>
-													<ExtendedTooltip name="ИнформацияЗаполнения4РасширеннаяПодсказка" id="506"/>
-												</LabelField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="Группа22" id="164">
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<BackColor>#C0F0C0</BackColor>
-											<ExtendedTooltip name="Группа22РасширеннаяПодсказка" id="165"/>
-											<ChildItems>
-												<RadioButtonField name="ВаринатВзаимодействияUbuntu" id="166">
-													<DataPath>ВаринатВзаимодействияUbuntu</DataPath>
-													<TitleLocation>None</TitleLocation>
-													<RadioButtonType>Tumbler</RadioButtonType>
-													<ColumnsCount>2</ColumnsCount>
-													<ChoiceList>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Перезагрузить сервер</v8:content>
-																	</v8:item>
-																	<v8:item>
-																		<v8:lang>en</v8:lang>
-																		<v8:content>Restart Server</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:string">Перезагрузить сервер</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Запущенные сервисы</v8:content>
-																	</v8:item>
-																	<v8:item>
-																		<v8:lang>en</v8:lang>
-																		<v8:content>Services Started</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:string">Запущенные сервисы</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>en</v8:lang>
-																		<v8:content>Disk Space</v8:content>
-																	</v8:item>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Место на дисках</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:string">Место на дисках</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>-</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:string">-</Value>
-															</xr:Value>
-														</xr:Item>
-													</ChoiceList>
-													<ContextMenu name="ВаринатВзаимодействияUbuntuКонтекстноеМеню" id="167"/>
-													<ExtendedTooltip name="ВаринатВзаимодействияUbuntuРасширеннаяПодсказка" id="168"/>
-													<Events>
-														<Event name="OnChange">ВаринатВзаимодействияUbuntuПриИзменении</Event>
-													</Events>
-												</RadioButtonField>
-											</ChildItems>
-										</UsualGroup>
 										<Pages name="ГруппаСтраницыUbuntu" id="169">
 											<Title>
 												<v8:item>
@@ -379,11 +494,14 @@
 															<v8:content>Администрирование</v8:content>
 														</v8:item>
 													</ToolTip>
+													<HorizontalStretch>true</HorizontalStretch>
 													<ExtendedTooltip name="ГруппаСтраница24АдминистрированиеРасширеннаяПодсказка" id="172"/>
 													<ChildItems>
 														<InputField name="ПарольСуперПользователя1" id="516">
 															<DataPath>ПарольСуперПользователя</DataPath>
 															<HorizontalStretch>false</HorizontalStretch>
+															<PasswordMode>true</PasswordMode>
+															<AutoMarkIncomplete>true</AutoMarkIncomplete>
 															<ContextMenu name="ПарольСуперПользователя1КонтекстноеМеню" id="517"/>
 															<ExtendedTooltip name="ПарольСуперПользователя1РасширеннаяПодсказка" id="518"/>
 														</InputField>
@@ -402,6 +520,17 @@
 															<CommandName>Form.Command.ПроверкаСвязи</CommandName>
 															<ExtendedTooltip name="ПроверкаСвязиРасширеннаяПодсказка" id="656"/>
 														</Button>
+														<Button name="ПолучитьМестоНаДискахСервера" id="714">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ПолучитьМестоНаДискахСервера</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Информация по дискам сервера</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ПолучитьМестоНаДискахСервераРасширеннаяПодсказка" id="715"/>
+														</Button>
 														<Button name="ПерезагрузитьФизическийСервер" id="521">
 															<Type>UsualButton</Type>
 															<Width>12</Width>
@@ -409,6 +538,21 @@
 															<ExtendedTooltip name="ПерезагрузитьФизическийСерверРасширеннаяПодсказка" id="522"/>
 														</Button>
 													</ChildItems>
+												</Page>
+												<Page name="Группа57Информация" id="700">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Информация</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Информация</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="Группа57ИнформацияРасширеннаяПодсказка" id="701"/>
 												</Page>
 											</ChildItems>
 										</Pages>
@@ -429,52 +573,113 @@
 									</ToolTip>
 									<ExtendedTooltip name="ГруппаDockerРасширеннаяПодсказка" id="134"/>
 									<ChildItems>
-										<UsualGroup name="Группа39" id="492">
-											<Visible>false</Visible>
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<BackColor>#C0F0C0</BackColor>
-											<ExtendedTooltip name="Группа39РасширеннаяПодсказка" id="493"/>
-											<ChildItems>
-												<LabelField name="ИнформацияЗаполнения2" id="494">
-													<DataPath>ИнформацияЗаполнения</DataPath>
-													<TitleLocation>None</TitleLocation>
-													<Border width="1">
-														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
-													</Border>
-													<ContextMenu name="ИнформацияЗаполнения2КонтекстноеМеню" id="495"/>
-													<ExtendedTooltip name="ИнформацияЗаполнения2РасширеннаяПодсказка" id="496"/>
-												</LabelField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="Группа19" id="158">
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<BackColor>#C0F0C0</BackColor>
-											<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="159"/>
-											<ChildItems>
-												<RadioButtonField name="ВаринатВзаимодействияDocker" id="155">
-													<DataPath>ВаринатВзаимодействияDocker</DataPath>
-													<Visible>false</Visible>
-													<TitleLocation>None</TitleLocation>
-													<RadioButtonType>Tumbler</RadioButtonType>
-													<ColumnsCount>2</ColumnsCount>
-													<ContextMenu name="ВаринатВзаимодействияDockerКонтекстноеМеню" id="156"/>
-													<ExtendedTooltip name="ВаринатВзаимодействияDockerРасширеннаяПодсказка" id="157"/>
-													<Events>
-														<Event name="OnChange">ВаринатВзаимодействияDockerПриИзменении</Event>
-													</Events>
-												</RadioButtonField>
-											</ChildItems>
-										</UsualGroup>
 										<Pages name="Группа20" id="160">
 											<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
 											<ExtendedTooltip name="Группа20РасширеннаяПодсказка" id="161"/>
 											<ChildItems>
+												<Page name="ГруппаСтраница21" id="162">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Команды</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа страница21</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаСтраница21РасширеннаяПодсказка" id="163"/>
+													<ChildItems>
+														<UsualGroup name="Группа35" id="738">
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа35РасширеннаяПодсказка" id="739"/>
+															<ChildItems>
+																<InputField name="idКонтейнерDocker" id="600">
+																	<DataPath>idКонтейнерDocker</DataPath>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<AutoMarkIncomplete>true</AutoMarkIncomplete>
+																	<ContextMenu name="idКонтейнерDockerКонтекстноеМеню" id="601"/>
+																	<ExtendedTooltip name="idКонтейнерDockerРасширеннаяПодсказка" id="602"/>
+																</InputField>
+																<Button name="СтатусКонтейнераDocker" id="613">
+																	<Type>UsualButton</Type>
+																	<Width>8</Width>
+																	<CommandName>Form.Command.СтатусКонтейнераDocker</CommandName>
+																	<ExtendedTooltip name="СтатусКонтейнераDockerРасширеннаяПодсказка" id="614"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа46" id="607">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Контейнер</v8:content>
+																</v8:item>
+															</Title>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ExtendedTooltip name="Группа46РасширеннаяПодсказка" id="608"/>
+															<ChildItems>
+																<Button name="ОстановитьКонтейнерDocker" id="598">
+																	<Type>UsualButton</Type>
+																	<Width>10</Width>
+																	<CommandName>Form.Command.ОстановитьКонтейнерDocker</CommandName>
+																	<ExtendedTooltip name="ОстановитьКонтейнерDockerРасширеннаяПодсказка" id="599"/>
+																</Button>
+																<Button name="ЗапуститьКонтейнерDocker" id="605">
+																	<Type>UsualButton</Type>
+																	<Width>9</Width>
+																	<CommandName>Form.Command.ЗапуститьКонтейнерDocker</CommandName>
+																	<ExtendedTooltip name="ЗапуститьКонтейнерDockerРасширеннаяПодсказка" id="606"/>
+																</Button>
+																<Button name="ПерезагрузитьКонтейнерDocker" id="611">
+																	<Type>UsualButton</Type>
+																	<Width>12</Width>
+																	<CommandName>Form.Command.ПерезагрузитьКонтейнерDocker</CommandName>
+																	<ExtendedTooltip name="ПерезагрузитьКонтейнерDockerРасширеннаяПодсказка" id="612"/>
+																</Button>
+																<Button name="ОбновитьКонтейнерDocker" id="603">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.ОбновитьКонтейнерDocker</CommandName>
+																	<ExtendedTooltip name="ОбновитьКонтейнерDockerРасширеннаяПодсказка" id="604"/>
+																</Button>
+																<Button name="ПолучитьСписокКонтейнеровDocker" id="596">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.ПолучитьСписокКонтейнеровDocker</CommandName>
+																	<ExtendedTooltip name="ПолучитьСписокКонтейнеровDockerРасширеннаяПодсказка" id="597"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа47" id="609">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сервис(Служба)</v8:content>
+																</v8:item>
+															</Title>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ExtendedTooltip name="Группа47РасширеннаяПодсказка" id="610"/>
+															<ChildItems>
+																<Button name="ПерезагрузитьCервисDocker" id="615">
+																	<Type>UsualButton</Type>
+																	<Width>12</Width>
+																	<CommandName>Form.Command.ПерезагрузитьCервисDocker</CommandName>
+																	<ExtendedTooltip name="ПерезагрузитьCервисDockerРасширеннаяПодсказка" id="616"/>
+																</Button>
+																<Button name="СтатусСервисаDocker" id="617">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.СтатусСервисаDocker</CommandName>
+																	<ExtendedTooltip name="СтатусСервисаDockerРасширеннаяПодсказка" id="618"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</Page>
 												<Page name="Группа2Информация" id="446">
 													<Title>
 														<v8:item>
@@ -492,30 +697,6 @@
 													<Group>AlwaysHorizontal</Group>
 													<ExtendedTooltip name="Группа2ИнформацияРасширеннаяПодсказка" id="447"/>
 													<ChildItems>
-														<UsualGroup name="Группа35" id="448">
-															<Group>Vertical</Group>
-															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="Группа35РасширеннаяПодсказка" id="449"/>
-															<ChildItems>
-																<InputField name="АдресСервера" id="636">
-																	<DataPath>АдресСервера</DataPath>
-																	<Title>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>ip server</v8:content>
-																		</v8:item>
-																	</Title>
-																	<TitleLocation>Right</TitleLocation>
-																	<ContextMenu name="АдресСервераКонтекстноеМеню" id="637"/>
-																	<ExtendedTooltip name="АдресСервераРасширеннаяПодсказка" id="638"/>
-																</InputField>
-																<Button name="ПолучитьСписокКонтейнеровDocker" id="596">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ПолучитьСписокКонтейнеровDocker</CommandName>
-																	<ExtendedTooltip name="ПолучитьСписокКонтейнеровDockerРасширеннаяПодсказка" id="597"/>
-																</Button>
-															</ChildItems>
-														</UsualGroup>
 														<UsualGroup name="Группа49" id="632">
 															<Group>Vertical</Group>
 															<Representation>None</Representation>
@@ -576,95 +757,6 @@
 																	</Title>
 																	<Shape>Oval</Shape>
 																	<ExtendedTooltip name="HelpDockerРасширеннаяПодсказка" id="622"/>
-																</Button>
-															</ChildItems>
-														</UsualGroup>
-													</ChildItems>
-												</Page>
-												<Page name="ГруппаСтраница21" id="162">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Команды</v8:content>
-														</v8:item>
-													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Группа страница21</v8:content>
-														</v8:item>
-													</ToolTip>
-													<ExtendedTooltip name="ГруппаСтраница21РасширеннаяПодсказка" id="163"/>
-													<ChildItems>
-														<InputField name="idКонтейнерDocker" id="600">
-															<DataPath>idКонтейнерDocker</DataPath>
-															<HorizontalStretch>false</HorizontalStretch>
-															<ContextMenu name="idКонтейнерDockerКонтекстноеМеню" id="601"/>
-															<ExtendedTooltip name="idКонтейнерDockerРасширеннаяПодсказка" id="602"/>
-														</InputField>
-														<UsualGroup name="Группа46" id="607">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Контейнер</v8:content>
-																</v8:item>
-															</Title>
-															<Group>AlwaysHorizontal</Group>
-															<Representation>None</Representation>
-															<ExtendedTooltip name="Группа46РасширеннаяПодсказка" id="608"/>
-															<ChildItems>
-																<Button name="ОстановитьКонтейнерDocker" id="598">
-																	<Type>UsualButton</Type>
-																	<Width>10</Width>
-																	<CommandName>Form.Command.ОстановитьКонтейнерDocker</CommandName>
-																	<ExtendedTooltip name="ОстановитьКонтейнерDockerРасширеннаяПодсказка" id="599"/>
-																</Button>
-																<Button name="ЗапуститьКонтейнерDocker" id="605">
-																	<Type>UsualButton</Type>
-																	<Width>9</Width>
-																	<CommandName>Form.Command.ЗапуститьКонтейнерDocker</CommandName>
-																	<ExtendedTooltip name="ЗапуститьКонтейнерDockerРасширеннаяПодсказка" id="606"/>
-																</Button>
-																<Button name="ПерезагрузитьКонтейнерDocker" id="611">
-																	<Type>UsualButton</Type>
-																	<Width>12</Width>
-																	<CommandName>Form.Command.ПерезагрузитьКонтейнерDocker</CommandName>
-																	<ExtendedTooltip name="ПерезагрузитьКонтейнерDockerРасширеннаяПодсказка" id="612"/>
-																</Button>
-																<Button name="ОбновитьКонтейнерDocker" id="603">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ОбновитьКонтейнерDocker</CommandName>
-																	<ExtendedTooltip name="ОбновитьКонтейнерDockerРасширеннаяПодсказка" id="604"/>
-																</Button>
-																<Button name="СтатусКонтейнераDocker" id="613">
-																	<Type>UsualButton</Type>
-																	<Width>8</Width>
-																	<CommandName>Form.Command.СтатусКонтейнераDocker</CommandName>
-																	<ExtendedTooltip name="СтатусКонтейнераDockerРасширеннаяПодсказка" id="614"/>
-																</Button>
-															</ChildItems>
-														</UsualGroup>
-														<UsualGroup name="Группа47" id="609">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Сервис(Служба)</v8:content>
-																</v8:item>
-															</Title>
-															<Group>AlwaysHorizontal</Group>
-															<Representation>None</Representation>
-															<ExtendedTooltip name="Группа47РасширеннаяПодсказка" id="610"/>
-															<ChildItems>
-																<Button name="ПерезагрузитьCервисDocker" id="615">
-																	<Type>UsualButton</Type>
-																	<Width>12</Width>
-																	<CommandName>Form.Command.ПерезагрузитьCервисDocker</CommandName>
-																	<ExtendedTooltip name="ПерезагрузитьCервисDockerРасширеннаяПодсказка" id="616"/>
-																</Button>
-																<Button name="СтатусСервисаDocker" id="617">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.СтатусСервисаDocker</CommandName>
-																	<ExtendedTooltip name="СтатусСервисаDockerРасширеннаяПодсказка" id="618"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
@@ -2720,144 +2812,200 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа26РасширеннаяПодсказка" id="205"/>
 					<ChildItems>
-						<UsualGroup name="Группа5" id="193">
-							<HorizontalStretch>true</HorizontalStretch>
-							<VerticalStretch>true</VerticalStretch>
+						<UsualGroup name="Группа19" id="726">
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="194"/>
+							<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="727"/>
 							<ChildItems>
-								<TextDocumentField name="РезультатВыполнения" id="6">
-									<DataPath>РезультатВыполнения</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<TitleLocation>None</TitleLocation>
-									<Height>6</Height>
-									<ContextMenu name="РезультатВыполненияКонтекстноеМеню" id="7"/>
-									<ExtendedTooltip name="РезультатВыполненияРасширеннаяПодсказка" id="8"/>
-								</TextDocumentField>
+								<UsualGroup name="Группа5" id="193">
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="194"/>
+									<ChildItems>
+										<TextDocumentField name="РезультатВыполнения" id="6">
+											<DataPath>РезультатВыполнения</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TitleLocation>None</TitleLocation>
+											<Height>6</Height>
+											<ContextMenu name="РезультатВыполненияКонтекстноеМеню" id="7"/>
+											<ExtendedTooltip name="РезультатВыполненияРасширеннаяПодсказка" id="8"/>
+										</TextDocumentField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа22" id="728">
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа22РасширеннаяПодсказка" id="729"/>
+									<ChildItems>
+										<Button name="ОткрытьВОтдельномОкне" id="730">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьВОтдельномОкне</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В отдельном окне</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьВОтдельномОкнеРасширеннаяПодсказка" id="731"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="Группа43" id="551">
-							<ReadOnly>true</ReadOnly>
+						<UsualGroup name="Группа39" id="732">
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа43РасширеннаяПодсказка" id="552"/>
+							<ExtendedTooltip name="Группа39РасширеннаяПодсказка" id="733"/>
 							<ChildItems>
-								<Table name="РезультатВыполненияТЧ" id="523">
-									<Representation>List</Representation>
-									<AutoInsertNewRow>true</AutoInsertNewRow>
-									<EnableStartDrag>true</EnableStartDrag>
-									<EnableDrag>true</EnableDrag>
-									<DataPath>РезультатВыполненияТЧ</DataPath>
-									<CommandSet>
-										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>CancelSearch</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>Find</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>OutputList</ExcludedCommand>
-										<ExcludedCommand>SearchEverywhere</ExcludedCommand>
-										<ExcludedCommand>SelectAll</ExcludedCommand>
-										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-										<ExcludedCommand>SortListAsc</ExcludedCommand>
-										<ExcludedCommand>SortListDesc</ExcludedCommand>
-									</CommandSet>
-									<RowFilter xsi:nil="true"/>
-									<ContextMenu name="РезультатВыполненияТЧКонтекстноеМеню" id="524"/>
-									<AutoCommandBar name="РезультатВыполненияТЧКоманднаяПанель" id="525"/>
-									<ExtendedTooltip name="РезультатВыполненияТЧРасширеннаяПодсказка" id="526"/>
-									<SearchStringAddition name="РезультатВыполненияТЧСтрокаПоиска" id="527">
-										<AdditionSource>
-											<Item>РезультатВыполненияТЧ</Item>
-											<Type>SearchStringRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="РезультатВыполненияТЧСтрокаПоискаКонтекстноеМеню" id="528"/>
-										<ExtendedTooltip name="РезультатВыполненияТЧСтрокаПоискаРасширеннаяПодсказка" id="529"/>
-									</SearchStringAddition>
-									<ViewStatusAddition name="РезультатВыполненияТЧСостояниеПросмотра" id="530">
-										<AdditionSource>
-											<Item>РезультатВыполненияТЧ</Item>
-											<Type>ViewStatusRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="РезультатВыполненияТЧСостояниеПросмотраКонтекстноеМеню" id="531"/>
-										<ExtendedTooltip name="РезультатВыполненияТЧСостояниеПросмотраРасширеннаяПодсказка" id="532"/>
-									</ViewStatusAddition>
-									<SearchControlAddition name="РезультатВыполненияТЧУправлениеПоиском" id="533">
-										<AdditionSource>
-											<Item>РезультатВыполненияТЧ</Item>
-											<Type>SearchControl</Type>
-										</AdditionSource>
-										<ContextMenu name="РезультатВыполненияТЧУправлениеПоискомКонтекстноеМеню" id="534"/>
-										<ExtendedTooltip name="РезультатВыполненияТЧУправлениеПоискомРасширеннаяПодсказка" id="535"/>
-									</SearchControlAddition>
+								<UsualGroup name="Группа43" id="551">
+									<ReadOnly>true</ReadOnly>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа43РасширеннаяПодсказка" id="552"/>
 									<ChildItems>
-										<InputField name="РезультатВыполненияТЧРеквизит1" id="536">
-											<DataPath>РезультатВыполненияТЧ.Реквизит1</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Параметр</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="РезультатВыполненияТЧРеквизит1КонтекстноеМеню" id="537"/>
-											<ExtendedTooltip name="РезультатВыполненияТЧРеквизит1РасширеннаяПодсказка" id="538"/>
-										</InputField>
-										<InputField name="РезультатВыполненияТЧРеквизит2" id="539">
-											<DataPath>РезультатВыполненияТЧ.Реквизит2</DataPath>
-											<TitleLocation>None</TitleLocation>
-											<EditMode>EnterOnInput</EditMode>
-											<Width>1</Width>
-											<HorizontalStretch>false</HorizontalStretch>
-											<ContextMenu name="РезультатВыполненияТЧРеквизит2КонтекстноеМеню" id="540"/>
-											<ExtendedTooltip name="РезультатВыполненияТЧРеквизит2РасширеннаяПодсказка" id="541"/>
-										</InputField>
-										<InputField name="РезультатВыполненияТЧРеквизит3" id="542">
-											<DataPath>РезультатВыполненияТЧ.Реквизит3</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Значение</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="РезультатВыполненияТЧРеквизит3КонтекстноеМеню" id="543"/>
-											<ExtendedTooltip name="РезультатВыполненияТЧРеквизит3РасширеннаяПодсказка" id="544"/>
-										</InputField>
-										<InputField name="РезультатВыполненияТЧРеквизит4" id="545">
-											<DataPath>РезультатВыполненияТЧ.Реквизит4</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Описание</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="РезультатВыполненияТЧРеквизит4КонтекстноеМеню" id="546"/>
-											<ExtendedTooltip name="РезультатВыполненияТЧРеквизит4РасширеннаяПодсказка" id="547"/>
-										</InputField>
-										<InputField name="РезультатВыполненияТЧРеквизит5" id="548">
-											<DataPath>РезультатВыполненияТЧ.Реквизит5</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Примечание</v8:content>
-												</v8:item>
-											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="РезультатВыполненияТЧРеквизит5КонтекстноеМеню" id="549"/>
-											<ExtendedTooltip name="РезультатВыполненияТЧРеквизит5РасширеннаяПодсказка" id="550"/>
-										</InputField>
+										<Table name="РезультатВыполненияТЧ" id="523">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>РезультатВыполненияТЧ</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>CancelSearch</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>Find</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>OutputList</ExcludedCommand>
+												<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>SortListAsc</ExcludedCommand>
+												<ExcludedCommand>SortListDesc</ExcludedCommand>
+											</CommandSet>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="РезультатВыполненияТЧКонтекстноеМеню" id="524"/>
+											<AutoCommandBar name="РезультатВыполненияТЧКоманднаяПанель" id="525"/>
+											<ExtendedTooltip name="РезультатВыполненияТЧРасширеннаяПодсказка" id="526"/>
+											<SearchStringAddition name="РезультатВыполненияТЧСтрокаПоиска" id="527">
+												<AdditionSource>
+													<Item>РезультатВыполненияТЧ</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="РезультатВыполненияТЧСтрокаПоискаКонтекстноеМеню" id="528"/>
+												<ExtendedTooltip name="РезультатВыполненияТЧСтрокаПоискаРасширеннаяПодсказка" id="529"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="РезультатВыполненияТЧСостояниеПросмотра" id="530">
+												<AdditionSource>
+													<Item>РезультатВыполненияТЧ</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="РезультатВыполненияТЧСостояниеПросмотраКонтекстноеМеню" id="531"/>
+												<ExtendedTooltip name="РезультатВыполненияТЧСостояниеПросмотраРасширеннаяПодсказка" id="532"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="РезультатВыполненияТЧУправлениеПоиском" id="533">
+												<AdditionSource>
+													<Item>РезультатВыполненияТЧ</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="РезультатВыполненияТЧУправлениеПоискомКонтекстноеМеню" id="534"/>
+												<ExtendedTooltip name="РезультатВыполненияТЧУправлениеПоискомРасширеннаяПодсказка" id="535"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="РезультатВыполненияТЧРеквизит1" id="536">
+													<DataPath>РезультатВыполненияТЧ.Реквизит1</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Параметр</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="РезультатВыполненияТЧРеквизит1КонтекстноеМеню" id="537"/>
+													<ExtendedTooltip name="РезультатВыполненияТЧРеквизит1РасширеннаяПодсказка" id="538"/>
+												</InputField>
+												<InputField name="РезультатВыполненияТЧРеквизит2" id="539">
+													<DataPath>РезультатВыполненияТЧ.Реквизит2</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>1</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="РезультатВыполненияТЧРеквизит2КонтекстноеМеню" id="540"/>
+													<ExtendedTooltip name="РезультатВыполненияТЧРеквизит2РасширеннаяПодсказка" id="541"/>
+												</InputField>
+												<InputField name="РезультатВыполненияТЧРеквизит3" id="542">
+													<DataPath>РезультатВыполненияТЧ.Реквизит3</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Значение</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="РезультатВыполненияТЧРеквизит3КонтекстноеМеню" id="543"/>
+													<ExtendedTooltip name="РезультатВыполненияТЧРеквизит3РасширеннаяПодсказка" id="544"/>
+												</InputField>
+												<InputField name="РезультатВыполненияТЧРеквизит4" id="545">
+													<DataPath>РезультатВыполненияТЧ.Реквизит4</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Описание</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="РезультатВыполненияТЧРеквизит4КонтекстноеМеню" id="546"/>
+													<ExtendedTooltip name="РезультатВыполненияТЧРеквизит4РасширеннаяПодсказка" id="547"/>
+												</InputField>
+												<InputField name="РезультатВыполненияТЧРеквизит5" id="548">
+													<DataPath>РезультатВыполненияТЧ.Реквизит5</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Примечание</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="РезультатВыполненияТЧРеквизит5КонтекстноеМеню" id="549"/>
+													<ExtendedTooltip name="РезультатВыполненияТЧРеквизит5РасширеннаяПодсказка" id="550"/>
+												</InputField>
+											</ChildItems>
+										</Table>
 									</ChildItems>
-								</Table>
+								</UsualGroup>
+								<UsualGroup name="Группа41" id="734">
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа41РасширеннаяПодсказка" id="735"/>
+									<ChildItems>
+										<Button name="ОткрытьВОтдельномОкнеТЧ" id="740">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьВОтдельномОкнеТЧ</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В отдельном окне</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьВОтдельномОкнеТЧРасширеннаяПодсказка" id="741"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -2916,46 +3064,6 @@
 					</Picture>
 					<ContextMenu name="Декорация4КонтекстноеМеню" id="104"/>
 					<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="105"/>
-				</PictureDecoration>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="ГруппаИзображение" id="73">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Изображение</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа изображение</v8:content>
-				</v8:item>
-			</ToolTip>
-			<HorizontalStretch>true</HorizontalStretch>
-			<Group>AlwaysHorizontal</Group>
-			<HorizontalAlign>Left</HorizontalAlign>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаИзображениеРасширеннаяПодсказка" id="74"/>
-			<ChildItems>
-				<PictureDecoration name="ДекорацияBASH" id="75">
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<HorizontalStretch>false</HorizontalStretch>
-					<VerticalStretch>false</VerticalStretch>
-					<Title formatted="false">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Декорация BASH</v8:content>
-						</v8:item>
-					</Title>
-					<Picture>
-						<xr:Abs>Picture.png</xr:Abs>
-						<xr:LoadTransparent>false</xr:LoadTransparent>
-					</Picture>
-					<ContextMenu name="ДекорацияBASHКонтекстноеМеню" id="76"/>
-					<ExtendedTooltip name="ДекорацияBASHРасширеннаяПодсказка" id="77"/>
 				</PictureDecoration>
 			</ChildItems>
 		</UsualGroup>
@@ -3883,6 +3991,21 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ТекстПрямойКоманды" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст прямой команды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВыполнитьСформированныйСкрипт" id="4">
@@ -4228,7 +4351,7 @@
 					<v8:content>Получить список контейнеров docker</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПолучитьСписокКонтейнеровDocker1</Action>
+			<Action>ПолучитьСписокКонтейнеровDocker</Action>
 		</Command>
 		<Command name="ОстановитьКонтейнерDocker" id="24">
 			<Title>
@@ -4484,6 +4607,203 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДанныеОФайле</Action>
+		</Command>
+		<Command name="СсылкаНаСайт1" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаНаСайт1</Action>
+		</Command>
+		<Command name="СсылкаНаСайт2" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт2</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаНаСайт2</Action>
+		</Command>
+		<Command name="СсылкаНаСайт3" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Bash-скрипты: функции и разработка библиотек</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаНаСайт3</Action>
+		</Command>
+		<Command name="СсылкаНаСайт4" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Bash-скрипты, руководство в 11 частях</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт4</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаНаСайт4</Action>
+		</Command>
+		<Command name="СсылкаНаСайт5" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды обработки текста</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт5</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаНаСайт5</Action>
+		</Command>
+		<Command name="Команда1" id="46"/>
+		<Command name="ПолучитьМестоНаДискахСервера" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить место на дисках сервера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить место на дисках сервера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьМестоНаДискахСервера</Action>
+		</Command>
+		<Command name="СсылкаНаСайт6" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт6</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт6</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаНаСайт6</Action>
+		</Command>
+		<Command name="СсылкаНаСайт7" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>читать файл построчно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт7</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаНаСайт7</Action>
+		</Command>
+		<Command name="СсылкаНаСайт8" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Bash-скрипты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт8</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаНаСайт8</Action>
+		</Command>
+		<Command name="СсылкаНаСайт9" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>язык обработки данных awk</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт9</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаНаСайт9</Action>
+		</Command>
+		<Command name="СсылкаНаСайт10" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чтение файла при помощи цикла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка на сайт10</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаНаСайт10</Action>
+		</Command>
+		<Command name="Команда2" id="53"/>
+		<Command name="ОткрытьВОтдельномОкнеТЧ" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в отдельном окне</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть в отдельном окне</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьВОтдельномОкнеТЧ</Action>
+		</Command>
+		<Command name="ВыполнитьПрямуюКоманду" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить прямую команду</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить прямую команду</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПрямуюКоманду</Action>
 		</Command>
 	</Commands>
 </Form>
