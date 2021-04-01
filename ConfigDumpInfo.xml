@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.9">
 	<ConfigVersions>
-		<Metadata name="Catalog.АдминистраторСервера1С" id="6ffd862c-1de4-11eb-f082-b42e9905bfa2" configVersion="a60dcdb3763feb11a09bb42e9905bfa200000000">
+		<Metadata name="Catalog.АдминистраторСервера1С" id="6ffd862c-1de4-11eb-f082-b42e9905bfa2" configVersion="c21ce4186559eb116786b42e9905bfa200000000">
 			<Metadata name="Catalog.АдминистраторСервера1С.Attribute.ПарольАдминистратора" id="75be561e-3f76-11eb-a09b-b42e9905bfa2"/>
 			<Metadata name="Catalog.АдминистраторСервера1С.Attribute.Сервер1С" id="8e864a12-3f76-11eb-a09b-b42e9905bfa2"/>
 		</Metadata>
@@ -11,6 +11,7 @@
 			<Metadata name="Catalog.База1С.Attribute.Сервер1С" id="9cc1808e-1469-11eb-d88d-b42e9905bfa2"/>
 			<Metadata name="Catalog.База1С.Attribute.idБазы1С" id="da69f67e-144a-11eb-1d83-b42e9905bfa2"/>
 		</Metadata>
+		<Metadata name="Catalog.БазаPostgres" id="47959658-5966-11eb-6786-b42e9905bfa2" configVersion="380152686659eb116786b42e9905bfa200000000"/>
 		<Metadata name="Catalog.ПолучательПисьма" id="67b63d42-0161-11eb-c19d-b42e9905bfa2" configVersion="ba613b8b4702eb113884b42e9905bfa200000000">
 			<Metadata name="Catalog.ПолучательПисьма.Attribute.email" id="7f5f5e46-0161-11eb-c19d-b42e9905bfa2"/>
 			<Metadata name="Catalog.ПолучательПисьма.Attribute.Примечание" id="8d2e2e30-0161-11eb-c19d-b42e9905bfa2"/>
@@ -49,16 +50,20 @@
 		<Metadata name="CommonCommand.ОтправитьПисьмо.CommandModule" id="73db87b4-0163-11eb-c19d-b42e9905bfa2.2" configVersion="f617fc8f6301eb11c19db42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаHelpDocker" id="405f318e-1535-11eb-d88d-b42e9905bfa2" configVersion="8ed0e4325317eb11f492b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаHelpDocker.Form" id="405f318e-1535-11eb-d88d-b42e9905bfa2.0" configVersion="1423e4325317eb11f492b42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаАдминистрирования" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2" configVersion="7ec2810e763feb11a09bb42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаАдминистрирования.Form" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.0" configVersion="f812800e763feb11a09bb42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2" configVersion="d0dfa15a9e59eb11478ab42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования.Form" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.0" configVersion="a665a05a9e59eb11478ab42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаАдминистрирования.Help" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.1" configVersion="7e4fcbfae6fcea11b39ab42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаНаименованияБазы" id="a05c7846-596c-11eb-6786-b42e9905bfa2" configVersion="8efabbe46c59eb116786b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаНаименованияБазы.Form" id="a05c7846-596c-11eb-6786-b42e9905bfa2.0" configVersion="c44cbbe46c59eb116786b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаОтправкиУведомительногоПисьма" id="e9ad774c-0161-11eb-c19d-b42e9905bfa2" configVersion="54bae571980feb113d92b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаОтправкиУведомительногоПисьма.Form" id="e9ad774c-0161-11eb-c19d-b42e9905bfa2.0" configVersion="0650e471980feb113d92b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаРасширенныйПросмотр" id="0ba9da1e-1762-11eb-f492-b42e9905bfa2" configVersion="2e42ee536217eb11f492b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаРасширенныйПросмотр.Form" id="0ba9da1e-1762-11eb-f492-b42e9905bfa2.0" configVersion="b859ed536217eb11f492b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаРезультатВыполнения" id="c6a6ef12-54cc-11eb-8289-b42e9905bfa2" configVersion="bad6e1f1d654eb118289b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаРезультатВыполнения.Form" id="c6a6ef12-54cc-11eb-8289-b42e9905bfa2.0" configVersion="1667e1f1d654eb118289b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаСправкаКластера1С" id="a74d7350-1752-11eb-f492-b42e9905bfa2" configVersion="16d06ee55217eb11f492b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаСправкаКластера1С.Form" id="a74d7350-1752-11eb-f492-b42e9905bfa2.0" configVersion="08706ee55217eb11f492b42e9905bfa200000000"/>
-		<Metadata name="Configuration.АдминистрированиеСервера" id="68b31c24-f990-11ea-a281-b42e9905bfa2" configVersion="7c07ebbae41deb11f082b42e9905bfa200000000"/>
+		<Metadata name="Configuration.АдминистрированиеСервера" id="68b31c24-f990-11ea-a281-b42e9905bfa2" configVersion="fc09bce46c59eb116786b42e9905bfa200000000"/>
 		<Metadata name="Configuration.АдминистрированиеСервера.ClientApplicationInterface" id="68b31c25-f990-11ea-a281-b42e9905bfa2.b" configVersion="2af61608ebfcea11b39ab42e9905bfa200000000"/>
 		<Metadata name="Configuration.АдминистрированиеСервера.HomePageWorkArea" id="68b31c25-f990-11ea-a281-b42e9905bfa2.8" configVersion="d0bcd02be7fcea11b39ab42e9905bfa200000000"/>
 		<Metadata name="Configuration.АдминистрированиеСервера.MainSectionCommandInterface" id="68b31c25-f990-11ea-a281-b42e9905bfa2.9" configVersion="06d9edd66301eb11c19db42e9905bfa200000000"/>

@@ -183,12 +183,15 @@
 			<CommonForm>ФормаHelpDocker</CommonForm>
 			<CommonForm>ФормаСправкаКластера1С</CommonForm>
 			<CommonForm>ФормаРасширенныйПросмотр</CommonForm>
+			<CommonForm>ФормаРезультатВыполнения</CommonForm>
+			<CommonForm>ФормаНаименованияБазы</CommonForm>
 			<Catalog>СписокБаз</Catalog>
 			<Catalog>ПолучательПисьма</Catalog>
 			<Catalog>Сервер1С</Catalog>
 			<Catalog>База1С</Catalog>
 			<Catalog>ПользователиБазы1С</Catalog>
 			<Catalog>АдминистраторСервера1С</Catalog>
+			<Catalog>БазаPostgres</Catalog>
 			<DataProcessor>StandartServerControl</DataProcessor>
 		</ChildObjects>
 	</Configuration>

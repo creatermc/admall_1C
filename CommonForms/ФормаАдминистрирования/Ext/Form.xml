@@ -2043,7 +2043,6 @@
 																	<Type>UsualButton</Type>
 																	<Width>14</Width>
 																	<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
-																	<Shape>Oval</Shape>
 																	<ExtendedTooltip name="ПолучитьСписокКластеров1С1РасширеннаяПодсказка" id="411"/>
 																</Button>
 																<Button name="ПолучитьИнформацию1" id="452">
@@ -2056,7 +2055,7 @@
 																			<v8:content>Информация</v8:content>
 																		</v8:item>
 																	</Title>
-																	<Shape>Oval</Shape>
+																	<Shape>Usual</Shape>
 																	<ExtendedTooltip name="ПолучитьИнформацию1РасширеннаяПодсказка" id="453"/>
 																</Button>
 															</ChildItems>
@@ -2147,7 +2146,7 @@
 																	<Type>UsualButton</Type>
 																	<Width>14</Width>
 																	<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
-																	<Shape>Oval</Shape>
+																	<Shape>Usual</Shape>
 																	<ExtendedTooltip name="ПолучитьСписокБаз1С5РасширеннаяПодсказка" id="385"/>
 																</Button>
 																<Button name="ПолучитьИнформацию2" id="454">
@@ -2160,7 +2159,7 @@
 																			<v8:content>Информация</v8:content>
 																		</v8:item>
 																	</Title>
-																	<Shape>Oval</Shape>
+																	<Shape>Usual</Shape>
 																	<ExtendedTooltip name="ПолучитьИнформацию2РасширеннаяПодсказка" id="455"/>
 																</Button>
 															</ChildItems>
@@ -2225,7 +2224,7 @@
 																			<v8:content>Получить список</v8:content>
 																		</v8:item>
 																	</Title>
-																	<Shape>Oval</Shape>
+																	<Shape>Usual</Shape>
 																	<ExtendedTooltip name="ПолучитьСписокАктивныхПользователей1РасширеннаяПодсказка" id="392"/>
 																</Button>
 																<Button name="ПолучитьИнформацию3" id="456">
@@ -2238,49 +2237,8 @@
 																			<v8:content>Информация</v8:content>
 																		</v8:item>
 																	</Title>
-																	<Shape>Oval</Shape>
+																	<Shape>Usual</Shape>
 																	<ExtendedTooltip name="ПолучитьИнформацию3РасширеннаяПодсказка" id="457"/>
-																</Button>
-															</ChildItems>
-														</UsualGroup>
-													</ChildItems>
-												</Page>
-												<Page name="Кластер" id="393">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Кластер</v8:content>
-														</v8:item>
-													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Кластер</v8:content>
-														</v8:item>
-													</ToolTip>
-													<ExtendedTooltip name="КластерРасширеннаяПодсказка" id="394"/>
-													<ChildItems>
-														<UsualGroup name="Группа28" id="401">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Сервер 1С</v8:content>
-																</v8:item>
-															</Title>
-															<Group>AlwaysHorizontal</Group>
-															<ExtendedTooltip name="Группа28РасширеннаяПодсказка" id="402"/>
-															<ChildItems>
-																<InputField name="idКластераСервера1С" id="398">
-																	<DataPath>idКластераСервера1С</DataPath>
-																	<TitleLocation>None</TitleLocation>
-																	<HorizontalStretch>false</HorizontalStretch>
-																	<ContextMenu name="idКластераСервера1СКонтекстноеМеню" id="399"/>
-																	<ExtendedTooltip name="idКластераСервера1СРасширеннаяПодсказка" id="400"/>
-																</InputField>
-																<Button name="ПолучитьСписокКластеров1С" id="403">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
-																	<ExtendedTooltip name="ПолучитьСписокКластеров1СРасширеннаяПодсказка" id="404"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
@@ -2290,7 +2248,7 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Информация</v8:content>
+															<v8:content>help</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
@@ -2332,122 +2290,14 @@
 									</ToolTip>
 									<ExtendedTooltip name="ГруппаPostgreSQLРасширеннаяПодсказка" id="140"/>
 									<ChildItems>
-										<UsualGroup name="Группа38" id="487">
-											<Visible>false</Visible>
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<BackColor>#C0F0C0</BackColor>
-											<ExtendedTooltip name="Группа38РасширеннаяПодсказка" id="488"/>
-											<ChildItems>
-												<LabelField name="ИнформацияЗаполнения1" id="489">
-													<DataPath>ИнформацияЗаполнения</DataPath>
-													<TitleLocation>None</TitleLocation>
-													<Border width="1">
-														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
-													</Border>
-													<ContextMenu name="ИнформацияЗаполнения1КонтекстноеМеню" id="490"/>
-													<ExtendedTooltip name="ИнформацияЗаполнения1РасширеннаяПодсказка" id="491"/>
-												</LabelField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="Группа16" id="151">
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<BackColor>#C0F0C0</BackColor>
-											<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="152"/>
-											<ChildItems>
-												<RadioButtonField name="ВаринатВзаимодействияPostgreSQL" id="148">
-													<DataPath>ВаринатВзаимодействияPostgreSQL</DataPath>
-													<TitleLocation>None</TitleLocation>
-													<RadioButtonType>Tumbler</RadioButtonType>
-													<ColumnsCount>2</ColumnsCount>
-													<ChoiceList>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Список баз</v8:content>
-																	</v8:item>
-																	<v8:item>
-																		<v8:lang>en</v8:lang>
-																		<v8:content>Get Database List</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:string">Список баз</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Удалить базу</v8:content>
-																	</v8:item>
-																	<v8:item>
-																		<v8:lang>en</v8:lang>
-																		<v8:content>Delete Database</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:string">Удалить базу</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>Перезагрузить сервер</v8:content>
-																	</v8:item>
-																	<v8:item>
-																		<v8:lang>en</v8:lang>
-																		<v8:content>Restart Server</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:string">Перезагрузить сервер</Value>
-															</xr:Value>
-														</xr:Item>
-														<xr:Item>
-															<xr:Presentation/>
-															<xr:CheckState>0</xr:CheckState>
-															<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																<Presentation>
-																	<v8:item>
-																		<v8:lang>ru</v8:lang>
-																		<v8:content>-</v8:content>
-																	</v8:item>
-																</Presentation>
-																<Value xsi:type="xs:string">-</Value>
-															</xr:Value>
-														</xr:Item>
-													</ChoiceList>
-													<ContextMenu name="ВаринатВзаимодействияPostgreSQLКонтекстноеМеню" id="149"/>
-													<ExtendedTooltip name="ВаринатВзаимодействияPostgreSQLРасширеннаяПодсказка" id="150"/>
-													<Events>
-														<Event name="OnChange">ВаринатВзаимодействияPostgreSQLПриИзменении</Event>
-													</Events>
-												</RadioButtonField>
-											</ChildItems>
-										</UsualGroup>
 										<Pages name="Группа17" id="153">
-											<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
 											<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="154"/>
 											<ChildItems>
 												<Page name="ГруппаАдминистраторСервераpostgres" id="56">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Администратор</v8:content>
+															<v8:content>Администрирование</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
@@ -2459,61 +2309,196 @@
 													<HorizontalStretch>true</HorizontalStretch>
 													<ExtendedTooltip name="ГруппаАдминистраторСервераpostgresРасширеннаяПодсказка" id="57"/>
 													<ChildItems>
-														<InputField name="АдминистраторСервераPostgres" id="61">
-															<DataPath>АдминистраторСервераPostgres</DataPath>
-															<HorizontalStretch>false</HorizontalStretch>
-															<DropListButton>true</DropListButton>
-															<ChoiceList>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>postgres</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">postgres</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>admin</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">admin</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>denis</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">denis</Value>
-																	</xr:Value>
-																</xr:Item>
-															</ChoiceList>
-															<ContextMenu name="АдминистраторСервераPostgresКонтекстноеМеню" id="62"/>
-															<ExtendedTooltip name="АдминистраторСервераPostgresРасширеннаяПодсказка" id="63"/>
-														</InputField>
-														<InputField name="ПарольАдминистраторСервераpostgres" id="58">
-															<DataPath>ПарольАдминистраторСервераPostgres</DataPath>
+														<InputField name="ПарольСуперПользователя2" id="799">
+															<DataPath>ПарольСуперПользователя</DataPath>
 															<HorizontalStretch>false</HorizontalStretch>
 															<PasswordMode>true</PasswordMode>
-															<ContextMenu name="ПарольАдминистраторСервераpostgresКонтекстноеМеню" id="59"/>
-															<ExtendedTooltip name="ПарольАдминистраторСервераpostgresРасширеннаяПодсказка" id="60"/>
+															<AutoMarkIncomplete>true</AutoMarkIncomplete>
+															<ContextMenu name="ПарольСуперПользователя2КонтекстноеМеню" id="800"/>
+															<ExtendedTooltip name="ПарольСуперПользователя2РасширеннаяПодсказка" id="801"/>
 														</InputField>
+														<UsualGroup name="Группа16" id="791">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сервер</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Vertical</Group>
+															<Representation>StrongSeparation</Representation>
+															<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="792"/>
+															<ChildItems>
+																<UsualGroup name="Группа28" id="768">
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа28РасширеннаяПодсказка" id="769"/>
+																	<ChildItems>
+																		<InputField name="АдминистраторСервераPostgres" id="61">
+																			<DataPath>АдминистраторСервераPostgres</DataPath>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<DropListButton>true</DropListButton>
+																			<ChoiceList>
+																				<xr:Item>
+																					<xr:Presentation/>
+																					<xr:CheckState>0</xr:CheckState>
+																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																						<Presentation>
+																							<v8:item>
+																								<v8:lang>ru</v8:lang>
+																								<v8:content>postgres</v8:content>
+																							</v8:item>
+																						</Presentation>
+																						<Value xsi:type="xs:string">postgres</Value>
+																					</xr:Value>
+																				</xr:Item>
+																				<xr:Item>
+																					<xr:Presentation/>
+																					<xr:CheckState>0</xr:CheckState>
+																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																						<Presentation>
+																							<v8:item>
+																								<v8:lang>ru</v8:lang>
+																								<v8:content>admin</v8:content>
+																							</v8:item>
+																						</Presentation>
+																						<Value xsi:type="xs:string">admin</Value>
+																					</xr:Value>
+																				</xr:Item>
+																				<xr:Item>
+																					<xr:Presentation/>
+																					<xr:CheckState>0</xr:CheckState>
+																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																						<Presentation>
+																							<v8:item>
+																								<v8:lang>ru</v8:lang>
+																								<v8:content>denis</v8:content>
+																							</v8:item>
+																						</Presentation>
+																						<Value xsi:type="xs:string">denis</Value>
+																					</xr:Value>
+																				</xr:Item>
+																			</ChoiceList>
+																			<ContextMenu name="АдминистраторСервераPostgresКонтекстноеМеню" id="62"/>
+																			<ExtendedTooltip name="АдминистраторСервераPostgresРасширеннаяПодсказка" id="63"/>
+																		</InputField>
+																		<InputField name="ПарольАдминистраторСервераpostgres" id="58">
+																			<DataPath>ПарольАдминистраторСервераPostgres</DataPath>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<PasswordMode>true</PasswordMode>
+																			<ContextMenu name="ПарольАдминистраторСервераpostgresКонтекстноеМеню" id="59"/>
+																			<ExtendedTooltip name="ПарольАдминистраторСервераpostgresРасширеннаяПодсказка" id="60"/>
+																		</InputField>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="Группа65" id="779">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ОбщиеКомандыСервер</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа65РасширеннаяПодсказка" id="780"/>
+																	<ChildItems>
+																		<Button name="СтатусСервераPostgres" id="783">
+																			<Type>UsualButton</Type>
+																			<Width>8</Width>
+																			<CommandName>Form.Command.СтатусСервераPostgres</CommandName>
+																			<ExtendedTooltip name="СтатусСервераPostgresРасширеннаяПодсказка" id="784"/>
+																		</Button>
+																		<Button name="ПерезагрузитьСерверPostgres" id="781">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ПерезагрузитьСерверPostgres</CommandName>
+																			<ExtendedTooltip name="ПерезагрузитьСерверPostgresРасширеннаяПодсказка" id="782"/>
+																		</Button>
+																		<Button name="ОстановитьСерверPostgres" id="785">
+																			<Type>UsualButton</Type>
+																			<Width>10</Width>
+																			<CommandName>Form.Command.ОстановитьСерверPostgres</CommandName>
+																			<ExtendedTooltip name="ОстановитьСерверPostgresРасширеннаяПодсказка" id="786"/>
+																		</Button>
+																		<Button name="ЗапуститьСерверPostgres" id="787">
+																			<Type>UsualButton</Type>
+																			<Width>9</Width>
+																			<CommandName>Form.Command.ЗапуститьСерверPostgres</CommandName>
+																			<ExtendedTooltip name="ЗапуститьСерверPostgresРасширеннаяПодсказка" id="788"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа38" id="793">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Базы</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Vertical</Group>
+															<Representation>StrongSeparation</Representation>
+															<ExtendedTooltip name="Группа38РасширеннаяПодсказка" id="794"/>
+															<ChildItems>
+																<UsualGroup name="Группа64" id="773">
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа64РасширеннаяПодсказка" id="774"/>
+																	<ChildItems>
+																		<InputField name="БазаPostgres" id="770">
+																			<DataPath>БазаPostgres</DataPath>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<ContextMenu name="БазаPostgresКонтекстноеМеню" id="771"/>
+																			<ExtendedTooltip name="БазаPostgresРасширеннаяПодсказка" id="772"/>
+																		</InputField>
+																		<Button name="ПолучитьСписокБазPostgres" id="775">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ПолучитьСписокБазPostgres</CommandName>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Обновить список</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="ПолучитьСписокБазPostgresРасширеннаяПодсказка" id="776"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="Группа66" id="795">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ОбщиеКомандыБазы</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа66РасширеннаяПодсказка" id="796"/>
+																	<ChildItems>
+																		<Button name="УдалитьБазуPostgres" id="777">
+																			<Type>UsualButton</Type>
+																			<Width>8</Width>
+																			<CommandName>Form.Command.УдалитьБазуPostgres</CommandName>
+																			<ExtendedTooltip name="УдалитьБазуPostgresРасширеннаяПодсказка" id="778"/>
+																		</Button>
+																		<Button name="СоздатьБазуPostgres" id="789">
+																			<Type>UsualButton</Type>
+																			<Width>8</Width>
+																			<CommandName>Form.Command.СоздатьБазуPostgres</CommandName>
+																			<ExtendedTooltip name="СоздатьБазуPostgresРасширеннаяПодсказка" id="790"/>
+																		</Button>
+																		<Button name="СписокБазPostgres" id="797">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.СписокБазPostgres</CommandName>
+																			<ExtendedTooltip name="СписокБазPostgresРасширеннаяПодсказка" id="798"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
 													</ChildItems>
 												</Page>
 											</ChildItems>
@@ -4006,6 +3991,17 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="БазаPostgres" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>База postgres</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.БазаPostgres</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВыполнитьСформированныйСкрипт" id="4">
@@ -4683,7 +4679,21 @@
 			</ToolTip>
 			<Action>СсылкаНаСайт5</Action>
 		</Command>
-		<Command name="Команда1" id="46"/>
+		<Command name="ПолучитьСписокБазPostgres" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить список баз postgres</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить список баз postgres</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьСписокБазPostgres</Action>
+		</Command>
 		<Command name="ПолучитьМестоНаДискахСервера" id="47">
 			<Title>
 				<v8:item>
@@ -4774,7 +4784,21 @@
 			</ToolTip>
 			<Action>СсылкаНаСайт10</Action>
 		</Command>
-		<Command name="Команда2" id="53"/>
+		<Command name="ПерезагрузитьСерверPostgres" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезагрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезагрузить сервер postgres</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерезагрузитьСерверPostgres</Action>
+		</Command>
 		<Command name="ОткрытьВОтдельномОкнеТЧ" id="54">
 			<Title>
 				<v8:item>
@@ -4804,6 +4828,95 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыполнитьПрямуюКоманду</Action>
+		</Command>
+		<Command name="УдалитьБазуPostgres" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить текущую базу postgres</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьБазуPostgres</Action>
+		</Command>
+		<Command name="СтатусСервераPostgres" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус сервера postgres</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтатусСервераPostgres</Action>
+		</Command>
+		<Command name="ОстановитьСерверPostgres" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить сервер postgres</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстановитьСерверPostgres</Action>
+		</Command>
+		<Command name="ЗапуститьСерверPostgres" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить сервер postgres</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьСерверPostgres</Action>
+		</Command>
+		<Command name="СоздатьБазуPostgres" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать базу postgres</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="СписокБазPostgres" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список баз postgres</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокБазPostgres</Action>
 		</Command>
 	</Commands>
 </Form>
