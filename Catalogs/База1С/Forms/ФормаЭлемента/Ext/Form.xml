@@ -23,17 +23,6 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
-		<InputField name="Владелец" id="16">
-			<DataPath>Объект.Owner</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>База 1С</v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="ВладелецКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="18"/>
-		</InputField>
 		<InputField name="Код" id="1">
 			<DataPath>Объект.Code</DataPath>
 			<Visible>false</Visible>
@@ -42,45 +31,35 @@
 			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
 		</InputField>
-		<UsualGroup name="ГруппаПользовательПароль" id="19">
-			<Group>AlwaysHorizontal</Group>
+		<InputField name="Сервер1С" id="10">
+			<DataPath>Объект.Owner</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер 1С</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="Сервер1СКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="Сервер1СРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<UsualGroup name="Группа1" id="13">
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПользовательПарольРасширеннаяПодсказка" id="20"/>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="14"/>
 			<ChildItems>
+				<InputField name="idБазы1С" id="7">
+					<DataPath>Объект.idБазы1С</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="idБазы1СКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="idБазы1СРасширеннаяПодсказка" id="9"/>
+				</InputField>
 				<InputField name="Наименование" id="4">
 					<DataPath>Объект.Description</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Учетная запись</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Учетная запись администратора текущей базы 1С</v8:content>
-						</v8:item>
-					</ToolTip>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-				</InputField>
-				<InputField name="ПарольПользователя" id="13">
-					<DataPath>Объект.ПарольПользователя</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>пароль</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<MaxWidth>16</MaxWidth>
-					<HorizontalStretch>false</HorizontalStretch>
-					<PasswordMode>true</PasswordMode>
-					<ContextMenu name="ПарольПользователяКонтекстноеМеню" id="14"/>
-					<ExtendedTooltip name="ПарольПользователяРасширеннаяПодсказка" id="15"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -88,7 +67,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:CatalogObject.ПользователиБазы1С</v8:Type>
+				<v8:Type>cfg:CatalogObject.База1С</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>

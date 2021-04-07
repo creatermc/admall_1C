@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<Catalog uuid="115e3a96-13a6-11eb-568f-b42e9905bfa2">
+	<Catalog uuid="fc8e3e2e-97a1-11eb-7e98-b42e9905bfa2">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Сервер1С" category="Object">
-				<xr:TypeId>115e3a50-13a6-11eb-568f-b42e9905bfa2</xr:TypeId>
-				<xr:ValueId>115e3a5a-13a6-11eb-568f-b42e9905bfa2</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.Пользователи" category="Object">
+				<xr:TypeId>fc8e3dfc-97a1-11eb-7e98-b42e9905bfa2</xr:TypeId>
+				<xr:ValueId>fc8e3e06-97a1-11eb-7e98-b42e9905bfa2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Сервер1С" category="Ref">
-				<xr:TypeId>115e3a5b-13a6-11eb-568f-b42e9905bfa2</xr:TypeId>
-				<xr:ValueId>115e3a64-13a6-11eb-568f-b42e9905bfa2</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.Пользователи" category="Ref">
+				<xr:TypeId>fc8e3e07-97a1-11eb-7e98-b42e9905bfa2</xr:TypeId>
+				<xr:ValueId>fc8e3e08-97a1-11eb-7e98-b42e9905bfa2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Сервер1С" category="Selection">
-				<xr:TypeId>115e3a6e-13a6-11eb-568f-b42e9905bfa2</xr:TypeId>
-				<xr:ValueId>115e3a6f-13a6-11eb-568f-b42e9905bfa2</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.Пользователи" category="Selection">
+				<xr:TypeId>fc8e3e10-97a1-11eb-7e98-b42e9905bfa2</xr:TypeId>
+				<xr:ValueId>fc8e3e11-97a1-11eb-7e98-b42e9905bfa2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Сервер1С" category="List">
-				<xr:TypeId>115e3a78-13a6-11eb-568f-b42e9905bfa2</xr:TypeId>
-				<xr:ValueId>115e3a79-13a6-11eb-568f-b42e9905bfa2</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.Пользователи" category="List">
+				<xr:TypeId>fc8e3e1a-97a1-11eb-7e98-b42e9905bfa2</xr:TypeId>
+				<xr:ValueId>fc8e3e1b-97a1-11eb-7e98-b42e9905bfa2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Сервер1С" category="Manager">
-				<xr:TypeId>115e3a82-13a6-11eb-568f-b42e9905bfa2</xr:TypeId>
-				<xr:ValueId>115e3a83-13a6-11eb-568f-b42e9905bfa2</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.Пользователи" category="Manager">
+				<xr:TypeId>fc8e3e24-97a1-11eb-7e98-b42e9905bfa2</xr:TypeId>
+				<xr:ValueId>fc8e3e25-97a1-11eb-7e98-b42e9905bfa2</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Сервер1С</Name>
+			<Name>Пользователи</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сервер 1С</v8:content>
+					<v8:content>Пользователи</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -41,7 +41,7 @@
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
-			<DescriptionLength>75</DescriptionLength>
+			<DescriptionLength>25</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
@@ -54,13 +54,13 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Сервер1С.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Сервер1С.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Пользователи.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Пользователи.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Catalog.Сервер1С.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultObjectForm/>
 			<DefaultFolderForm/>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
@@ -86,52 +86,6 @@
 			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
-		<ChildObjects>
-			<Attribute uuid="2ba6c63e-13a6-11eb-568f-b42e9905bfa2">
-				<Properties>
-					<Name>IDСервера1С</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ID Сервера 1С</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>50</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Form>ФормаЭлемента</Form>
-		</ChildObjects>
+		<ChildObjects/>
 	</Catalog>
 </MetaDataObject>

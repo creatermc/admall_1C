@@ -1,39 +1,83 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>ChangeHistory</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>Reread</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>ShowInList</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<InputField name="Код" id="1">
 			<DataPath>Объект.Code</DataPath>
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
 		</InputField>
 		<InputField name="Владелец" id="7">
 			<DataPath>Объект.Owner</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер 1С</v8:content>
+				</v8:item>
+			</Title>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
 		</InputField>
-		<InputField name="Сервер1С" id="13">
-			<DataPath>Объект.Сервер1С</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="Сервер1СКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="Сервер1СРасширеннаяПодсказка" id="15"/>
-		</InputField>
-		<InputField name="Наименование" id="4">
-			<DataPath>Объект.Description</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-		</InputField>
-		<InputField name="ПарольАдминистратора" id="10">
-			<DataPath>Объект.ПарольАдминистратора</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ПарольАдминистратораКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ПарольАдминистратораРасширеннаяПодсказка" id="12"/>
-		</InputField>
+		<UsualGroup name="ГруппаАдминПароль" id="13">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАдминПарольРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учетная запись</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="ПарольАдминистратора" id="10">
+					<DataPath>Объект.ПарольАдминистратора</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>16</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ПарольАдминистратораКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ПарольАдминистратораРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

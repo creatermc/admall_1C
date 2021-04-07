@@ -871,9 +871,14 @@
 																	<HorizontalStretch>false</HorizontalStretch>
 																	<ContextMenu name="АдминистраторСервера1С5КонтекстноеМеню" id="325"/>
 																	<ExtendedTooltip name="АдминистраторСервера1С5РасширеннаяПодсказка" id="326"/>
+																	<Events>
+																		<Event name="ChoiceProcessing">АдминистраторСервера1С5ОбработкаВыбора</Event>
+																	</Events>
 																</InputField>
 																<InputField name="ПарольАдминистратораСервера1С5" id="327">
 																	<DataPath>ПарольАдминистратораСервера1С</DataPath>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -949,9 +954,14 @@
 																	<HorizontalStretch>false</HorizontalStretch>
 																	<ContextMenu name="АдминистраторБазы1С1КонтекстноеМеню" id="233"/>
 																	<ExtendedTooltip name="АдминистраторБазы1С1РасширеннаяПодсказка" id="234"/>
+																	<Events>
+																		<Event name="ChoiceProcessing">АдминистраторБазы1С1ОбработкаВыбора</Event>
+																	</Events>
 																</InputField>
 																<InputField name="ПарольАдминистратораБазы1С1" id="235">
 																	<DataPath>ПарольАдминистратораБазы1С</DataPath>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
 																	<HorizontalStretch>false</HorizontalStretch>
 																	<PasswordMode>true</PasswordMode>
 																	<ContextMenu name="ПарольАдминистратораБазы1С1КонтекстноеМеню" id="236"/>
@@ -979,7 +989,6 @@
 															<ChildItems>
 																<CheckBoxField name="БлокироватРегламентныеЗаданияБазы1С" id="108">
 																	<DataPath>БлокироватРегламентныеЗаданияБазы1С</DataPath>
-																	<ReadOnly>true</ReadOnly>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -2770,12 +2779,120 @@
 									</Title>
 									<ExtendedTooltip name="Группа42РасширеннаяПодсказка" id="676"/>
 									<ChildItems>
-										<CheckBoxField name="ОтображатьИменаФайлов" id="677">
-											<DataPath>ОтображатьИменаФайлов</DataPath>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ОтображатьИменаФайловКонтекстноеМеню" id="678"/>
-											<ExtendedTooltip name="ОтображатьИменаФайловРасширеннаяПодсказка" id="679"/>
-										</CheckBoxField>
+										<UsualGroup name="Группа67" id="802">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа67РасширеннаяПодсказка" id="803"/>
+											<ChildItems>
+												<CheckBoxField name="ОтображатьИменаФайлов" id="677">
+													<DataPath>ОтображатьИменаФайлов</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОтображатьИменаФайловКонтекстноеМеню" id="678"/>
+													<ExtendedTooltip name="ОтображатьИменаФайловРасширеннаяПодсказка" id="679"/>
+												</CheckBoxField>
+												<LabelDecoration name="Декорация6" id="811">
+													<TextColor>#999999</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Описание</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация6КонтекстноеМеню" id="812"/>
+													<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="813"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<LabelDecoration name="Декорация5" id="808">
+											<ContextMenu name="Декорация5КонтекстноеМеню" id="809"/>
+											<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="810"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаСправочники" id="804">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа справочники</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа справочники</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСправочникиРасширеннаяПодсказка" id="805"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаСправочники1С" id="818">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройки по 1С</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройки по 1С</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ExtendedTooltip name="ГруппаСправочники1СРасширеннаяПодсказка" id="819"/>
+													<ChildItems>
+														<Button name="ОткрытьСписокАдминистраторовСервера1С" id="806">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ОткрытьСписокАдминистраторовСервера1С</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Администраторы 1С</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ОткрытьСписокАдминистраторовСервера1СРасширеннаяПодсказка" id="807"/>
+														</Button>
+														<Button name="ОткрытьСписокБаз1С" id="816">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ОткрытьСписокБаз1С</CommandName>
+															<ExtendedTooltip name="ОткрытьСписокБаз1СРасширеннаяПодсказка" id="817"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаНастройкиPostgre" id="820">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройки Postgre</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройки Postgre</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ExtendedTooltip name="ГруппаНастройкиPostgreРасширеннаяПодсказка" id="821"/>
+													<ChildItems>
+														<Button name="ОткрытьСписокБазPostgre" id="814">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ОткрытьСписокБазPostgre</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Базы Postgre SQL</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ОткрытьСписокБазPostgreРасширеннаяПодсказка" id="815"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</Page>
 							</ChildItems>
@@ -4002,6 +4119,38 @@
 				<v8:Type>cfg:CatalogRef.БазаPostgres</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПользователиСписок" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.ПользователиБазы1С</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВыполнитьСформированныйСкрипт" id="4">
@@ -4917,6 +5066,66 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СписокБазPostgres</Action>
+		</Command>
+		<Command name="ОткрытьСписокАдминистраторовСервера1С" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список администраторов сервера 1С</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список администраторов сервера 1С</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписокАдминистраторовСервера1С</Action>
+		</Command>
+		<Command name="ОткрытьСписокБазPostgre" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список баз postgre</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список баз postgre</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписокБазPostgre</Action>
+		</Command>
+		<Command name="ОткрытьСписокБаз1С" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список баз 1С</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список баз 1С</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписокБаз1С</Action>
+		</Command>
+		<Command name="ОткрытьСписокСерверов1С" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список серверов 1С</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список серверов 1С</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписокСерверов1С</Action>
 		</Command>
 	</Commands>
 </Form>

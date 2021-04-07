@@ -185,6 +185,7 @@
 			<CommonForm>ФормаРасширенныйПросмотр</CommonForm>
 			<CommonForm>ФормаРезультатВыполнения</CommonForm>
 			<CommonForm>ФормаНаименованияБазы</CommonForm>
+			<CommonForm>ФормаЗапросПароля</CommonForm>
 			<Catalog>СписокБаз</Catalog>
 			<Catalog>ПолучательПисьма</Catalog>
 			<Catalog>Сервер1С</Catalog>
@@ -192,6 +193,7 @@
 			<Catalog>ПользователиБазы1С</Catalog>
 			<Catalog>АдминистраторСервера1С</Catalog>
 			<Catalog>БазаPostgres</Catalog>
+			<Catalog>Пользователи</Catalog>
 			<DataProcessor>StandartServerControl</DataProcessor>
 		</ChildObjects>
 	</Configuration>
