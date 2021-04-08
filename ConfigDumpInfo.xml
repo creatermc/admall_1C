@@ -56,8 +56,8 @@
 		<Metadata name="CommonCommand.ОтправитьПисьмо.CommandModule" id="73db87b4-0163-11eb-c19d-b42e9905bfa2.2" configVersion="8c6d0a00e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаHelpDocker" id="405f318e-1535-11eb-d88d-b42e9905bfa2" configVersion="c49e5000e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаHelpDocker.Form" id="405f318e-1535-11eb-d88d-b42e9905bfa2.0" configVersion="a42f4400e092eb110782b42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаАдминистрирования" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2" configVersion="f240cc615098eb11e09db42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаАдминистрирования.Form" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.0" configVersion="58b4ca615098eb11e09db42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2" configVersion="22c84bed6098eb118f9cb42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования.Form" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.0" configVersion="32554aed6098eb118f9cb42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаАдминистрирования.Help" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.1" configVersion="aaa01800e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаЗапросПароля" id="397866dc-9795-11eb-7e98-b42e9905bfa2" configVersion="c4ca1a739597eb117e98b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаЗапросПароля.Form" id="397866dc-9795-11eb-7e98-b42e9905bfa2.0" configVersion="9c6b1a739597eb117e98b42e9905bfa200000000"/>

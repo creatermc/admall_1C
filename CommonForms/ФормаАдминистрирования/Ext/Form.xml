@@ -501,6 +501,8 @@
 													<ChildItems>
 														<InputField name="ПарольСуперПользователя1" id="516">
 															<DataPath>ПарольСуперПользователя</DataPath>
+															<Visible>false</Visible>
+															<Enabled>false</Enabled>
 															<HorizontalStretch>false</HorizontalStretch>
 															<PasswordMode>true</PasswordMode>
 															<AutoMarkIncomplete>true</AutoMarkIncomplete>
@@ -509,26 +511,36 @@
 														</InputField>
 														<Button name="ПолучитьСписокЗапущенныхСервисов" id="519">
 															<Type>UsualButton</Type>
+															<Width>18</Width>
 															<CommandName>Form.Command.ПолучитьСписокЗапущенныхСервисов</CommandName>
 															<ExtendedTooltip name="ПолучитьСписокЗапущенныхСервисовРасширеннаяПодсказка" id="520"/>
 														</Button>
 														<Button name="СкоростьСоединения" id="653">
 															<Type>UsualButton</Type>
+															<Width>18</Width>
 															<CommandName>Form.Command.СкоростьСоединения</CommandName>
 															<ExtendedTooltip name="СкоростьСоединенияРасширеннаяПодсказка" id="654"/>
 														</Button>
 														<Button name="ПроверкаСвязи" id="655">
 															<Type>UsualButton</Type>
+															<Width>18</Width>
 															<CommandName>Form.Command.ПроверкаСвязи</CommandName>
 															<ExtendedTooltip name="ПроверкаСвязиРасширеннаяПодсказка" id="656"/>
 														</Button>
+														<Button name="ИнформацияОСервере" id="855">
+															<Type>UsualButton</Type>
+															<Width>18</Width>
+															<CommandName>Form.Command.ИнформацияОСервере</CommandName>
+															<ExtendedTooltip name="ИнформацияОСервереРасширеннаяПодсказка" id="856"/>
+														</Button>
 														<Button name="ПолучитьМестоНаДискахСервера" id="714">
 															<Type>UsualButton</Type>
+															<Width>18</Width>
 															<CommandName>Form.Command.ПолучитьМестоНаДискахСервера</CommandName>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Информация по дискам сервера</v8:content>
+																	<v8:content>Информация по дискам</v8:content>
 																</v8:item>
 															</Title>
 															<ExtendedTooltip name="ПолучитьМестоНаДискахСервераРасширеннаяПодсказка" id="715"/>
@@ -5297,6 +5309,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьСписокСерверов1С</Action>
+		</Command>
+		<Command name="СписокАдминистраторовPostgree" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список администраторов postgree</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список администраторов postgree</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокАдминистраторовPostgree</Action>
+		</Command>
+		<Command name="ИнформацияОСервере" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о сервере</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о сервере</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИнформацияОСервере</Action>
 		</Command>
 	</Commands>
 </Form>
