@@ -194,6 +194,7 @@
 			<Catalog>АдминистраторСервера1С</Catalog>
 			<Catalog>БазаPostgres</Catalog>
 			<Catalog>Пользователи</Catalog>
+			<Catalog>АдминистраторСервераPostgreSQL</Catalog>
 			<DataProcessor>StandartServerControl</DataProcessor>
 		</ChildObjects>
 	</Configuration>

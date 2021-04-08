@@ -841,6 +841,7 @@
 																			<DataPath>idКластераСервера1С</DataPath>
 																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
+																			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																			<ContextMenu name="idКластераСервера1С5КонтекстноеМеню" id="469"/>
 																			<ExtendedTooltip name="idКластераСервера1С5РасширеннаяПодсказка" id="470"/>
 																		</InputField>
@@ -885,6 +886,7 @@
 																			</Title>
 																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
+																			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																			<ContextMenu name="АдминистраторСервера1С5КонтекстноеМеню" id="325"/>
 																			<ExtendedTooltip name="АдминистраторСервера1С5РасширеннаяПодсказка" id="326"/>
 																			<Events>
@@ -942,6 +944,7 @@
 																			<ChoiceListHeight>2</ChoiceListHeight>
 																			<DropListWidth>2</DropListWidth>
 																			<HeightControlVariant>UseContentHeight</HeightControlVariant>
+																			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																			<ContextMenu name="База1С2КонтекстноеМеню" id="228"/>
 																			<ExtendedTooltip name="База1С2РасширеннаяПодсказка" id="229"/>
 																			<Events>
@@ -983,6 +986,7 @@
 																			<DataPath>АдминистраторБазы1С</DataPath>
 																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
+																			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																			<ContextMenu name="АдминистраторБазы1С1КонтекстноеМеню" id="233"/>
 																			<ExtendedTooltip name="АдминистраторБазы1С1РасширеннаяПодсказка" id="234"/>
 																			<Events>
@@ -1093,6 +1097,7 @@
 																			<DataPath>idКластераСервера1С</DataPath>
 																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
+																			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																			<ContextMenu name="idКластераСервера1С6КонтекстноеМеню" id="476"/>
 																			<ExtendedTooltip name="idКластераСервера1С6РасширеннаяПодсказка" id="477"/>
 																		</InputField>
@@ -1137,11 +1142,11 @@
 																			</Title>
 																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
+																			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																			<ContextMenu name="АдминистраторСервера1С2КонтекстноеМеню" id="241"/>
 																			<ExtendedTooltip name="АдминистраторСервера1С2РасширеннаяПодсказка" id="242"/>
 																			<Events>
-																				<Event name="TextEditEnd">АдминистраторСервера1СОкончаниеВводаТекста</Event>
-																				<Event name="ChoiceProcessing">АдминистраторСервера1СОбработкаВыбора</Event>
+																				<Event name="ChoiceProcessing">АдминистраторСервера1С2ОбработкаВыбора</Event>
 																			</Events>
 																		</InputField>
 																		<InputField name="ПарольАдминистратораСервера1С2" id="243">
@@ -1196,6 +1201,7 @@
 																			<ChoiceListHeight>2</ChoiceListHeight>
 																			<DropListWidth>2</DropListWidth>
 																			<HeightControlVariant>UseContentHeight</HeightControlVariant>
+																			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																			<ContextMenu name="База1С3КонтекстноеМеню" id="249"/>
 																			<ExtendedTooltip name="База1С3РасширеннаяПодсказка" id="250"/>
 																			<Events>
@@ -1232,6 +1238,7 @@
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<ChoiceButton>true</ChoiceButton>
 																			<ListChoiceMode>true</ListChoiceMode>
+																			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																			<ContextMenu name="СписокПользователей1СКонтекстноеМеню" id="84"/>
 																			<ExtendedTooltip name="СписокПользователей1СРасширеннаяПодсказка" id="85"/>
 																			<Events>
@@ -1278,6 +1285,7 @@
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<AutoMaxHeight>false</AutoMaxHeight>
 																	<HorizontalStretch>false</HorizontalStretch>
+																	<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																	<ContextMenu name="idСессииПользователя1СКонтекстноеМеню" id="640"/>
 																	<ExtendedTooltip name="idСессииПользователя1СРасширеннаяПодсказка" id="641"/>
 																</InputField>
@@ -2333,6 +2341,85 @@
 														</UsualGroup>
 													</ChildItems>
 												</Page>
+												<Page name="ГруппаНастройки" id="843">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="844"/>
+													<ChildItems>
+														<UsualGroup name="Группа3" id="848">
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="849"/>
+															<ChildItems>
+																<CheckBoxField name="ОтображатьЗапрос" id="845">
+																	<DataPath>ОтображатьЗапрос</DataPath>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ОтображатьЗапросКонтекстноеМеню" id="846"/>
+																	<ExtendedTooltip name="ОтображатьЗапросРасширеннаяПодсказка" id="847"/>
+																</CheckBoxField>
+																<LabelDecoration name="ДекорацияОписаниеОтображенияЗапроса" id="850">
+																	<TextColor>win:WindowFrame</TextColor>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Отобразить запрос при получении 
+ошибки или дополнительной служебной 
+информации со стороны сервера</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ДекорацияОписаниеОтображенияЗапросаКонтекстноеМеню" id="851"/>
+																	<ExtendedTooltip name="ДекорацияОписаниеОтображенияЗапросаРасширеннаяПодсказка" id="852"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаСправочники1С" id="818">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Справочники</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Настройки по 1С</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ExtendedTooltip name="ГруппаСправочники1СРасширеннаяПодсказка" id="819"/>
+															<ChildItems>
+																<Button name="ОткрытьСписокАдминистраторовСервера1С" id="806">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.ОткрытьСписокАдминистраторовСервера1С</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Администраторы 1С</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="ОткрытьСписокАдминистраторовСервера1СРасширеннаяПодсказка" id="807"/>
+																</Button>
+																<Button name="ОткрытьСписокБаз1С" id="816">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.ОткрытьСписокБаз1С</CommandName>
+																	<ExtendedTooltip name="ОткрытьСписокБаз1СРасширеннаяПодсказка" id="817"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</Page>
 												<Page name="Группа1Информация" id="440">
 													<Title>
 														<v8:item>
@@ -2379,8 +2466,9 @@
 									</ToolTip>
 									<ExtendedTooltip name="ГруппаPostgreSQLРасширеннаяПодсказка" id="140"/>
 									<ChildItems>
-										<Pages name="Группа17" id="153">
-											<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="154"/>
+										<Pages name="ГруппаСтраницPostgreSQL" id="153">
+											<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+											<ExtendedTooltip name="ГруппаСтраницPostgreSQLРасширеннаяПодсказка" id="154"/>
 											<ChildItems>
 												<Page name="ГруппаАдминистраторСервераpostgres" id="56">
 													<Title>
@@ -2400,6 +2488,8 @@
 													<ChildItems>
 														<InputField name="ПарольСуперПользователя2" id="799">
 															<DataPath>ПарольСуперПользователя</DataPath>
+															<Visible>false</Visible>
+															<Enabled>false</Enabled>
 															<HorizontalStretch>false</HorizontalStretch>
 															<PasswordMode>true</PasswordMode>
 															<AutoMarkIncomplete>true</AutoMarkIncomplete>
@@ -2427,52 +2517,17 @@
 																			<DataPath>АдминистраторСервераPostgres</DataPath>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<DropListButton>true</DropListButton>
-																			<ChoiceList>
-																				<xr:Item>
-																					<xr:Presentation/>
-																					<xr:CheckState>0</xr:CheckState>
-																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																						<Presentation>
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>postgres</v8:content>
-																							</v8:item>
-																						</Presentation>
-																						<Value xsi:type="xs:string">postgres</Value>
-																					</xr:Value>
-																				</xr:Item>
-																				<xr:Item>
-																					<xr:Presentation/>
-																					<xr:CheckState>0</xr:CheckState>
-																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																						<Presentation>
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>admin</v8:content>
-																							</v8:item>
-																						</Presentation>
-																						<Value xsi:type="xs:string">admin</Value>
-																					</xr:Value>
-																				</xr:Item>
-																				<xr:Item>
-																					<xr:Presentation/>
-																					<xr:CheckState>0</xr:CheckState>
-																					<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																						<Presentation>
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>denis</v8:content>
-																							</v8:item>
-																						</Presentation>
-																						<Value xsi:type="xs:string">denis</Value>
-																					</xr:Value>
-																				</xr:Item>
-																			</ChoiceList>
+																			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																			<ContextMenu name="АдминистраторСервераPostgresКонтекстноеМеню" id="62"/>
 																			<ExtendedTooltip name="АдминистраторСервераPostgresРасширеннаяПодсказка" id="63"/>
+																			<Events>
+																				<Event name="ChoiceProcessing">АдминистраторСервераPostgresОбработкаВыбора</Event>
+																			</Events>
 																		</InputField>
 																		<InputField name="ПарольАдминистраторСервераpostgres" id="58">
 																			<DataPath>ПарольАдминистраторСервераPostgres</DataPath>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<PasswordMode>true</PasswordMode>
 																			<ContextMenu name="ПарольАдминистраторСервераpostgresКонтекстноеМеню" id="59"/>
@@ -2586,6 +2641,47 @@
 																		</Button>
 																	</ChildItems>
 																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</Page>
+												<Page name="ГруппаНастройкиPostgreSQL" id="853">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройки Postgre SQL</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаНастройкиPostgreSQLРасширеннаяПодсказка" id="854"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНастройкиPostgre" id="820">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Справочники</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ExtendedTooltip name="ГруппаНастройкиPostgreРасширеннаяПодсказка" id="821"/>
+															<ChildItems>
+																<Button name="ОткрытьСписокБазPostgre" id="814">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.ОткрытьСписокБазPostgre</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Базы Postgre SQL</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="ОткрытьСписокБазPostgreРасширеннаяПодсказка" id="815"/>
+																</Button>
 															</ChildItems>
 														</UsualGroup>
 													</ChildItems>
@@ -2884,10 +2980,6 @@
 												</LabelDecoration>
 											</ChildItems>
 										</UsualGroup>
-										<LabelDecoration name="Декорация5" id="808">
-											<ContextMenu name="Декорация5КонтекстноеМеню" id="809"/>
-											<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="810"/>
-										</LabelDecoration>
 										<UsualGroup name="ГруппаСправочники" id="804">
 											<Title>
 												<v8:item>
@@ -2905,73 +2997,6 @@
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСправочникиРасширеннаяПодсказка" id="805"/>
-											<ChildItems>
-												<UsualGroup name="ГруппаСправочники1С" id="818">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Настройки по 1С</v8:content>
-														</v8:item>
-													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Настройки по 1С</v8:content>
-														</v8:item>
-													</ToolTip>
-													<Group>Vertical</Group>
-													<Representation>None</Representation>
-													<ExtendedTooltip name="ГруппаСправочники1СРасширеннаяПодсказка" id="819"/>
-													<ChildItems>
-														<Button name="ОткрытьСписокАдминистраторовСервера1С" id="806">
-															<Type>UsualButton</Type>
-															<CommandName>Form.Command.ОткрытьСписокАдминистраторовСервера1С</CommandName>
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Администраторы 1С</v8:content>
-																</v8:item>
-															</Title>
-															<ExtendedTooltip name="ОткрытьСписокАдминистраторовСервера1СРасширеннаяПодсказка" id="807"/>
-														</Button>
-														<Button name="ОткрытьСписокБаз1С" id="816">
-															<Type>UsualButton</Type>
-															<CommandName>Form.Command.ОткрытьСписокБаз1С</CommandName>
-															<ExtendedTooltip name="ОткрытьСписокБаз1СРасширеннаяПодсказка" id="817"/>
-														</Button>
-													</ChildItems>
-												</UsualGroup>
-												<UsualGroup name="ГруппаНастройкиPostgre" id="820">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Настройки Postgre</v8:content>
-														</v8:item>
-													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Настройки Postgre</v8:content>
-														</v8:item>
-													</ToolTip>
-													<Group>Vertical</Group>
-													<Representation>None</Representation>
-													<ExtendedTooltip name="ГруппаНастройкиPostgreРасширеннаяПодсказка" id="821"/>
-													<ChildItems>
-														<Button name="ОткрытьСписокБазPostgre" id="814">
-															<Type>UsualButton</Type>
-															<CommandName>Form.Command.ОткрытьСписокБазPostgre</CommandName>
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Базы Postgre SQL</v8:content>
-																</v8:item>
-															</Title>
-															<ExtendedTooltip name="ОткрытьСписокБазPostgreРасширеннаяПодсказка" id="815"/>
-														</Button>
-													</ChildItems>
-												</UsualGroup>
-											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
 								</Page>
@@ -3497,11 +3522,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:CatalogRef.АдминистраторСервераPostgreSQL</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ПарольАдминистраторСервераPostgres" id="17">
@@ -4284,6 +4305,17 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>ТЗ результат выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображатьЗапрос" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать запрос</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
