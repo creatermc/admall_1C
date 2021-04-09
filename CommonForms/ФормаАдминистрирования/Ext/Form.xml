@@ -647,21 +647,21 @@
 											<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
 											<ExtendedTooltip name="ГруппаСтраницыUbuntuРасширеннаяПодсказка" id="170"/>
 											<ChildItems>
-												<Page name="ГруппаСтраница24Администрирование" id="171">
+												<Page name="ГруппаСтраницаUbuntuCommand" id="171">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Администрирование</v8:content>
+															<v8:content>Command</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Администрирование</v8:content>
+															<v8:content>Command</v8:content>
 														</v8:item>
 													</ToolTip>
 													<HorizontalStretch>true</HorizontalStretch>
-													<ExtendedTooltip name="ГруппаСтраница24АдминистрированиеРасширеннаяПодсказка" id="172"/>
+													<ExtendedTooltip name="ГруппаСтраницаUbuntuCommandРасширеннаяПодсказка" id="172"/>
 													<ChildItems>
 														<InputField name="ПарольСуперПользователя1" id="516">
 															<DataPath>ПарольСуперПользователя</DataPath>
@@ -717,20 +717,32 @@
 														</Button>
 													</ChildItems>
 												</Page>
-												<Page name="Группа57Информация" id="700">
+												<Page name="ГруппаUbuntuHelp" id="700">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Информация</v8:content>
+															<v8:content>help</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Информация</v8:content>
+															<v8:content>help</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="Группа57ИнформацияРасширеннаяПодсказка" id="701"/>
+													<ExtendedTooltip name="ГруппаUbuntuHelpРасширеннаяПодсказка" id="701"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация19" id="911">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>a</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Декорация19КонтекстноеМеню" id="912"/>
+															<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="913"/>
+														</LabelDecoration>
+													</ChildItems>
 												</Page>
 											</ChildItems>
 										</Pages>
@@ -862,13 +874,13 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Информация</v8:content>
+															<v8:content>help</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Информация</v8:content>
+															<v8:content>help</v8:content>
 														</v8:item>
 													</ToolTip>
 													<HorizontalStretch>true</HorizontalStretch>
@@ -1023,6 +1035,8 @@
 																		</InputField>
 																		<Button name="ПолучитьСписокКластеров1С5" id="471">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
 																			<Title>
 																				<v8:item>
@@ -1129,6 +1143,8 @@
 																		</InputField>
 																		<Button name="ПолучитьСписокБаз1С3" id="302">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
 																			<Title>
 																				<v8:item>
@@ -1224,6 +1240,7 @@
 																		<Button name="ПолучитьСтатусРегламентныхЗаданий" id="634">
 																			<Type>UsualButton</Type>
 																			<CommandName>Form.Command.ПолучитьСтатусРегламентныхЗаданий</CommandName>
+																			<BorderColor>style:AccentColor</BorderColor>
 																			<ExtendedTooltip name="ПолучитьСтатусРегламентныхЗаданийРасширеннаяПодсказка" id="635"/>
 																		</Button>
 																		<Button name="ИзменитьНастройкуБлокировки" id="304">
@@ -1279,6 +1296,8 @@
 																		</InputField>
 																		<Button name="ПолучитьСписокКластеров1С6" id="478">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
 																			<Title>
 																				<v8:item>
@@ -1387,6 +1406,8 @@
 																		</InputField>
 																		<Button name="ПолучитьСписокБаз1С" id="268">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
 																			<Title>
 																				<v8:item>
@@ -1507,36 +1528,36 @@
 														</UsualGroup>
 													</ChildItems>
 												</Page>
-												<Page name="Группа11" id="123">
+												<Page name="ГруппаРезервноеКопирование" id="123">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
 															<v8:content>Резервное копирование</v8:content>
 														</v8:item>
 													</Title>
-													<Group>AlwaysHorizontal</Group>
-													<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="124"/>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Резервное копирование</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаРезервноеКопированиеРасширеннаяПодсказка" id="124"/>
 													<ChildItems>
-														<UsualGroup name="Группа1" id="251">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Архивирование</v8:content>
-																</v8:item>
-															</Title>
-															<HorizontalStretch>false</HorizontalStretch>
+														<UsualGroup name="Группа78" id="922">
 															<Group>Vertical</Group>
 															<Representation>StrongSeparation</Representation>
-															<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="252"/>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа78РасширеннаяПодсказка" id="923"/>
 															<ChildItems>
 																<UsualGroup name="Группа37" id="480">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Сервер 1С</v8:content>
+																			<v8:content>Сервер</v8:content>
 																		</v8:item>
 																	</Title>
 																	<Group>AlwaysHorizontal</Group>
+																	<Representation>None</Representation>
 																	<ExtendedTooltip name="Группа37РасширеннаяПодсказка" id="481"/>
 																	<ChildItems>
 																		<InputField name="idКластераСервера1С7" id="482">
@@ -1548,17 +1569,18 @@
 																		</InputField>
 																		<Button name="ПолучитьСписокКластеров1С7" id="485">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
 																			<ExtendedTooltip name="ПолучитьСписокКластеров1С7РасширеннаяПодсказка" id="486"/>
 																		</Button>
 																	</ChildItems>
 																</UsualGroup>
 																<UsualGroup name="ГруппаАдминистраторСервера1С3" id="306">
-																	<Visible>false</Visible>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Администратор сервера 1С</v8:content>
+																			<v8:content>Администратор сервера</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ToolTip>
@@ -1569,6 +1591,7 @@
 																	</ToolTip>
 																	<Shortcut>Ctrl+S</Shortcut>
 																	<Group>Vertical</Group>
+																	<Representation>None</Representation>
 																	<ExtendedTooltip name="ГруппаАдминистраторСервера1С3РасширеннаяПодсказка" id="307"/>
 																	<ChildItems>
 																		<InputField name="АдминистраторСервера1С3" id="308">
@@ -1579,6 +1602,7 @@
 																					<v8:content>Учетная запись</v8:content>
 																				</v8:item>
 																			</Title>
+																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<ContextMenu name="АдминистраторСервера1С3КонтекстноеМеню" id="309"/>
 																			<ExtendedTooltip name="АдминистраторСервера1С3РасширеннаяПодсказка" id="310"/>
@@ -1589,6 +1613,8 @@
 																		</InputField>
 																		<InputField name="ПарольАдминистратораСервера1С3" id="311">
 																			<DataPath>ПарольАдминистратораСервера1С</DataPath>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
@@ -1603,11 +1629,19 @@
 																		</InputField>
 																	</ChildItems>
 																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа79" id="924">
+															<Group>Vertical</Group>
+															<Representation>StrongSeparation</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа79РасширеннаяПодсказка" id="925"/>
+															<ChildItems>
 																<UsualGroup name="ГруппаБаза1С1" id="212">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>База 1С</v8:content>
+																			<v8:content>База</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ToolTip>
@@ -1630,6 +1664,8 @@
 																		</InputField>
 																		<Button name="ПолучитьСписокБаз1С1" id="280">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
 																			<ExtendedTooltip name="ПолучитьСписокБаз1С1РасширеннаяПодсказка" id="281"/>
 																		</Button>
@@ -1639,13 +1675,13 @@
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Администратор базы 1С</v8:content>
+																			<v8:content>Администратор базы</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ToolTip>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Администратор базы1 С</v8:content>
+																			<v8:content>Администратор базы</v8:content>
 																		</v8:item>
 																	</ToolTip>
 																	<HorizontalStretch>false</HorizontalStretch>
@@ -1655,13 +1691,19 @@
 																	<ChildItems>
 																		<InputField name="АдминистраторБазы1С2" id="262">
 																			<DataPath>АдминистраторБазы1С</DataPath>
+																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<AutoMarkIncomplete>true</AutoMarkIncomplete>
 																			<ContextMenu name="АдминистраторБазы1С2КонтекстноеМеню" id="263"/>
 																			<ExtendedTooltip name="АдминистраторБазы1С2РасширеннаяПодсказка" id="264"/>
+																			<Events>
+																				<Event name="ChoiceProcessing">АдминистраторБазы1С2ОбработкаВыбора</Event>
+																			</Events>
 																		</InputField>
 																		<InputField name="ПарольАдминистратораБазы1С2" id="265">
 																			<DataPath>ПарольАдминистратораБазы1С</DataPath>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<PasswordMode>true</PasswordMode>
 																			<AutoMarkIncomplete>true</AutoMarkIncomplete>
@@ -1670,13 +1712,33 @@
 																		</InputField>
 																	</ChildItems>
 																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа1" id="251">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Архивирование</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalStretch>false</HorizontalStretch>
+															<Group>Vertical</Group>
+															<Representation>StrongSeparation</Representation>
+															<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="252"/>
+															<ChildItems>
 																<UsualGroup name="Группа2" id="278">
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
+																	<EnableContentChange>true</EnableContentChange>
 																	<Group>Vertical</Group>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="279"/>
 																	<ChildItems>
 																		<UsualGroup name="Группа12" id="660">
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
+																			<EnableContentChange>true</EnableContentChange>
 																			<Group>AlwaysHorizontal</Group>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
@@ -1684,6 +1746,8 @@
 																			<ChildItems>
 																				<CheckBoxField name="АрхивироватьCFФайл" id="206">
 																					<DataPath>АрхивироватьCFФайл</DataPath>
+																					<Visible>false</Visible>
+																					<Enabled>false</Enabled>
 																					<Title>
 																						<v8:item>
 																							<v8:lang>ru</v8:lang>
@@ -1699,6 +1763,8 @@
 																				</CheckBoxField>
 																				<InputField name="ПутьСохраненияФайлаCF" id="657">
 																					<DataPath>ПутьСохраненияФайлаCF</DataPath>
+																					<Visible>false</Visible>
+																					<Enabled>false</Enabled>
 																					<TitleLocation>Right</TitleLocation>
 																					<ContextMenu name="ПутьСохраненияФайлаCFКонтекстноеМеню" id="658"/>
 																					<ExtendedTooltip name="ПутьСохраненияФайлаCFРасширеннаяПодсказка" id="659"/>
@@ -1706,6 +1772,9 @@
 																			</ChildItems>
 																		</UsualGroup>
 																		<UsualGroup name="Группа24" id="665">
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
+																			<EnableContentChange>true</EnableContentChange>
 																			<Group>AlwaysHorizontal</Group>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
@@ -1713,6 +1782,8 @@
 																			<ChildItems>
 																				<CheckBoxField name="АрхивироватьDTФайл" id="209">
 																					<DataPath>АрхивироватьDTФайл</DataPath>
+																					<Visible>false</Visible>
+																					<Enabled>false</Enabled>
 																					<Title>
 																						<v8:item>
 																							<v8:lang>ru</v8:lang>
@@ -1728,6 +1799,8 @@
 																				</CheckBoxField>
 																				<InputField name="ПутьСохраненияФайлаDT" id="662">
 																					<DataPath>ПутьСохраненияФайлаDT</DataPath>
+																					<Visible>false</Visible>
+																					<Enabled>false</Enabled>
 																					<TitleLocation>Right</TitleLocation>
 																					<ContextMenu name="ПутьСохраненияФайлаDTКонтекстноеМеню" id="663"/>
 																					<ExtendedTooltip name="ПутьСохраненияФайлаDTРасширеннаяПодсказка" id="664"/>
@@ -1736,6 +1809,56 @@
 																		</UsualGroup>
 																	</ChildItems>
 																</UsualGroup>
+																<Button name="ЗагрузитьФайл1" id="670">
+																	<Type>UsualButton</Type>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
+																	<CommandName>Form.Command.ЗагрузитьФайл</CommandName>
+																	<ExtendedTooltip name="ЗагрузитьФайл1РасширеннаяПодсказка" id="671"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа80" id="929">
+															<Group>AlwaysHorizontal</Group>
+															<Representation>StrongSeparation</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа80РасширеннаяПодсказка" id="930"/>
+															<ChildItems>
+																<RadioButtonField name="ВариантВыгрузкиРезервногоКопирования" id="926">
+																	<DataPath>ВариантВыгрузкиРезервногоКопирования</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>*.cf file</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">cf</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>*.dt file</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">dt</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ВариантВыгрузкиРезервногоКопированияКонтекстноеМеню" id="927"/>
+																	<ExtendedTooltip name="ВариантВыгрузкиРезервногоКопированияРасширеннаяПодсказка" id="928"/>
+																</RadioButtonField>
 																<Button name="ВыгрузитьФайл" id="298">
 																	<Type>UsualButton</Type>
 																	<Width>10</Width>
@@ -1747,11 +1870,6 @@
 																		</v8:item>
 																	</Title>
 																	<ExtendedTooltip name="ВыгрузитьФайлРасширеннаяПодсказка" id="299"/>
-																</Button>
-																<Button name="ЗагрузитьФайл1" id="670">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ЗагрузитьФайл</CommandName>
-																	<ExtendedTooltip name="ЗагрузитьФайл1РасширеннаяПодсказка" id="671"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
@@ -1787,6 +1905,8 @@
 																</InputField>
 																<Button name="ПолучитьСписокКластеров1С4" id="431">
 																	<Type>UsualButton</Type>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
 																	<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
 																	<ExtendedTooltip name="ПолучитьСписокКластеров1С4РасширеннаяПодсказка" id="432"/>
 																</Button>
@@ -1866,16 +1986,11 @@
 													</ToolTip>
 													<ExtendedTooltip name="ОбновлениеРасширеннаяПодсказка" id="349"/>
 													<ChildItems>
-														<UsualGroup name="Группа27" id="253">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Обновление</v8:content>
-																</v8:item>
-															</Title>
+														<UsualGroup name="Группа75" id="903">
 															<Group>Vertical</Group>
 															<Representation>StrongSeparation</Representation>
-															<ExtendedTooltip name="Группа27РасширеннаяПодсказка" id="254"/>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа75РасширеннаяПодсказка" id="904"/>
 															<ChildItems>
 																<UsualGroup name="Группа31" id="419">
 																	<Title>
@@ -1885,6 +2000,7 @@
 																		</v8:item>
 																	</Title>
 																	<Group>AlwaysHorizontal</Group>
+																	<Representation>None</Representation>
 																	<ExtendedTooltip name="Группа31РасширеннаяПодсказка" id="420"/>
 																	<ChildItems>
 																		<InputField name="idКластераСервера1С3" id="421">
@@ -1896,6 +2012,8 @@
 																		</InputField>
 																		<Button name="ПолучитьСписокКластеров1С3" id="424">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
 																			<ExtendedTooltip name="ПолучитьСписокКластеров1С3РасширеннаяПодсказка" id="425"/>
 																		</Button>
@@ -1916,6 +2034,7 @@
 																	</ToolTip>
 																	<Shortcut>Ctrl+S</Shortcut>
 																	<Group>Vertical</Group>
+																	<Representation>None</Representation>
 																	<ExtendedTooltip name="ГруппаАдминистраторСервера1С4РасширеннаяПодсказка" id="315"/>
 																	<ChildItems>
 																		<InputField name="АдминистраторСервера1С4" id="316">
@@ -1926,16 +2045,18 @@
 																					<v8:content>Учетная запись</v8:content>
 																				</v8:item>
 																			</Title>
+																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<ContextMenu name="АдминистраторСервера1С4КонтекстноеМеню" id="317"/>
 																			<ExtendedTooltip name="АдминистраторСервера1С4РасширеннаяПодсказка" id="318"/>
 																			<Events>
-																				<Event name="TextEditEnd">АдминистраторСервера1СОкончаниеВводаТекста</Event>
-																				<Event name="ChoiceProcessing">АдминистраторСервера1СОбработкаВыбора</Event>
+																				<Event name="ChoiceProcessing">АдминистраторСервера1С4ОбработкаВыбора</Event>
 																			</Events>
 																		</InputField>
 																		<InputField name="ПарольАдминистратораСервера1С4" id="319">
 																			<DataPath>ПарольАдминистратораСервера1С</DataPath>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
@@ -1950,6 +2071,14 @@
 																		</InputField>
 																	</ChildItems>
 																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа76" id="905">
+															<Group>Vertical</Group>
+															<Representation>StrongSeparation</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа76РасширеннаяПодсказка" id="906"/>
+															<ChildItems>
 																<UsualGroup name="ГруппаБаза1С4" id="255">
 																	<Title>
 																		<v8:item>
@@ -1985,6 +2114,8 @@
 																		</InputField>
 																		<Button name="ПолучитьСписокБаз1С2" id="282">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
 																			<ExtendedTooltip name="ПолучитьСписокБаз1С2РасширеннаяПодсказка" id="283"/>
 																		</Button>
@@ -2009,12 +2140,18 @@
 																	<ChildItems>
 																		<InputField name="АдминистраторБазы1С3" id="295">
 																			<DataPath>АдминистраторБазы1С</DataPath>
+																			<TitleLocation>None</TitleLocation>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<ContextMenu name="АдминистраторБазы1С3КонтекстноеМеню" id="296"/>
 																			<ExtendedTooltip name="АдминистраторБазы1С3РасширеннаяПодсказка" id="297"/>
+																			<Events>
+																				<Event name="ChoiceProcessing">АдминистраторБазы1С3ОбработкаВыбора</Event>
+																			</Events>
 																		</InputField>
 																		<InputField name="ПарольАдминистратораБазы1С3" id="292">
 																			<DataPath>ПарольАдминистратораБазы1С</DataPath>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<HorizontalStretch>false</HorizontalStretch>
 																			<PasswordMode>true</PasswordMode>
 																			<ContextMenu name="ПарольАдминистратораБазы1С3КонтекстноеМеню" id="293"/>
@@ -2022,6 +2159,19 @@
 																		</InputField>
 																	</ChildItems>
 																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="Группа27" id="253">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Обновление</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Vertical</Group>
+															<Representation>StrongSeparation</Representation>
+															<ExtendedTooltip name="Группа27РасширеннаяПодсказка" id="254"/>
+															<ChildItems>
 																<UsualGroup name="ГруппаФайлы" id="684">
 																	<Title>
 																		<v8:item>
@@ -2196,6 +2346,8 @@
 																		</InputField>
 																		<Button name="ПолучитьСписокКластеров1С2" id="417">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
 																			<Title>
 																				<v8:item>
@@ -2303,6 +2455,8 @@
 																		</InputField>
 																		<Button name="ПолучитьСписокБаз1С4" id="365">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
 																			<Title>
 																				<v8:item>
@@ -2608,7 +2762,8 @@
 																			<v8:lang>ru</v8:lang>
 																			<v8:content>Отобразить запрос при получении 
 ошибки или дополнительной служебной 
-информации со стороны сервера</v8:content>
+информации со стороны сервера в 
+окне "Результат выполнения"</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ContextMenu name="ДекорацияОписаниеОтображенияЗапросаКонтекстноеМеню" id="851"/>
@@ -2633,6 +2788,36 @@
 															<Representation>None</Representation>
 															<ExtendedTooltip name="ГруппаСправочники1СРасширеннаяПодсказка" id="819"/>
 															<ChildItems>
+																<UsualGroup name="Группа11" id="916">
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>StrongSeparation</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="917"/>
+																	<ChildItems>
+																		<Button name="ОткрытьСписокСерверов1С" id="909">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ОткрытьСписокСерверов1С</CommandName>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Серверы 1С</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="ОткрытьСписокСерверов1СРасширеннаяПодсказка" id="910"/>
+																		</Button>
+																		<Button name="ПолучитьСписокКластеров1С" id="914">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Обновить</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="ПолучитьСписокКластеров1СРасширеннаяПодсказка" id="915"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
 																<Button name="ОткрытьСписокАдминистраторовСервера1С" id="806">
 																	<Type>UsualButton</Type>
 																	<CommandName>Form.Command.ОткрытьСписокАдминистраторовСервера1С</CommandName>
@@ -2644,11 +2829,30 @@
 																	</Title>
 																	<ExtendedTooltip name="ОткрытьСписокАдминистраторовСервера1СРасширеннаяПодсказка" id="807"/>
 																</Button>
-																<Button name="ОткрытьСписокБаз1С" id="816">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ОткрытьСписокБаз1С</CommandName>
-																	<ExtendedTooltip name="ОткрытьСписокБаз1СРасширеннаяПодсказка" id="817"/>
-																</Button>
+																<UsualGroup name="Группа77" id="918">
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>StrongSeparation</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа77РасширеннаяПодсказка" id="919"/>
+																	<ChildItems>
+																		<Button name="ОткрытьСписокБаз1С" id="816">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ОткрытьСписокБаз1С</CommandName>
+																			<ExtendedTooltip name="ОткрытьСписокБаз1СРасширеннаяПодсказка" id="817"/>
+																		</Button>
+																		<Button name="ПолучитьСписокБаз1С6" id="920">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Обновить</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="ПолучитьСписокБаз1С6РасширеннаяПодсказка" id="921"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
 															</ChildItems>
 														</UsualGroup>
 													</ChildItems>
@@ -4561,6 +4765,15 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ВариантВыгрузкиРезервногоКопирования" id="68">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВыполнитьСформированныйСкрипт" id="4">
@@ -5481,7 +5694,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть список администраторов сервера 1С</v8:content>
+					<v8:content>Администраторы сервера 1С</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
