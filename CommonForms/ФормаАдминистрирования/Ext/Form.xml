@@ -1879,12 +1879,15 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Перезагрузка</v8:content>
+															<v8:content>Перезапуск</v8:content>
 														</v8:item>
 													</Title>
 													<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="331"/>
 													<ChildItems>
 														<UsualGroup name="Группа32" id="426">
+															<Visible>false</Visible>
+															<Enabled>false</Enabled>
+															<EnableContentChange>true</EnableContentChange>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -1897,6 +1900,8 @@
 															<ChildItems>
 																<InputField name="idКластераСервера1С4" id="428">
 																	<DataPath>idКластераСервера1С</DataPath>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
 																	<TitleLocation>None</TitleLocation>
 																	<HorizontalStretch>false</HorizontalStretch>
 																	<ChoiceButton>true</ChoiceButton>
@@ -1924,7 +1929,7 @@
 														</InputField>
 														<UsualGroup name="Группа8" id="344">
 															<Group>AlwaysHorizontal</Group>
-															<Representation>NormalSeparation</Representation>
+															<Representation>StrongSeparation</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="345"/>
 															<ChildItems>
@@ -2470,11 +2475,19 @@
 																</UsualGroup>
 															</ChildItems>
 														</UsualGroup>
-														<Button name="УдалитьБазу1С" id="367">
-															<Type>UsualButton</Type>
-															<CommandName>Form.Command.УдалитьБазу1С</CommandName>
-															<ExtendedTooltip name="УдалитьБазу1СРасширеннаяПодсказка" id="368"/>
-														</Button>
+														<UsualGroup name="Группа19" id="931">
+															<Group>AlwaysHorizontal</Group>
+															<Representation>StrongSeparation</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="932"/>
+															<ChildItems>
+																<Button name="УдалитьБазу1С" id="367">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.УдалитьБазу1С</CommandName>
+																	<ExtendedTooltip name="УдалитьБазу1СРасширеннаяПодсказка" id="368"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
 													</ChildItems>
 												</Page>
 												<Page name="Подробно" id="369">
@@ -2818,17 +2831,25 @@
 																		</Button>
 																	</ChildItems>
 																</UsualGroup>
-																<Button name="ОткрытьСписокАдминистраторовСервера1С" id="806">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ОткрытьСписокАдминистраторовСервера1С</CommandName>
-																	<Title>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Администраторы 1С</v8:content>
-																		</v8:item>
-																	</Title>
-																	<ExtendedTooltip name="ОткрытьСписокАдминистраторовСервера1СРасширеннаяПодсказка" id="807"/>
-																</Button>
+																<UsualGroup name="Группа81" id="933">
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>StrongSeparation</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа81РасширеннаяПодсказка" id="934"/>
+																	<ChildItems>
+																		<Button name="ОткрытьСписокАдминистраторовСервера1С" id="806">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ОткрытьСписокАдминистраторовСервера1С</CommandName>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Администраторы 1С</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="ОткрытьСписокАдминистраторовСервера1СРасширеннаяПодсказка" id="807"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
 																<UsualGroup name="Группа77" id="918">
 																	<Group>AlwaysHorizontal</Group>
 																	<Representation>StrongSeparation</Representation>
@@ -2911,13 +2932,13 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Администрирование</v8:content>
+															<v8:content>Command</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Администратор сервера postgres</v8:content>
+															<v8:content>Комманды сервера Postgre SQL</v8:content>
 														</v8:item>
 													</ToolTip>
 													<HorizontalStretch>true</HorizontalStretch>
@@ -3121,6 +3142,33 @@
 																</Button>
 															</ChildItems>
 														</UsualGroup>
+													</ChildItems>
+												</Page>
+												<Page name="ГруппаPostgreHelp" id="935">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>help</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>help</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаPostgreHelpРасширеннаяПодсказка" id="936"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация20" id="937">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>a</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Декорация20КонтекстноеМеню" id="938"/>
+															<ExtendedTooltip name="Декорация20РасширеннаяПодсказка" id="939"/>
+														</LabelDecoration>
 													</ChildItems>
 												</Page>
 											</ChildItems>
@@ -3473,6 +3521,9 @@
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ОтобразитьРезультатВыполненияКонтекстноеМеню" id="831"/>
 									<ExtendedTooltip name="ОтобразитьРезультатВыполненияРасширеннаяПодсказка" id="832"/>
+									<Events>
+										<Event name="OnChange">ОтобразитьРезультатВыполненияПриИзменении</Event>
+									</Events>
 								</CheckBoxField>
 								<CheckBoxField name="ОтобразитьОкноТЗРезультатВыполнения" id="833">
 									<DataPath>ОтобразитьОкноТЗРезультатВыполнения</DataPath>
@@ -3499,11 +3550,11 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа26РасширеннаяПодсказка" id="205"/>
 					<ChildItems>
-						<UsualGroup name="Группа19" id="726">
+						<UsualGroup name="ГруппаРезультатВыполнения" id="726">
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="727"/>
+							<ExtendedTooltip name="ГруппаРезультатВыполненияРасширеннаяПодсказка" id="727"/>
 							<ChildItems>
 								<UsualGroup name="Группа5" id="193">
 									<HorizontalStretch>true</HorizontalStretch>
@@ -4921,7 +4972,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Перезагрузка сервера1 С</v8:content>
+					<v8:content>Перезагрузка сервера 1С</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ПерезагрузкаСервера1С</Action>
@@ -4936,7 +4987,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Остановка сервера1 С</v8:content>
+					<v8:content>Остановка сервера 1С</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ОстановкаСервера1С</Action>
@@ -4951,7 +5002,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Запуск сервера1 С</v8:content>
+					<v8:content>Запуск сервера 1С</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ЗапускСервера1С</Action>
