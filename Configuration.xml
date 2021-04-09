@@ -186,6 +186,7 @@
 			<CommonForm>ФормаРезультатВыполнения</CommonForm>
 			<CommonForm>ФормаНаименованияБазы</CommonForm>
 			<CommonForm>ФормаЗапросПароля</CommonForm>
+			<CommonForm>ФормаРезультатВыполненияТЧ</CommonForm>
 			<Catalog>СписокБаз</Catalog>
 			<Catalog>ПолучательПисьма</Catalog>
 			<Catalog>Сервер1С</Catalog>

@@ -799,6 +799,7 @@
 																	<Type>UsualButton</Type>
 																	<Width>8</Width>
 																	<CommandName>Form.Command.СтатусКонтейнераDocker</CommandName>
+																	<BorderColor>style:AccentColor</BorderColor>
 																	<ExtendedTooltip name="СтатусКонтейнераDockerРасширеннаяПодсказка" id="614"/>
 																</Button>
 															</ChildItems>
@@ -864,6 +865,7 @@
 																<Button name="СтатусСервисаDocker" id="617">
 																	<Type>UsualButton</Type>
 																	<CommandName>Form.Command.СтатусСервисаDocker</CommandName>
+																	<BorderColor>style:AccentColor</BorderColor>
 																	<ExtendedTooltip name="СтатусСервисаDockerРасширеннаяПодсказка" id="618"/>
 																</Button>
 															</ChildItems>
@@ -973,6 +975,8 @@
 									<ChildItems>
 										<UsualGroup name="Группа15" id="146">
 											<Visible>false</Visible>
+											<Enabled>false</Enabled>
+											<EnableContentChange>true</EnableContentChange>
 											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
@@ -982,6 +986,8 @@
 											<ChildItems>
 												<LabelField name="ИнформацияЗаполнения" id="395">
 													<DataPath>ИнформацияЗаполнения</DataPath>
+													<Visible>false</Visible>
+													<Enabled>false</Enabled>
 													<TitleLocation>None</TitleLocation>
 													<Border width="1">
 														<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
@@ -2741,6 +2747,125 @@
 														</UsualGroup>
 													</ChildItems>
 												</Page>
+												<Page name="ГруппаУведомления" id="564">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Уведомления</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Уведомления</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ГруппаУведомленияРасширеннаяПодсказка" id="565"/>
+													<ChildItems>
+														<Button name="Отправить" id="566">
+															<Type>UsualButton</Type>
+															<Width>10</Width>
+															<CommandName>Form.Command.ОтправитьПисьмоУведомление</CommandName>
+															<ExtendedTooltip name="ОтправитьРасширеннаяПодсказка" id="567"/>
+														</Button>
+														<InputField name="База" id="568">
+															<DataPath>База</DataPath>
+															<ContextMenu name="БазаКонтекстноеМеню" id="569"/>
+															<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="570"/>
+														</InputField>
+														<Button name="ЭлАдресТехническойПочты" id="571">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ЭлАдресТехническойПочты</CommandName>
+															<ExtendedTooltip name="ЭлАдресТехническойПочтыРасширеннаяПодсказка" id="572"/>
+														</Button>
+														<Table name="СписокПолучателейПисьма" id="573">
+															<Representation>List</Representation>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<MaxHeight>4</MaxHeight>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<VerticalStretch>false</VerticalStretch>
+															<EnableStartDrag>true</EnableStartDrag>
+															<EnableDrag>true</EnableDrag>
+															<DataPath>СписокПолучателейПисьма</DataPath>
+															<CommandSet>
+																<ExcludedCommand>CancelSearch</ExcludedCommand>
+																<ExcludedCommand>Copy</ExcludedCommand>
+																<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+																<ExcludedCommand>EndEdit</ExcludedCommand>
+																<ExcludedCommand>Find</ExcludedCommand>
+																<ExcludedCommand>MoveDown</ExcludedCommand>
+																<ExcludedCommand>MoveUp</ExcludedCommand>
+																<ExcludedCommand>OutputList</ExcludedCommand>
+																<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+																<ExcludedCommand>SelectAll</ExcludedCommand>
+																<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+																<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+																<ExcludedCommand>SortListAsc</ExcludedCommand>
+																<ExcludedCommand>SortListDesc</ExcludedCommand>
+															</CommandSet>
+															<RowFilter xsi:nil="true"/>
+															<ContextMenu name="СписокПолучателейПисьмаКонтекстноеМеню" id="574"/>
+															<AutoCommandBar name="СписокПолучателейПисьмаКоманднаяПанель" id="575"/>
+															<ExtendedTooltip name="СписокПолучателейПисьмаРасширеннаяПодсказка" id="576"/>
+															<SearchStringAddition name="СписокПолучателейПисьмаСтрокаПоиска" id="577">
+																<AdditionSource>
+																	<Item>СписокПолучателейПисьма</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="СписокПолучателейПисьмаСтрокаПоискаКонтекстноеМеню" id="578"/>
+																<ExtendedTooltip name="СписокПолучателейПисьмаСтрокаПоискаРасширеннаяПодсказка" id="579"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="СписокПолучателейПисьмаСостояниеПросмотра" id="580">
+																<AdditionSource>
+																	<Item>СписокПолучателейПисьма</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="СписокПолучателейПисьмаСостояниеПросмотраКонтекстноеМеню" id="581"/>
+																<ExtendedTooltip name="СписокПолучателейПисьмаСостояниеПросмотраРасширеннаяПодсказка" id="582"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="СписокПолучателейПисьмаУправлениеПоиском" id="583">
+																<AdditionSource>
+																	<Item>СписокПолучателейПисьма</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="СписокПолучателейПисьмаУправлениеПоискомКонтекстноеМеню" id="584"/>
+																<ExtendedTooltip name="СписокПолучателейПисьмаУправлениеПоискомРасширеннаяПодсказка" id="585"/>
+															</SearchControlAddition>
+															<Events>
+																<Event name="OnEditEnd">СписокПолучателейПисьмаПриОкончанииРедактирования</Event>
+																<Event name="OnChange">СписокПолучателейПисьмаПриИзменении</Event>
+															</Events>
+															<ChildItems>
+																<InputField name="СписокПолучателейПисьмаНаименованиеПолучателя" id="586">
+																	<DataPath>СписокПолучателейПисьма.НаименованиеПолучателя</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="СписокПолучателейПисьмаНаименованиеПолучателяКонтекстноеМеню" id="587"/>
+																	<ExtendedTooltip name="СписокПолучателейПисьмаНаименованиеПолучателяРасширеннаяПодсказка" id="588"/>
+																</InputField>
+																<InputField name="СписокПолучателейПисьмаЭлАдресПолучателя" id="589">
+																	<DataPath>СписокПолучателейПисьма.ЭлАдресПолучателя</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="СписокПолучателейПисьмаЭлАдресПолучателяКонтекстноеМеню" id="590"/>
+																	<ExtendedTooltip name="СписокПолучателейПисьмаЭлАдресПолучателяРасширеннаяПодсказка" id="591"/>
+																</InputField>
+															</ChildItems>
+														</Table>
+														<TextDocumentField name="ТекстЭлПисьма" id="672">
+															<DataPath>ТекстЭлПисьма</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>"Тело" письма</v8:content>
+																</v8:item>
+															</Title>
+															<Height>4</Height>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<MaxHeight>1</MaxHeight>
+															<ContextMenu name="ТекстЭлПисьмаКонтекстноеМеню" id="673"/>
+															<ExtendedTooltip name="ТекстЭлПисьмаРасширеннаяПодсказка" id="674"/>
+														</TextDocumentField>
+													</ChildItems>
+												</Page>
 												<Page name="ГруппаНастройки" id="843">
 													<Title>
 														<v8:item>
@@ -3309,6 +3434,12 @@
 													<ExtendedTooltip name="ГруппаСтраница25РасширеннаяПодсказка" id="189"/>
 													<ChildItems>
 														<LabelDecoration name="Декорация7" id="190">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>a</v8:content>
+																</v8:item>
+															</Title>
 															<ContextMenu name="Декорация7КонтекстноеМеню" id="191"/>
 															<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="192"/>
 														</LabelDecoration>
@@ -3316,125 +3447,6 @@
 												</Page>
 											</ChildItems>
 										</Pages>
-									</ChildItems>
-								</Page>
-								<Page name="ГруппаУведомления" id="564">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Уведомления</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Уведомления</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="ГруппаУведомленияРасширеннаяПодсказка" id="565"/>
-									<ChildItems>
-										<Button name="Отправить" id="566">
-											<Type>UsualButton</Type>
-											<Width>10</Width>
-											<CommandName>Form.Command.ОтправитьПисьмоУведомление</CommandName>
-											<ExtendedTooltip name="ОтправитьРасширеннаяПодсказка" id="567"/>
-										</Button>
-										<InputField name="База" id="568">
-											<DataPath>База</DataPath>
-											<ContextMenu name="БазаКонтекстноеМеню" id="569"/>
-											<ExtendedTooltip name="БазаРасширеннаяПодсказка" id="570"/>
-										</InputField>
-										<Button name="ЭлАдресТехническойПочты" id="571">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ЭлАдресТехническойПочты</CommandName>
-											<ExtendedTooltip name="ЭлАдресТехническойПочтыРасширеннаяПодсказка" id="572"/>
-										</Button>
-										<Table name="СписокПолучателейПисьма" id="573">
-											<Representation>List</Representation>
-											<AutoMaxHeight>false</AutoMaxHeight>
-											<MaxHeight>4</MaxHeight>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<VerticalStretch>false</VerticalStretch>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
-											<DataPath>СписокПолучателейПисьма</DataPath>
-											<CommandSet>
-												<ExcludedCommand>CancelSearch</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>Find</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>OutputList</ExcludedCommand>
-												<ExcludedCommand>SearchEverywhere</ExcludedCommand>
-												<ExcludedCommand>SelectAll</ExcludedCommand>
-												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-												<ExcludedCommand>SortListAsc</ExcludedCommand>
-												<ExcludedCommand>SortListDesc</ExcludedCommand>
-											</CommandSet>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="СписокПолучателейПисьмаКонтекстноеМеню" id="574"/>
-											<AutoCommandBar name="СписокПолучателейПисьмаКоманднаяПанель" id="575"/>
-											<ExtendedTooltip name="СписокПолучателейПисьмаРасширеннаяПодсказка" id="576"/>
-											<SearchStringAddition name="СписокПолучателейПисьмаСтрокаПоиска" id="577">
-												<AdditionSource>
-													<Item>СписокПолучателейПисьма</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="СписокПолучателейПисьмаСтрокаПоискаКонтекстноеМеню" id="578"/>
-												<ExtendedTooltip name="СписокПолучателейПисьмаСтрокаПоискаРасширеннаяПодсказка" id="579"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="СписокПолучателейПисьмаСостояниеПросмотра" id="580">
-												<AdditionSource>
-													<Item>СписокПолучателейПисьма</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="СписокПолучателейПисьмаСостояниеПросмотраКонтекстноеМеню" id="581"/>
-												<ExtendedTooltip name="СписокПолучателейПисьмаСостояниеПросмотраРасширеннаяПодсказка" id="582"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="СписокПолучателейПисьмаУправлениеПоиском" id="583">
-												<AdditionSource>
-													<Item>СписокПолучателейПисьма</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="СписокПолучателейПисьмаУправлениеПоискомКонтекстноеМеню" id="584"/>
-												<ExtendedTooltip name="СписокПолучателейПисьмаУправлениеПоискомРасширеннаяПодсказка" id="585"/>
-											</SearchControlAddition>
-											<Events>
-												<Event name="OnEditEnd">СписокПолучателейПисьмаПриОкончанииРедактирования</Event>
-												<Event name="OnChange">СписокПолучателейПисьмаПриИзменении</Event>
-											</Events>
-											<ChildItems>
-												<InputField name="СписокПолучателейПисьмаНаименованиеПолучателя" id="586">
-													<DataPath>СписокПолучателейПисьма.НаименованиеПолучателя</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СписокПолучателейПисьмаНаименованиеПолучателяКонтекстноеМеню" id="587"/>
-													<ExtendedTooltip name="СписокПолучателейПисьмаНаименованиеПолучателяРасширеннаяПодсказка" id="588"/>
-												</InputField>
-												<InputField name="СписокПолучателейПисьмаЭлАдресПолучателя" id="589">
-													<DataPath>СписокПолучателейПисьма.ЭлАдресПолучателя</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="СписокПолучателейПисьмаЭлАдресПолучателяКонтекстноеМеню" id="590"/>
-													<ExtendedTooltip name="СписокПолучателейПисьмаЭлАдресПолучателяРасширеннаяПодсказка" id="591"/>
-												</InputField>
-											</ChildItems>
-										</Table>
-										<TextDocumentField name="ТекстЭлПисьма" id="672">
-											<DataPath>ТекстЭлПисьма</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>"Тело" письма</v8:content>
-												</v8:item>
-											</Title>
-											<Height>4</Height>
-											<AutoMaxHeight>false</AutoMaxHeight>
-											<MaxHeight>1</MaxHeight>
-											<ContextMenu name="ТекстЭлПисьмаКонтекстноеМеню" id="673"/>
-											<ExtendedTooltip name="ТекстЭлПисьмаРасширеннаяПодсказка" id="674"/>
-										</TextDocumentField>
 									</ChildItems>
 								</Page>
 								<Page name="Группа42" id="675">
@@ -3510,7 +3522,7 @@
 									<Title formatted="false">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Отображать доп. информацию:</v8:content>
+											<v8:content>Отображать:</v8:content>
 										</v8:item>
 									</Title>
 									<ContextMenu name="ДекорацияПоИнформацииКонтекстноеМеню" id="837"/>
@@ -3527,9 +3539,18 @@
 								</CheckBoxField>
 								<CheckBoxField name="ОтобразитьОкноТЗРезультатВыполнения" id="833">
 									<DataPath>ОтобразитьОкноТЗРезультатВыполнения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таблица значений</v8:content>
+										</v8:item>
+									</Title>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ОтобразитьОкноТЗРезультатВыполненияКонтекстноеМеню" id="834"/>
 									<ExtendedTooltip name="ОтобразитьОкноТЗРезультатВыполненияРасширеннаяПодсказка" id="835"/>
+									<Events>
+										<Event name="OnChange">ОтобразитьОкноТЗРезультатВыполненияПриИзменении</Event>
+									</Events>
 								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
@@ -3596,11 +3617,11 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="Группа39" id="732">
+						<UsualGroup name="ГруппаРезультатВыполненияТЧ" id="732">
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа39РасширеннаяПодсказка" id="733"/>
+							<ExtendedTooltip name="ГруппаРезультатВыполненияТЧРасширеннаяПодсказка" id="733"/>
 							<ChildItems>
 								<UsualGroup name="Группа43" id="551">
 									<ReadOnly>true</ReadOnly>
