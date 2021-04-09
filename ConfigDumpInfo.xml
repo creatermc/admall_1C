@@ -79,10 +79,10 @@
 		<Metadata name="CommonForm.ФормаОтправкиУведомительногоПисьма.Form" id="e9ad774c-0161-11eb-c19d-b42e9905bfa2.0" configVersion="94d04400e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаРасширенныйПросмотр" id="0ba9da1e-1762-11eb-f492-b42e9905bfa2" configVersion="e4885000e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаРасширенныйПросмотр.Form" id="0ba9da1e-1762-11eb-f492-b42e9905bfa2.0" configVersion="ae4c4500e092eb110782b42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаРезультатВыполнения" id="c6a6ef12-54cc-11eb-8289-b42e9905bfa2" configVersion="66a474072599eb111a82b42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаРезультатВыполнения.Form" id="c6a6ef12-54cc-11eb-8289-b42e9905bfa2.0" configVersion="8a0d74072599eb111a82b42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаРезультатВыполненияТЧ" id="2ee74702-9924-11eb-1a82-b42e9905bfa2" configVersion="924196122599eb111a82b42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаРезультатВыполненияТЧ.Form" id="2ee74702-9924-11eb-1a82-b42e9905bfa2.0" configVersion="ce8395122599eb111a82b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаРезультатВыполнения" id="c6a6ef12-54cc-11eb-8289-b42e9905bfa2" configVersion="7c5f6abd2599eb11ae83b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаРезультатВыполнения.Form" id="c6a6ef12-54cc-11eb-8289-b42e9905bfa2.0" configVersion="4c8b69bd2599eb11ae83b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаРезультатВыполненияТЧ" id="2ee74702-9924-11eb-1a82-b42e9905bfa2" configVersion="86f2cfb52599eb11ae83b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаРезультатВыполненияТЧ.Form" id="2ee74702-9924-11eb-1a82-b42e9905bfa2.0" configVersion="5e89cfb52599eb11ae83b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаСправкаКластера1С" id="a74d7350-1752-11eb-f492-b42e9905bfa2" configVersion="90b45000e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаСправкаКластера1С.Form" id="a74d7350-1752-11eb-f492-b42e9905bfa2.0" configVersion="d28f2900e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="Configuration.АдминистрированиеСервера" id="68b31c24-f990-11ea-a281-b42e9905bfa2" configVersion="c88805402499eb111a82b42e9905bfa200000000"/>
