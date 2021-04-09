@@ -247,11 +247,11 @@
 							<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
 							<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="130"/>
 							<ChildItems>
-								<Page name="ГруппаSSH" id="141">
+								<Page name="ГруппаBASH" id="141">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>SSH</v8:content>
+											<v8:content>BASH</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
@@ -260,7 +260,7 @@
 											<v8:content>SSH</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ГруппаSSHРасширеннаяПодсказка" id="142"/>
+									<ExtendedTooltip name="ГруппаBASHРасширеннаяПодсказка" id="142"/>
 									<ChildItems>
 										<Pages name="Группа57Страницы" id="702">
 											<Title>
@@ -272,11 +272,11 @@
 											<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
 											<ExtendedTooltip name="Группа57СтраницыРасширеннаяПодсказка" id="703"/>
 											<ChildItems>
-												<Page name="Группа57ЗапросSSH" id="704">
+												<Page name="ГруппаЗапросBASH" id="704">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Запрос SSH</v8:content>
+															<v8:content>BASH</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
@@ -285,7 +285,7 @@
 															<v8:content>Запрос SSH</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="Группа57ЗапросSSHРасширеннаяПодсказка" id="705"/>
+													<ExtendedTooltip name="ГруппаЗапросBASHРасширеннаяПодсказка" id="705"/>
 													<ChildItems>
 														<UsualGroup name="Группа59" id="748">
 															<Group>Vertical</Group>
@@ -345,38 +345,202 @@
 																		</UsualGroup>
 																	</ChildItems>
 																</Page>
-																<Page name="Группа63" id="763">
+																<Page name="ГруппаCLI" id="763">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
 																			<v8:content>cli</v8:content>
 																		</v8:item>
 																	</Title>
-																	<ExtendedTooltip name="Группа63РасширеннаяПодсказка" id="764"/>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>CLI (Command line interface)</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ExtendedTooltip name="ГруппаCLIРасширеннаяПодсказка" id="764"/>
 																	<ChildItems>
-																		<UsualGroup name="Группа60" id="750">
-																			<Group>AlwaysHorizontal</Group>
+																		<UsualGroup name="Группа74" id="861">
+																			<Group>Vertical</Group>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
-																			<ExtendedTooltip name="Группа60РасширеннаяПодсказка" id="751"/>
+																			<ExtendedTooltip name="Группа74РасширеннаяПодсказка" id="862"/>
 																			<ChildItems>
-																				<InputField name="ТекстПрямойКоманды" id="756">
-																					<DataPath>ТекстПрямойКоманды</DataPath>
-																					<TitleLocation>None</TitleLocation>
-																					<ContextMenu name="ТекстПрямойКомандыКонтекстноеМеню" id="757"/>
-																					<ExtendedTooltip name="ТекстПрямойКомандыРасширеннаяПодсказка" id="758"/>
-																				</InputField>
-																				<Button name="ВыполнитьПрямуюКоманду" id="754">
-																					<Type>UsualButton</Type>
-																					<CommandName>Form.Command.ВыполнитьПрямуюКоманду</CommandName>
-																					<Title>
+																				<UsualGroup name="Группа60" id="750">
+																					<Group>AlwaysHorizontal</Group>
+																					<Representation>None</Representation>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="Группа60РасширеннаяПодсказка" id="751"/>
+																					<ChildItems>
+																						<InputField name="ТекстПрямойКоманды" id="756">
+																							<DataPath>ТекстПрямойКоманды</DataPath>
+																							<TitleLocation>None</TitleLocation>
+																							<ContextMenu name="ТекстПрямойКомандыКонтекстноеМеню" id="757"/>
+																							<ExtendedTooltip name="ТекстПрямойКомандыРасширеннаяПодсказка" id="758"/>
+																							<Events>
+																								<Event name="TextEditEnd">ТекстПрямойКомандыОкончаниеВводаТекста</Event>
+																							</Events>
+																						</InputField>
+																						<Button name="ВыполнитьПрямуюКоманду" id="754">
+																							<Type>UsualButton</Type>
+																							<CommandName>Form.Command.ВыполнитьПрямуюКоманду</CommandName>
+																							<Title>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Выполнить</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ExtendedTooltip name="ВыполнитьПрямуюКомандуРасширеннаяПодсказка" id="755"/>
+																						</Button>
+																					</ChildItems>
+																				</UsualGroup>
+																				<UsualGroup name="Группа63" id="898">
+																					<Group>Vertical</Group>
+																					<Representation>None</Representation>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="Группа63РасширеннаяПодсказка" id="899"/>
+																					<ChildItems>
+																						<LabelDecoration name="Декорация18" id="900">
+																							<ContextMenu name="Декорация18КонтекстноеМеню" id="901"/>
+																							<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="902"/>
+																						</LabelDecoration>
+																					</ChildItems>
+																				</UsualGroup>
+																				<UsualGroup name="ГруппаFirstHelp" id="863">
+																					<ToolTip>
 																						<v8:item>
 																							<v8:lang>ru</v8:lang>
-																							<v8:content>Выполнить</v8:content>
+																							<v8:content>first help</v8:content>
 																						</v8:item>
-																					</Title>
-																					<ExtendedTooltip name="ВыполнитьПрямуюКомандуРасширеннаяПодсказка" id="755"/>
-																				</Button>
+																					</ToolTip>
+																					<Group>Vertical</Group>
+																					<Representation>None</Representation>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="ГруппаFirstHelpРасширеннаяПодсказка" id="864"/>
+																					<ChildItems>
+																						<LabelDecoration name="Декорация5" id="865">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>pwd - Вывести текущую (рабочую) директорию.</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация5КонтекстноеМеню" id="866"/>
+																							<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="867"/>
+																						</LabelDecoration>
+																						<LabelDecoration name="Декорация9" id="871">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>date - Вывести текущую дату и время системы.</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация9КонтекстноеМеню" id="872"/>
+																							<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="873"/>
+																						</LabelDecoration>
+																						<LabelDecoration name="Декорация10" id="874">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>w - Данная команда показывает, кто залогинен в системе.</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация10КонтекстноеМеню" id="875"/>
+																							<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="876"/>
+																						</LabelDecoration>
+																						<LabelDecoration name="Декорация11" id="877">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>ls - Вывести содержимое директории.</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация11КонтекстноеМеню" id="878"/>
+																							<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="879"/>
+																						</LabelDecoration>
+																						<LabelDecoration name="Декорация12" id="880">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>cd - Изменить текущую директорию.</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация12КонтекстноеМеню" id="881"/>
+																							<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="882"/>
+																						</LabelDecoration>
+																						<LabelDecoration name="Декорация13" id="883">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>mkdir - Создать директорию.</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация13КонтекстноеМеню" id="884"/>
+																							<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="885"/>
+																						</LabelDecoration>
+																						<LabelDecoration name="Декорация14" id="886">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>rm - Удалить файл.</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация14КонтекстноеМеню" id="887"/>
+																							<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="888"/>
+																						</LabelDecoration>
+																						<LabelDecoration name="Декорация15" id="889">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>cp - Копировать файл или директорию.</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация15КонтекстноеМеню" id="890"/>
+																							<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="891"/>
+																						</LabelDecoration>
+																						<LabelDecoration name="Декорация16" id="892">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>mv - Переместить или переименовать файл или директорию.</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация16КонтекстноеМеню" id="893"/>
+																							<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="894"/>
+																						</LabelDecoration>
+																						<LabelDecoration name="Декорация17" id="895">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>cat - Вывести содержимое файла (или файлов).</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация17КонтекстноеМеню" id="896"/>
+																							<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="897"/>
+																						</LabelDecoration>
+																						<LabelDecoration name="Декорация8" id="868">
+																							<TextColor>#999999</TextColor>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>ps - Вывести список процессов.</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="Декорация8КонтекстноеМеню" id="869"/>
+																							<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="870"/>
+																						</LabelDecoration>
+																					</ChildItems>
+																				</UsualGroup>
 																			</ChildItems>
 																		</UsualGroup>
 																	</ChildItems>
@@ -1610,6 +1774,7 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
 															<ExtendedTooltip name="Группа32РасширеннаяПодсказка" id="427"/>
 															<ChildItems>
 																<InputField name="idКластераСервера1С4" id="428">
@@ -1629,6 +1794,8 @@
 														</UsualGroup>
 														<InputField name="ПарольСуперПользователя" id="433">
 															<DataPath>ПарольСуперПользователя</DataPath>
+															<Visible>false</Visible>
+															<Enabled>false</Enabled>
 															<TitleLocation>Top</TitleLocation>
 															<HorizontalStretch>false</HorizontalStretch>
 															<PasswordMode>true</PasswordMode>
@@ -1641,10 +1808,17 @@
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="345"/>
 															<ChildItems>
-																<Button name="Перезагрузка" id="340">
+																<Button name="ПолучитьСтатусСервера1С" id="594">
 																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ПерезагрузкаСервера1С</CommandName>
-																	<ExtendedTooltip name="ПерезагрузкаРасширеннаяПодсказка" id="341"/>
+																	<CommandName>Form.Command.ПолучитьСтатусСервера1С</CommandName>
+																	<BorderColor>style:AccentColor</BorderColor>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Статус</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="ПолучитьСтатусСервера1СРасширеннаяПодсказка" id="595"/>
 																</Button>
 																<Button name="ОстановкаСервера" id="342">
 																	<Type>UsualButton</Type>
@@ -1657,6 +1831,11 @@
 																	</Title>
 																	<ExtendedTooltip name="ОстановкаСервераРасширеннаяПодсказка" id="343"/>
 																</Button>
+																<Button name="Перезагрузка" id="340">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.ПерезагрузкаСервера1С</CommandName>
+																	<ExtendedTooltip name="ПерезагрузкаРасширеннаяПодсказка" id="341"/>
+																</Button>
 																<Button name="ЗапускСервера1С" id="346">
 																	<Type>UsualButton</Type>
 																	<CommandName>Form.Command.ЗапускСервера1С</CommandName>
@@ -1667,11 +1846,6 @@
 																		</v8:item>
 																	</Title>
 																	<ExtendedTooltip name="ЗапускСервера1СРасширеннаяПодсказка" id="347"/>
-																</Button>
-																<Button name="ПолучитьСтатусСервера1С" id="594">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ПолучитьСтатусСервера1С</CommandName>
-																	<ExtendedTooltip name="ПолучитьСтатусСервера1СРасширеннаяПодсказка" id="595"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
@@ -1996,117 +2170,150 @@
 													</ToolTip>
 													<ExtendedTooltip name="УдалениеБазРасширеннаяПодсказка" id="351"/>
 													<ChildItems>
-														<UsualGroup name="Группа30" id="412">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Сервер 1С</v8:content>
-																</v8:item>
-															</Title>
-															<Group>AlwaysHorizontal</Group>
-															<ExtendedTooltip name="Группа30РасширеннаяПодсказка" id="413"/>
-															<ChildItems>
-																<InputField name="idКластераСервера1С2" id="414">
-																	<DataPath>idКластераСервера1С</DataPath>
-																	<TitleLocation>None</TitleLocation>
-																	<HorizontalStretch>false</HorizontalStretch>
-																	<ContextMenu name="idКластераСервера1С2КонтекстноеМеню" id="415"/>
-																	<ExtendedTooltip name="idКластераСервера1С2РасширеннаяПодсказка" id="416"/>
-																</InputField>
-																<Button name="ПолучитьСписокКластеров1С2" id="417">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
-																	<ExtendedTooltip name="ПолучитьСписокКластеров1С2РасширеннаяПодсказка" id="418"/>
-																</Button>
-															</ChildItems>
-														</UsualGroup>
-														<UsualGroup name="ГруппаАдминистраторСервера1С7" id="352">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Администратор сервера 1С</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Сервер 1С</v8:content>
-																</v8:item>
-															</ToolTip>
-															<Shortcut>Ctrl+S</Shortcut>
+														<UsualGroup name="Группа17" id="857">
 															<Group>Vertical</Group>
-															<ExtendedTooltip name="ГруппаАдминистраторСервера1С7РасширеннаяПодсказка" id="353"/>
+															<Representation>StrongSeparation</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="858"/>
 															<ChildItems>
-																<InputField name="АдминистраторСервера1С7" id="354">
-																	<DataPath>АдминистраторСервера1С</DataPath>
+																<UsualGroup name="Группа30" id="412">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Учетная запись</v8:content>
+																			<v8:content>Сервер 1С</v8:content>
 																		</v8:item>
 																	</Title>
-																	<HorizontalStretch>false</HorizontalStretch>
-																	<ContextMenu name="АдминистраторСервера1С7КонтекстноеМеню" id="355"/>
-																	<ExtendedTooltip name="АдминистраторСервера1С7РасширеннаяПодсказка" id="356"/>
-																	<Events>
-																		<Event name="TextEditEnd">АдминистраторСервера1СОкончаниеВводаТекста</Event>
-																		<Event name="ChoiceProcessing">АдминистраторСервера1СОбработкаВыбора</Event>
-																	</Events>
-																</InputField>
-																<InputField name="ПарольАдминистратораСервера1С7" id="357">
-																	<DataPath>ПарольАдминистратораСервера1С</DataPath>
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>None</Representation>
+																	<ExtendedTooltip name="Группа30РасширеннаяПодсказка" id="413"/>
+																	<ChildItems>
+																		<InputField name="idКластераСервера1С2" id="414">
+																			<DataPath>idКластераСервера1С</DataPath>
+																			<TitleLocation>None</TitleLocation>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<ContextMenu name="idКластераСервера1С2КонтекстноеМеню" id="415"/>
+																			<ExtendedTooltip name="idКластераСервера1С2РасширеннаяПодсказка" id="416"/>
+																		</InputField>
+																		<Button name="ПолучитьСписокКластеров1С2" id="417">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Обновить</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="ПолучитьСписокКластеров1С2РасширеннаяПодсказка" id="418"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="ГруппаАдминистраторСервера1С7" id="352">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Пароль</v8:content>
+																			<v8:content>Администратор сервера 1С</v8:content>
 																		</v8:item>
 																	</Title>
-																	<HorizontalStretch>false</HorizontalStretch>
-																	<PasswordMode>true</PasswordMode>
-																	<BorderColor>win:HotLight</BorderColor>
-																	<ContextMenu name="ПарольАдминистратораСервера1С7КонтекстноеМеню" id="358"/>
-																	<ExtendedTooltip name="ПарольАдминистратораСервера1С7РасширеннаяПодсказка" id="359"/>
-																</InputField>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Администратор сервера 1С</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Shortcut>Ctrl+S</Shortcut>
+																	<Group>Vertical</Group>
+																	<Representation>None</Representation>
+																	<ExtendedTooltip name="ГруппаАдминистраторСервера1С7РасширеннаяПодсказка" id="353"/>
+																	<ChildItems>
+																		<InputField name="АдминистраторСервера1С7" id="354">
+																			<DataPath>АдминистраторСервера1С</DataPath>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Учетная запись</v8:content>
+																				</v8:item>
+																			</Title>
+																			<TitleLocation>None</TitleLocation>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<ContextMenu name="АдминистраторСервера1С7КонтекстноеМеню" id="355"/>
+																			<ExtendedTooltip name="АдминистраторСервера1С7РасширеннаяПодсказка" id="356"/>
+																			<Events>
+																				<Event name="TextEditEnd">АдминистраторСервера1СОкончаниеВводаТекста</Event>
+																				<Event name="ChoiceProcessing">АдминистраторСервера1СОбработкаВыбора</Event>
+																			</Events>
+																		</InputField>
+																		<InputField name="ПарольАдминистратораСервера1С7" id="357">
+																			<DataPath>ПарольАдминистратораСервера1С</DataPath>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Пароль</v8:content>
+																				</v8:item>
+																			</Title>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<PasswordMode>true</PasswordMode>
+																			<BorderColor>win:HotLight</BorderColor>
+																			<ContextMenu name="ПарольАдминистратораСервера1С7КонтекстноеМеню" id="358"/>
+																			<ExtendedTooltip name="ПарольАдминистратораСервера1С7РасширеннаяПодсказка" id="359"/>
+																		</InputField>
+																	</ChildItems>
+																</UsualGroup>
 															</ChildItems>
 														</UsualGroup>
-														<UsualGroup name="ГруппаБаза1С5" id="360">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>База 1С</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>База 1С</v8:content>
-																</v8:item>
-															</ToolTip>
-															<Group>AlwaysHorizontal</Group>
-															<Representation>None</Representation>
-															<ExtendedTooltip name="ГруппаБаза1С5РасширеннаяПодсказка" id="361"/>
+														<UsualGroup name="Группа73" id="859">
+															<Group>Vertical</Group>
+															<Representation>StrongSeparation</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа73РасширеннаяПодсказка" id="860"/>
 															<ChildItems>
-																<InputField name="База1С5" id="362">
-																	<DataPath>База1С</DataPath>
-																	<TitleLocation>None</TitleLocation>
-																	<HorizontalStretch>false</HorizontalStretch>
-																	<DropListButton>true</DropListButton>
-																	<ListChoiceMode>true</ListChoiceMode>
-																	<AutoMarkIncomplete>true</AutoMarkIncomplete>
-																	<ChoiceListHeight>2</ChoiceListHeight>
-																	<DropListWidth>2</DropListWidth>
-																	<HeightControlVariant>UseContentHeight</HeightControlVariant>
-																	<ContextMenu name="База1С5КонтекстноеМеню" id="363"/>
-																	<ExtendedTooltip name="База1С5РасширеннаяПодсказка" id="364"/>
-																	<Events>
-																		<Event name="ChoiceProcessing">База1СОбработкаВыбора</Event>
-																	</Events>
-																</InputField>
-																<Button name="ПолучитьСписокБаз1С4" id="365">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
-																	<ExtendedTooltip name="ПолучитьСписокБаз1С4РасширеннаяПодсказка" id="366"/>
-																</Button>
+																<UsualGroup name="ГруппаБаза1С5" id="360">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>База 1С</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>База 1С</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>None</Representation>
+																	<ExtendedTooltip name="ГруппаБаза1С5РасширеннаяПодсказка" id="361"/>
+																	<ChildItems>
+																		<InputField name="База1С5" id="362">
+																			<DataPath>База1С</DataPath>
+																			<TitleLocation>None</TitleLocation>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<DropListButton>true</DropListButton>
+																			<ListChoiceMode>true</ListChoiceMode>
+																			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+																			<ChoiceListHeight>2</ChoiceListHeight>
+																			<DropListWidth>2</DropListWidth>
+																			<HeightControlVariant>UseContentHeight</HeightControlVariant>
+																			<ContextMenu name="База1С5КонтекстноеМеню" id="363"/>
+																			<ExtendedTooltip name="База1С5РасширеннаяПодсказка" id="364"/>
+																			<Events>
+																				<Event name="ChoiceProcessing">База1СОбработкаВыбора</Event>
+																			</Events>
+																		</InputField>
+																		<Button name="ПолучитьСписокБаз1С4" id="365">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Обновить</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="ПолучитьСписокБаз1С4РасширеннаяПодсказка" id="366"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
 															</ChildItems>
 														</UsualGroup>
 														<Button name="УдалитьБазу1С" id="367">
@@ -2139,6 +2346,7 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
 															<ExtendedTooltip name="Группа29РасширеннаяПодсказка" id="406"/>
 															<ChildItems>
 																<InputField name="idКластераСервера1С1" id="407">
@@ -2150,6 +2358,8 @@
 																</InputField>
 																<Button name="ПолучитьСписокКластеров1С1" id="410">
 																	<Type>UsualButton</Type>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
 																	<Width>14</Width>
 																	<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
 																	<ExtendedTooltip name="ПолучитьСписокКластеров1С1РасширеннаяПодсказка" id="411"/>
@@ -2184,6 +2394,7 @@
 															</ToolTip>
 															<Shortcut>Ctrl+S</Shortcut>
 															<Group>Vertical</Group>
+															<Representation>None</Representation>
 															<ExtendedTooltip name="ГруппаАдминистраторСервера1С8РасширеннаяПодсказка" id="372"/>
 															<ChildItems>
 																<InputField name="АдминистраторСервера1С8" id="373">
@@ -2194,6 +2405,7 @@
 																			<v8:content>Учетная запись</v8:content>
 																		</v8:item>
 																	</Title>
+																	<TitleLocation>None</TitleLocation>
 																	<HorizontalStretch>false</HorizontalStretch>
 																	<ContextMenu name="АдминистраторСервера1С8КонтекстноеМеню" id="374"/>
 																	<ExtendedTooltip name="АдминистраторСервера1С8РасширеннаяПодсказка" id="375"/>
@@ -2204,6 +2416,8 @@
 																</InputField>
 																<InputField name="ПарольАдминистратораСервера1С8" id="376">
 																	<DataPath>ПарольАдминистратораСервера1С</DataPath>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -2253,6 +2467,8 @@
 																</InputField>
 																<Button name="ПолучитьСписокБаз1С5" id="384">
 																	<Type>UsualButton</Type>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
 																	<Width>14</Width>
 																	<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
 																	<Shape>Usual</Shape>
@@ -2292,12 +2508,15 @@
 															<ChildItems>
 																<InputField name="АдминистраторБазы1С4" id="460">
 																	<DataPath>АдминистраторБазы1С</DataPath>
+																	<TitleLocation>None</TitleLocation>
 																	<HorizontalStretch>false</HorizontalStretch>
 																	<ContextMenu name="АдминистраторБазы1С4КонтекстноеМеню" id="461"/>
 																	<ExtendedTooltip name="АдминистраторБазы1С4РасширеннаяПодсказка" id="462"/>
 																</InputField>
 																<InputField name="ПарольАдминистратораБазы1С4" id="463">
 																	<DataPath>ПарольАдминистратораБазы1С</DataPath>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
 																	<HorizontalStretch>false</HorizontalStretch>
 																	<PasswordMode>true</PasswordMode>
 																	<ContextMenu name="ПарольАдминистратораБазы1С4КонтекстноеМеню" id="464"/>
@@ -2325,6 +2544,8 @@
 																</InputField>
 																<Button name="ПолучитьСписокАктивныхПользователей1" id="391">
 																	<Type>UsualButton</Type>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
 																	<Width>14</Width>
 																	<CommandName>Form.Command.ПолучитьСписокАктивныхПользователей</CommandName>
 																	<Title>
@@ -2878,7 +3099,10 @@
 										</Button>
 										<Table name="СписокПолучателейПисьма" id="573">
 											<Representation>List</Representation>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>4</MaxHeight>
 											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<VerticalStretch>false</VerticalStretch>
 											<EnableStartDrag>true</EnableStartDrag>
 											<EnableDrag>true</EnableDrag>
 											<DataPath>СписокПолучателейПисьма</DataPath>
@@ -2953,6 +3177,9 @@
 													<v8:content>"Тело" письма</v8:content>
 												</v8:item>
 											</Title>
+											<Height>4</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>1</MaxHeight>
 											<ContextMenu name="ТекстЭлПисьмаКонтекстноеМеню" id="673"/>
 											<ExtendedTooltip name="ТекстЭлПисьмаРасширеннаяПодсказка" id="674"/>
 										</TextDocumentField>
@@ -4526,7 +4753,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Удалить базу1 С</v8:content>
+					<v8:content>Удалить базу 1С</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>УдалитьБазу1С</Action>

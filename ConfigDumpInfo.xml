@@ -21,7 +21,19 @@
 			<Metadata name="Catalog.ПолучательПисьма.Attribute.email" id="7f5f5e46-0161-11eb-c19d-b42e9905bfa2"/>
 			<Metadata name="Catalog.ПолучательПисьма.Attribute.Примечание" id="8d2e2e30-0161-11eb-c19d-b42e9905bfa2"/>
 		</Metadata>
-		<Metadata name="Catalog.Пользователи" id="fc8e3e2e-97a1-11eb-7e98-b42e9905bfa2" configVersion="6455a84fab97eb117e98b42e9905bfa200000000"/>
+		<Metadata name="Catalog.Пользователи" id="fc8e3e2e-97a1-11eb-7e98-b42e9905bfa2" configVersion="cc61ea8c7098eb118f9cb42e9905bfa200000000">
+			<Metadata name="Catalog.Пользователи.Attribute.СвойстваПользователяИБ" id="1e3fe510-986d-11eb-8f9c-b42e9905bfa2"/>
+			<Metadata name="Catalog.Пользователи.Attribute.Подготовлен" id="1f5544e4-986e-11eb-8f9c-b42e9905bfa2"/>
+			<Metadata name="Catalog.Пользователи.Attribute.ИдентификаторПользователяСервиса" id="66734156-986d-11eb-8f9c-b42e9905bfa2"/>
+			<Metadata name="Catalog.Пользователи.Attribute.ИдентификаторПользователяИБ" id="8bccf280-986d-11eb-8f9c-b42e9905bfa2"/>
+			<Metadata name="Catalog.Пользователи.Attribute.Комментарий" id="a22b21f0-986d-11eb-8f9c-b42e9905bfa2"/>
+			<Metadata name="Catalog.Пользователи.Command.ПользователиИнформационнойБазы" id="c12427e0-986e-11eb-8f9c-b42e9905bfa2"/>
+			<Metadata name="Catalog.Пользователи.Attribute.Недействителен" id="d8b58198-986d-11eb-8f9c-b42e9905bfa2"/>
+			<Metadata name="Catalog.Пользователи.Attribute.Служебный" id="f75ffca4-986d-11eb-8f9c-b42e9905bfa2"/>
+		</Metadata>
+		<Metadata name="Catalog.Пользователи.Command.ПользователиИнформационнойБазы.CommandModule" id="c12427e0-986e-11eb-8f9c-b42e9905bfa2.2" configVersion="8a366df66e98eb118f9cb42e9905bfa200000000"/>
+		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента" id="a2b19300-986f-11eb-8f9c-b42e9905bfa2" configVersion="92e13c498098eb11779e0cc47a4026a800000000"/>
+		<Metadata name="Catalog.Пользователи.Form.ФормаЭлемента.Form" id="a2b19300-986f-11eb-8f9c-b42e9905bfa2.0" configVersion="263f3c498098eb11779e0cc47a4026a800000000"/>
 		<Metadata name="Catalog.ПользователиБазы1С" id="4c9d7026-192e-11eb-889d-b42e9905bfa2" configVersion="9c3f5f4fb997eb118787b42e9905bfa200000000">
 			<Metadata name="Catalog.ПользователиБазы1С.Attribute.ПарольПользователя" id="32171946-3f76-11eb-a09b-b42e9905bfa2"/>
 		</Metadata>
@@ -56,8 +68,8 @@
 		<Metadata name="CommonCommand.ОтправитьПисьмо.CommandModule" id="73db87b4-0163-11eb-c19d-b42e9905bfa2.2" configVersion="8c6d0a00e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаHelpDocker" id="405f318e-1535-11eb-d88d-b42e9905bfa2" configVersion="c49e5000e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаHelpDocker.Form" id="405f318e-1535-11eb-d88d-b42e9905bfa2.0" configVersion="a42f4400e092eb110782b42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаАдминистрирования" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2" configVersion="22c84bed6098eb118f9cb42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаАдминистрирования.Form" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.0" configVersion="32554aed6098eb118f9cb42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2" configVersion="1285241b1199eb11969ab42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования.Form" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.0" configVersion="94eb221b1199eb11969ab42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаАдминистрирования.Help" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.1" configVersion="aaa01800e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаЗапросПароля" id="397866dc-9795-11eb-7e98-b42e9905bfa2" configVersion="c4ca1a739597eb117e98b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаЗапросПароля.Form" id="397866dc-9795-11eb-7e98-b42e9905bfa2.0" configVersion="9c6b1a739597eb117e98b42e9905bfa200000000"/>
