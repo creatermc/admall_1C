@@ -1478,6 +1478,7 @@
 															<ChildItems>
 																<InputField name="idСессииПользователя1С" id="639">
 																	<DataPath>idСессииПользователя1С</DataPath>
+																	<ReadOnly>true</ReadOnly>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -1519,13 +1520,15 @@
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Отключить всех</v8:content>
+																			<v8:content>Отключить все</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ExtendedTooltip name="ОтключитьВсехПользователейРасширеннаяПодсказка" id="273"/>
 																</Button>
 																<Button name="ЗакрытьКонфигураторБазы1С" id="270">
 																	<Type>UsualButton</Type>
+																	<Visible>false</Visible>
+																	<Enabled>false</Enabled>
 																	<Width>17</Width>
 																	<CommandName>Form.Command.ЗакрытьКонфигураторБазы1С</CommandName>
 																	<ExtendedTooltip name="ЗакрытьКонфигураторБазы1СРасширеннаяПодсказка" id="271"/>
@@ -2927,41 +2930,41 @@
 															<ExtendedTooltip name="ГруппаСправочники1СРасширеннаяПодсказка" id="819"/>
 															<ChildItems>
 																<UsualGroup name="Группа11" id="916">
-																	<Group>AlwaysHorizontal</Group>
+																	<Group>Vertical</Group>
 																	<Representation>StrongSeparation</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="917"/>
 																	<ChildItems>
-																		<Button name="ОткрытьСписокСерверов1С" id="909">
-																			<Type>UsualButton</Type>
-																			<CommandName>Form.Command.ОткрытьСписокСерверов1С</CommandName>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Серверы 1С</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ExtendedTooltip name="ОткрытьСписокСерверов1СРасширеннаяПодсказка" id="910"/>
-																		</Button>
-																		<Button name="ПолучитьСписокКластеров1С" id="914">
-																			<Type>UsualButton</Type>
-																			<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Обновить</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ExtendedTooltip name="ПолучитьСписокКластеров1СРасширеннаяПодсказка" id="915"/>
-																		</Button>
-																	</ChildItems>
-																</UsualGroup>
-																<UsualGroup name="Группа81" id="933">
-																	<Group>AlwaysHorizontal</Group>
-																	<Representation>StrongSeparation</Representation>
-																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="Группа81РасширеннаяПодсказка" id="934"/>
-																	<ChildItems>
+																		<UsualGroup name="Группа39" id="940">
+																			<Group>AlwaysHorizontal</Group>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<ExtendedTooltip name="Группа39РасширеннаяПодсказка" id="941"/>
+																			<ChildItems>
+																				<Button name="ОткрытьСписокСерверов1С" id="909">
+																					<Type>UsualButton</Type>
+																					<CommandName>Form.Command.ОткрытьСписокСерверов1С</CommandName>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Серверы 1С</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ExtendedTooltip name="ОткрытьСписокСерверов1СРасширеннаяПодсказка" id="910"/>
+																				</Button>
+																				<Button name="ПолучитьСписокКластеров1С" id="914">
+																					<Type>UsualButton</Type>
+																					<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Обновить</v8:content>
+																						</v8:item>
+																					</Title>
+																					<ExtendedTooltip name="ПолучитьСписокКластеров1СРасширеннаяПодсказка" id="915"/>
+																				</Button>
+																			</ChildItems>
+																		</UsualGroup>
 																		<Button name="ОткрытьСписокАдминистраторовСервера1С" id="806">
 																			<Type>UsualButton</Type>
 																			<CommandName>Form.Command.ОткрытьСписокАдминистраторовСервера1С</CommandName>
@@ -2974,6 +2977,12 @@
 																			<ExtendedTooltip name="ОткрытьСписокАдминистраторовСервера1СРасширеннаяПодсказка" id="807"/>
 																		</Button>
 																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="Группа81" id="933">
+																	<Group>AlwaysHorizontal</Group>
+																	<Representation>StrongSeparation</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа81РасширеннаяПодсказка" id="934"/>
 																</UsualGroup>
 																<UsualGroup name="Группа77" id="918">
 																	<Group>AlwaysHorizontal</Group>
@@ -4845,6 +4854,34 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="СписокАктивныхПользователей" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список активных пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="idUser" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Id user</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>
