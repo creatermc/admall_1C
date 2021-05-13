@@ -68,8 +68,8 @@
 		<Metadata name="CommonCommand.ОтправитьПисьмо.CommandModule" id="73db87b4-0163-11eb-c19d-b42e9905bfa2.2" configVersion="8c6d0a00e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаHelpDocker" id="405f318e-1535-11eb-d88d-b42e9905bfa2" configVersion="c49e5000e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаHelpDocker.Form" id="405f318e-1535-11eb-d88d-b42e9905bfa2.0" configVersion="a42f4400e092eb110782b42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаАдминистрирования" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2" configVersion="18298df9729beb11c592b42e9905bfa200000000"/>
-		<Metadata name="CommonForm.ФормаАдминистрирования.Form" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.0" configVersion="94908bf9729beb11c592b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2" configVersion="dce3c20cc5b3eb11b198b42e9905bfa200000000"/>
+		<Metadata name="CommonForm.ФормаАдминистрирования.Form" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.0" configVersion="7c4ac10cc5b3eb11b198b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаАдминистрирования.Help" id="fac5c52c-fce6-11ea-b39a-b42e9905bfa2.1" configVersion="aaa01800e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаЗапросПароля" id="397866dc-9795-11eb-7e98-b42e9905bfa2" configVersion="c4ca1a739597eb117e98b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаЗапросПароля.Form" id="397866dc-9795-11eb-7e98-b42e9905bfa2.0" configVersion="9c6b1a739597eb117e98b42e9905bfa200000000"/>
@@ -85,7 +85,9 @@
 		<Metadata name="CommonForm.ФормаРезультатВыполненияТЧ.Form" id="2ee74702-9924-11eb-1a82-b42e9905bfa2.0" configVersion="5e89cfb52599eb11ae83b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаСправкаКластера1С" id="a74d7350-1752-11eb-f492-b42e9905bfa2" configVersion="90b45000e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="CommonForm.ФормаСправкаКластера1С.Form" id="a74d7350-1752-11eb-f492-b42e9905bfa2.0" configVersion="d28f2900e092eb110782b42e9905bfa200000000"/>
-		<Metadata name="Configuration.АдминистрированиеСервера" id="68b31c24-f990-11ea-a281-b42e9905bfa2" configVersion="c88805402499eb111a82b42e9905bfa200000000"/>
+		<Metadata name="CommonPicture.BASHLogo" id="6a575f1c-9dbf-11eb-709b-b42e9905bfa2" configVersion="b0ac18aebf9deb11709bb42e9905bfa200000000"/>
+		<Metadata name="CommonPicture.BASHLogo.Picture" id="6a575f1c-9dbf-11eb-709b-b42e9905bfa2.0" configVersion="3cd0029cbf9deb11709bb42e9905bfa200000000"/>
+		<Metadata name="Configuration.АдминистрированиеСервера" id="68b31c24-f990-11ea-a281-b42e9905bfa2" configVersion="f8be18aebf9deb11709bb42e9905bfa200000000"/>
 		<Metadata name="Configuration.АдминистрированиеСервера.ClientApplicationInterface" id="68b31c25-f990-11ea-a281-b42e9905bfa2.b" configVersion="0a360a00e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="Configuration.АдминистрированиеСервера.HomePageWorkArea" id="68b31c25-f990-11ea-a281-b42e9905bfa2.8" configVersion="7c6a1800e092eb110782b42e9905bfa200000000"/>
 		<Metadata name="Configuration.АдминистрированиеСервера.MainSectionCommandInterface" id="68b31c25-f990-11ea-a281-b42e9905bfa2.9" configVersion="623e1800e092eb110782b42e9905bfa200000000"/>

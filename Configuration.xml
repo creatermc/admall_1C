@@ -175,6 +175,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<CommonPicture>BASHLogo</CommonPicture>
 			<Role>ПолныеПрава</Role>
 			<CommonCommand>ОтправитьПисьмо</CommonCommand>
 			<Constant>АдресТехЭлПочты</Constant>

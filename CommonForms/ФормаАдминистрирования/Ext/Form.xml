@@ -61,7 +61,7 @@
 								</v8:item>
 							</Title>
 							<Picture>
-								<xr:Abs>Picture.png</xr:Abs>
+								<xr:Ref>CommonPicture.BASHLogo</xr:Ref>
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
 							<ContextMenu name="ДекорацияBASHКонтекстноеМеню" id="76"/>
@@ -94,6 +94,9 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа51" id="644">
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<EnableContentChange>true</EnableContentChange>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -377,9 +380,6 @@
 																							<TitleLocation>None</TitleLocation>
 																							<ContextMenu name="ТекстПрямойКомандыКонтекстноеМеню" id="757"/>
 																							<ExtendedTooltip name="ТекстПрямойКомандыРасширеннаяПодсказка" id="758"/>
-																							<Events>
-																								<Event name="TextEditEnd">ТекстПрямойКомандыОкончаниеВводаТекста</Event>
-																							</Events>
 																						</InputField>
 																						<Button name="ВыполнитьПрямуюКоманду" id="754">
 																							<Type>UsualButton</Type>
@@ -1405,10 +1405,6 @@
 																			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 																			<ContextMenu name="База1С3КонтекстноеМеню" id="249"/>
 																			<ExtendedTooltip name="База1С3РасширеннаяПодсказка" id="250"/>
-																			<Events>
-																				<Event name="StartChoice">База1С3НачалоВыбора</Event>
-																				<Event name="ChoiceProcessing">База1СОбработкаВыбора</Event>
-																			</Events>
 																		</InputField>
 																		<Button name="ПолучитьСписокБаз1С" id="268">
 																			<Type>UsualButton</Type>
@@ -2534,10 +2530,14 @@
 																</InputField>
 																<Button name="ПолучитьСписокКластеров1С1" id="410">
 																	<Type>UsualButton</Type>
-																	<Visible>false</Visible>
-																	<Enabled>false</Enabled>
-																	<Width>14</Width>
+																	<Width>9</Width>
 																	<CommandName>Form.Command.ПолучитьСписокКластеров1С</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Обновить</v8:content>
+																		</v8:item>
+																	</Title>
 																	<ExtendedTooltip name="ПолучитьСписокКластеров1С1РасширеннаяПодсказка" id="411"/>
 																</Button>
 																<Button name="ПолучитьИнформацию1" id="452">
@@ -2556,6 +2556,9 @@
 															</ChildItems>
 														</UsualGroup>
 														<UsualGroup name="ГруппаАдминистраторСервера1С8" id="371">
+															<Visible>false</Visible>
+															<Enabled>false</Enabled>
+															<EnableContentChange>true</EnableContentChange>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2625,28 +2628,24 @@
 															<Representation>None</Representation>
 															<ExtendedTooltip name="ГруппаБаза1С6РасширеннаяПодсказка" id="380"/>
 															<ChildItems>
-																<InputField name="База1С6" id="381">
+																<InputField name="База1С" id="942">
 																	<DataPath>База1С</DataPath>
 																	<TitleLocation>None</TitleLocation>
 																	<HorizontalStretch>false</HorizontalStretch>
-																	<DropListButton>true</DropListButton>
-																	<ListChoiceMode>true</ListChoiceMode>
-																	<AutoMarkIncomplete>true</AutoMarkIncomplete>
-																	<ChoiceListHeight>2</ChoiceListHeight>
-																	<DropListWidth>2</DropListWidth>
-																	<HeightControlVariant>UseContentHeight</HeightControlVariant>
-																	<ContextMenu name="База1С6КонтекстноеМеню" id="382"/>
-																	<ExtendedTooltip name="База1С6РасширеннаяПодсказка" id="383"/>
-																	<Events>
-																		<Event name="ChoiceProcessing">База1СОбработкаВыбора</Event>
-																	</Events>
+																	<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+																	<ContextMenu name="База1СКонтекстноеМеню" id="943"/>
+																	<ExtendedTooltip name="База1СРасширеннаяПодсказка" id="944"/>
 																</InputField>
 																<Button name="ПолучитьСписокБаз1С5" id="384">
 																	<Type>UsualButton</Type>
-																	<Visible>false</Visible>
-																	<Enabled>false</Enabled>
-																	<Width>14</Width>
+																	<Width>9</Width>
 																	<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Обновить</v8:content>
+																		</v8:item>
+																	</Title>
 																	<Shape>Usual</Shape>
 																	<ExtendedTooltip name="ПолучитьСписокБаз1С5РасширеннаяПодсказка" id="385"/>
 																</Button>
@@ -2666,6 +2665,9 @@
 															</ChildItems>
 														</UsualGroup>
 														<UsualGroup name="Группа29АдминистраторБазы1С1" id="458">
+															<Visible>false</Visible>
+															<Enabled>false</Enabled>
+															<EnableContentChange>true</EnableContentChange>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -2707,6 +2709,7 @@
 																	<v8:content>Активный пользователь</v8:content>
 																</v8:item>
 															</Title>
+															<Group>AlwaysHorizontal</Group>
 															<Representation>None</Representation>
 															<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="387"/>
 															<ChildItems>
@@ -2720,14 +2723,12 @@
 																</InputField>
 																<Button name="ПолучитьСписокАктивныхПользователей1" id="391">
 																	<Type>UsualButton</Type>
-																	<Visible>false</Visible>
-																	<Enabled>false</Enabled>
-																	<Width>14</Width>
+																	<Width>9</Width>
 																	<CommandName>Form.Command.ПолучитьСписокАктивныхПользователей</CommandName>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Получить список</v8:content>
+																			<v8:content>Обновить</v8:content>
 																		</v8:item>
 																	</Title>
 																	<Shape>Usual</Shape>
@@ -2884,34 +2885,6 @@
 													</ToolTip>
 													<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="844"/>
 													<ChildItems>
-														<UsualGroup name="Группа3" id="848">
-															<Group>AlwaysHorizontal</Group>
-															<Representation>None</Representation>
-															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="849"/>
-															<ChildItems>
-																<CheckBoxField name="ОтображатьЗапрос" id="845">
-																	<DataPath>ОтображатьЗапрос</DataPath>
-																	<CheckBoxType>Auto</CheckBoxType>
-																	<ContextMenu name="ОтображатьЗапросКонтекстноеМеню" id="846"/>
-																	<ExtendedTooltip name="ОтображатьЗапросРасширеннаяПодсказка" id="847"/>
-																</CheckBoxField>
-																<LabelDecoration name="ДекорацияОписаниеОтображенияЗапроса" id="850">
-																	<TextColor>win:WindowFrame</TextColor>
-																	<Title formatted="false">
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Отобразить запрос при получении 
-ошибки или дополнительной служебной 
-информации со стороны сервера в 
-окне "Результат выполнения"</v8:content>
-																		</v8:item>
-																	</Title>
-																	<ContextMenu name="ДекорацияОписаниеОтображенияЗапросаКонтекстноеМеню" id="851"/>
-																	<ExtendedTooltip name="ДекорацияОписаниеОтображенияЗапросаРасширеннаяПодсказка" id="852"/>
-																</LabelDecoration>
-															</ChildItems>
-														</UsualGroup>
 														<UsualGroup name="ГруппаСправочники1С" id="818">
 															<Title>
 																<v8:item>
@@ -2997,6 +2970,8 @@
 																		</Button>
 																		<Button name="ПолучитьСписокБаз1С6" id="920">
 																			<Type>UsualButton</Type>
+																			<Visible>false</Visible>
+																			<Enabled>false</Enabled>
 																			<CommandName>Form.Command.ПолучитьСписокБаз1С</CommandName>
 																			<Title>
 																				<v8:item>
@@ -3016,7 +2991,7 @@
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>help</v8:content>
+															<v8:content>Информация</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
@@ -3458,16 +3433,25 @@
 										</Pages>
 									</ChildItems>
 								</Page>
-								<Page name="Группа42" id="675">
+								<Page name="ГруппаСтрНастройки" id="675">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Настройки</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="Группа42РасширеннаяПодсказка" id="676"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаСтрНастройкиРасширеннаяПодсказка" id="676"/>
 									<ChildItems>
 										<UsualGroup name="Группа67" id="802">
+											<Visible>false</Visible>
+											<Enabled>false</Enabled>
+											<EnableContentChange>true</EnableContentChange>
 											<Group>AlwaysHorizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
@@ -3509,6 +3493,34 @@
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСправочникиРасширеннаяПодсказка" id="805"/>
+										</UsualGroup>
+										<UsualGroup name="Группа3" id="848">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="849"/>
+											<ChildItems>
+												<CheckBoxField name="ОтображатьЗапрос" id="845">
+													<DataPath>ОтображатьЗапрос</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОтображатьЗапросКонтекстноеМеню" id="846"/>
+													<ExtendedTooltip name="ОтображатьЗапросРасширеннаяПодсказка" id="847"/>
+												</CheckBoxField>
+												<LabelDecoration name="ДекорацияОписаниеОтображенияЗапроса" id="850">
+													<TextColor>win:WindowFrame</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отобразить запрос при получении 
+ошибки или дополнительной служебной 
+информации со стороны сервера в 
+окне "Результат выполнения"</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияОписаниеОтображенияЗапросаКонтекстноеМеню" id="851"/>
+													<ExtendedTooltip name="ДекорацияОписаниеОтображенияЗапросаРасширеннаяПодсказка" id="852"/>
+												</LabelDecoration>
+											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
 								</Page>
@@ -4913,7 +4925,7 @@
 					<v8:content>Получить список баз 1С</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПолучитьСписокБаз1С1</Action>
+			<Action>ПолучитьСписокБаз1С</Action>
 		</Command>
 		<Command name="ЗакрытьКонфигураторБазы1С" id="2">
 			<Title>
